@@ -1,4 +1,14 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Run_Query" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="Run_Query_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Run_Query" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_dcRPAConnection" Type="InArgument(ui:DatabaseConnection)" />
+  </x:Members>
+  <this:Run_Query.in_dcRPAConnection>
+    <InArgument x:TypeArguments="ui:DatabaseConnection" />
+  </this:Run_Query.in_dcRPAConnection>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>Run_Query_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -101,14 +111,14 @@
       <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Run_Query" sap:VirtualizedContainerService.HintSize="790,1641" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Run_Query" sap:VirtualizedContainerService.HintSize="790,1525" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:Comment sap:VirtualizedContainerService.HintSize="582,242" sap2010:WorkflowViewState.IdRef="Comment_1" Text="===== Start of Automation ======&#xA;&#xA;Developer Name: Matheus Rubio&#xA;&#xA;Date: 13/11/2025&#xA;&#xA;Task Name: Run.Query&#xA;&#xA;========================&#xA;&#xA;&#xA;" />
-    <TryCatch DisplayName="Try Catch - Run Query" sap:VirtualizedContainerService.HintSize="582,1376" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch - Run Query" sap:VirtualizedContainerService.HintSize="582,1260" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -116,16 +126,16 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="Try Try Catch - RunQuery" sap:VirtualizedContainerService.HintSize="544,1125" sap2010:WorkflowViewState.IdRef="Sequence_3">
+        <Sequence DisplayName="Try Try Catch - RunQuery" sap:VirtualizedContainerService.HintSize="544,1009" sap2010:WorkflowViewState.IdRef="Sequence_3">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:RetryScope DisplayName="Retry Scope - [RUN QUERY]" sap:VirtualizedContainerService.HintSize="510,1065" sap2010:WorkflowViewState.IdRef="RetryScope_1">
+          <ui:RetryScope DisplayName="Retry Scope - [RUN QUERY]" sap:VirtualizedContainerService.HintSize="510,949" sap2010:WorkflowViewState.IdRef="RetryScope_1">
             <ui:RetryScope.ActivityBody>
               <ActivityAction>
-                <Sequence DisplayName="Action Retry Scope - [RUN QUERY]" sap:VirtualizedContainerService.HintSize="468,867" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <Sequence DisplayName="Action Retry Scope - [RUN QUERY]" sap:VirtualizedContainerService.HintSize="468,751" sap2010:WorkflowViewState.IdRef="Sequence_5">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:String" Name="sQrToRun" />
                     <Variable x:TypeArguments="sd:DataTable" Name="dtQrResult" />
@@ -146,8 +156,15 @@
                       </InArgument>
                     </Assign.Value>
                   </Assign>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,173" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[String.Format(&quot;Running [{0}]&quot;)]" />
-                  <ui:ExecuteNonQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" AffectedRecords="[iAffectedRows]" CommandType="Text" DisplayName="Run command - [RUN QUERY]" sap:VirtualizedContainerService.HintSize="434,121" sap2010:WorkflowViewState.IdRef="ExecuteNonQuery_1" Sql="[sQrToRun]">
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[String.Format(&quot;Running [{0}]&quot;, sQrToRun)]">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:LogMessage>
+                  <ui:ExecuteNonQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" AffectedRecords="[iAffectedRows]" CommandType="Text" DisplayName="Run command - [RUN QUERY]" ExistingDbConnection="[in_dcRPAConnection]" sap:VirtualizedContainerService.HintSize="434,121" sap2010:WorkflowViewState.IdRef="ExecuteNonQuery_1" Sql="[sQrToRun]">
                     <ui:ExecuteNonQuery.Parameters>
                       <scg:Dictionary x:TypeArguments="x:String, Argument" />
                     </ui:ExecuteNonQuery.Parameters>
