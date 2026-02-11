@@ -52,6 +52,42 @@
       "IsPrincipal": true,
       "ArgumentType": 0,
       "DataSourceItems": null
+    },
+    {
+      "Name": "Update_Issue",
+      "DisplayName": "uipath-atlassian-jira",
+      "Category": null,
+      "Tooltip": "Update Issue",
+      "Placeholder": null,
+      "Widget": "Connection",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "ArgumentType": 1,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_sModernJiraProject",
+      "DisplayName": "in_sModernJiraProject",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "[Ops Defense] RPA - RPAS",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_sModernJiraIssueType",
+      "DisplayName": "in_sModernJiraIssueType",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "Task - 10002",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
     }
   ]
 }

@@ -41,12 +41,18 @@
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.applicationinsights\\2.21.0\\lib/netstandard2.0/Microsoft.ApplicationInsights.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.aspnet.signalr.client\\2.4.3\\lib/netstandard2.0/Microsoft.AspNet.SignalR.Client.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\6.0.36\\lib/net6.0/Microsoft.AspNetCore.Connections.Abstractions.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.aspnetcore.hosting.abstractions\\2.3.0\\lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Abstractions.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.aspnetcore.hosting.server.abstractions\\2.3.0\\lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.3.0\\lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.aspnetcore.http.connections.client\\6.0.36\\lib/net6.0/Microsoft.AspNetCore.Http.Connections.Client.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.aspnetcore.http.connections.common\\6.0.36\\lib/net6.0/Microsoft.AspNetCore.Http.Connections.Common.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.aspnetcore.http.extensions\\2.3.0\\lib/netstandard2.0/Microsoft.AspNetCore.Http.Extensions.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.3.0\\lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.aspnetcore.signalr.client\\6.0.36\\lib/net6.0/Microsoft.AspNetCore.SignalR.Client.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.aspnetcore.signalr.client.core\\6.0.36\\lib/net6.0/Microsoft.AspNetCore.SignalR.Client.Core.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.aspnetcore.signalr.common\\6.0.36\\lib/net6.0/Microsoft.AspNetCore.SignalR.Common.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.aspnetcore.signalr.protocols.json\\6.0.36\\lib/net6.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.aspnetcore.staticfiles\\2.3.0\\lib/netstandard2.0/Microsoft.AspNetCore.StaticFiles.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.azure.cognitiveservices.vision.computervision\\7.0.1\\lib/netstandard2.0/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.codeanalysis.common\\4.5.0-2.22527.10\\lib/netcoreapp3.1/Microsoft.CodeAnalysis.dll",
@@ -55,19 +61,26 @@
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.data.sqlclient\\4.1.0\\runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.0\\lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.configuration\\2.0.2\\lib/netstandard2.0/Microsoft.Extensions.Configuration.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\2.0.2\\lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\lib/net7.0/Microsoft.Extensions.DependencyInjection.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\lib/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\lib/net8.0/Microsoft.Extensions.Configuration.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\lib/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.configuration.binder\\8.0.0\\lib/net8.0/Microsoft.Extensions.Configuration.Binder.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.1\\lib/net8.0/Microsoft.Extensions.DependencyInjection.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.diagnostics\\8.0.1\\lib/net8.0/Microsoft.Extensions.Diagnostics.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.diagnostics.abstractions\\8.0.1\\lib/net8.0/Microsoft.Extensions.Diagnostics.Abstractions.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.features\\6.0.36\\lib/net6.0/Microsoft.Extensions.Features.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\8.0.0\\lib/net8.0/Microsoft.Extensions.FileProviders.Abstractions.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\5.0.0\\lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.http\\7.0.0\\lib/net7.0/Microsoft.Extensions.Http.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.http.polly\\7.0.5\\lib/netstandard2.0/Microsoft.Extensions.Http.Polly.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0\\lib/net7.0/Microsoft.Extensions.Logging.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\lib/net7.0/Microsoft.Extensions.Logging.Abstractions.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\8.0.1\\lib/net8.0/Microsoft.Extensions.Hosting.Abstractions.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.http\\8.0.1\\lib/net8.0/Microsoft.Extensions.Http.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.http.polly\\8.0.12\\lib/netstandard2.0/Microsoft.Extensions.Http.Polly.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.logging\\8.0.1\\lib/net8.0/Microsoft.Extensions.Logging.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\lib/net8.0/Microsoft.Extensions.Logging.Abstractions.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.objectpool\\5.0.17\\lib/net5.0/Microsoft.Extensions.ObjectPool.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\lib/net7.0/Microsoft.Extensions.Options.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\lib/net7.0/Microsoft.Extensions.Primitives.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\lib/net8.0/Microsoft.Extensions.Options.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\8.0.0\\lib/net8.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\lib/net8.0/Microsoft.Extensions.Primitives.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.webencoders\\8.0.11\\lib/net8.0/Microsoft.Extensions.WebEncoders.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.graph\\3.32.0\\lib/netstandard2.0/Microsoft.Graph.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.graph.core\\1.25.1\\lib/netstandard1.1/Microsoft.Graph.Core.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.identity.client\\4.32.0\\lib/netcoreapp2.1/Microsoft.Identity.Client.dll",
@@ -81,6 +94,7 @@
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.management.infrastructure.cimcmdlets\\7.2.24\\runtimes/win/lib/net6.0/Microsoft.Management.Infrastructure.CimCmdlets.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\3.0.0\\runtimes/win-x64/lib/netstandard1.6/microsoft.management.infrastructure.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\3.0.0\\runtimes/win-x64/lib/netstandard1.6/microsoft.management.infrastructure.native.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.net.http.headers\\2.3.0\\lib/netstandard2.0/Microsoft.Net.Http.Headers.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.powershell.commands.diagnostics\\7.2.24\\runtimes/win/lib/net6.0/Microsoft.PowerShell.Commands.Diagnostics.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.powershell.commands.management\\7.2.24\\runtimes/win/lib/net6.0/Microsoft.PowerShell.Commands.Management.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.powershell.commands.utility\\7.2.24\\runtimes/win/lib/net6.0/Microsoft.PowerShell.Commands.Utility.dll",
@@ -98,8 +112,12 @@
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\namotion.reflection\\2.0.10\\lib/netstandard2.0/Namotion.Reflection.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\net.adamec.lib.common.dmn.engine\\1.1.1\\lib/netstandard2.0/net.adamec.lib.common.dmn.engine.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib/net6.0/Newtonsoft.Json.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nito.asyncex.context\\5.1.2\\lib/netstandard2.0/Nito.AsyncEx.Context.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nito.asyncex.coordination\\5.1.2\\lib/netstandard2.0/Nito.AsyncEx.Coordination.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nito.asyncex.interop.waithandles\\5.1.2\\lib/netstandard2.0/Nito.AsyncEx.Interop.WaitHandles.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nito.asyncex.oop\\5.1.2\\lib/netstandard2.0/Nito.AsyncEx.Oop.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nito.asyncex.tasks\\5.1.2\\lib/netstandard2.0/Nito.AsyncEx.Tasks.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nito.cancellation\\1.1.2\\lib/netstandard2.0/Nito.Cancellation.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nito.collections.deque\\1.1.1\\lib/netstandard2.0/Nito.Collections.Deque.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nito.disposables\\2.2.1\\lib/netstandard2.1/Nito.Disposables.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\njsonschema\\10.5.2\\lib/netstandard2.0/NJsonSchema.dll",
@@ -375,14 +393,14 @@
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nubank.library.runtime\\6.3.7\\lib/net8.0-windows7.0/Nubank_Expressions_9819130.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nubank.library.runtime\\6.3.7\\lib/net8.0-windows7.0/Nubank_Expressions_9962700.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\oracle.manageddataaccess.core\\3.21.1\\lib/netstandard2.1/Oracle.ManagedDataAccess.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\polly\\7.2.3\\lib/netstandard2.0/Polly.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\polly\\7.2.4\\lib/netstandard2.0/Polly.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\polly.contrib.waitandretry\\1.1.1\\lib/netstandard2.0/Polly.Contrib.WaitAndRetry.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\polly.extensions.http\\3.0.0\\lib/netstandard2.0/Polly.Extensions.Http.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\portable.bouncycastle\\1.8.9\\lib/netstandard2.0/BouncyCastle.Crypto.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\radcommons.core\\2.0.1\\lib/netstandard2.0/net.adamec.lib.common.core.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\restsharp\\106.15.0\\lib/netstandard2.0/RestSharp.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\sharpziplib\\1.3.3\\lib/netstandard2.1/ICSharpCode.SharpZipLib.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\system.activities.viewmodels\\1.0.0-20250401.2\\lib/net6.0-windows7.0/System.Activities.ViewModels.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\system.activities.viewmodels\\1.0.0-20250925.3\\lib/net6.0-windows7.0/System.Activities.ViewModels.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\system.componentmodel.composition\\6.0.0\\lib/net6.0/System.ComponentModel.Composition.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\system.componentmodel.composition.registration\\6.0.0\\lib/net6.0/System.ComponentModel.Composition.Registration.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\system.data.odbc\\6.0.1\\runtimes/win/lib/net6.0/System.Data.Odbc.dll",
@@ -422,7 +440,7 @@
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.amazonwebservices.activities\\2.6.1\\lib/net6.0-windows7.0/UiPath.AmazonWebServices.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.appsignatures\\25.6.140.65296\\lib/net6.0-windows7.0/AppSignatures.Locator.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.codedworkflows\\24.10.1\\lib/net6.0-windows7.0/UiPath.CodedWorkflows.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.connectionclient\\2.0.12\\lib/net6.0/ConnectionClient.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.connectionclient\\2.0.14\\lib/net6.0/ConnectionClient.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.cryptography.activities\\1.6.1\\lib/net6.0-windows7.0/UiPath.Cryptography.Activities.Design.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.cryptography.activities\\1.6.1\\lib/net6.0-windows7.0/UiPath.Cryptography.Activities.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.cryptography.activities\\1.6.1\\lib/net6.0-windows7.0/UiPath.Cryptography.dll",
@@ -455,8 +473,10 @@
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.gsuite.activities\\2.8.23\\lib/net6.0-windows7.0/UiPath.GSuite.Activities.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.gsuite.activities\\2.8.23\\lib/net6.0-windows7.0/UiPath.GSuite.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.imageprocessing\\23.4.0\\lib/net6.0-windows7.0/UiPath.ImageProcessingInterop.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.integrationservice.activities\\1.16.0\\lib/net8.0/UiPath.IntegrationService.Activities.Runtime.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.integrationservice.activities\\1.16.0\\lib/net8.0/UiPath.IntegrationService.Activities.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.integrationservice.activities\\1.23.0\\lib/net8.0/UiPath.IntegrationService.Activities.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.integrationservice.activities\\1.23.0\\lib/net8.0/UiPath.IntegrationService.Activities.Runtime.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.integrationservice.adapters\\1.0.0\\lib/net8.0/UiPath.IntegrationService.Adapters.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.integrationservice.client\\1.0.0\\lib/net8.0/UiPath.IntegrationService.Client.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.mail.activities\\1.12.3\\lib/net5.0-windows7.0/Interop.Domino.UiPath.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.mail.activities\\1.12.3\\lib/net5.0-windows7.0/Microsoft.Office.Interop.Outlook.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.mail.activities\\1.12.3\\lib/net5.0-windows7.0/Microsoft.Office.Interop.Word.dll",
@@ -474,7 +494,7 @@
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.persistence.activities\\1.5.11\\lib/net6.0-windows7.0/UiPath.Orchestrator.Service.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.persistence.activities\\1.5.11\\lib/net6.0-windows7.0/UiPath.Persistence.Activities.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.persistence.activities\\1.5.11\\lib/net6.0-windows7.0/UiPath.Persistence.Orchestrator.Client.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.platform\\25.6.0\\lib/net6.0-windows7.0/UiPath.Platform.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.platform\\25.12.0\\lib/net6.0-windows7.0/UiPath.Platform.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.python.activities\\1.10.0\\lib/net6.0-windows7.0/UiPath.Python.Activities.Design.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.python.activities\\1.10.0\\lib/net6.0-windows7.0/UiPath.Python.Activities.ViewModels.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.python.activities\\1.10.0\\lib/net6.0-windows7.0/UiPath.Python.Activities.dll",
@@ -526,6 +546,23 @@
     },
     {
       "Package": {
+        "Id": "UiPath.Jira.Activities",
+        "Version": "2.4.5"
+      },
+      "Assemblies": [
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\dotnetprojects.wpftoolkit.input\\6.0.90\\lib/netcoreapp3.0/DotNetProjects.Input.Toolkit.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib/net6.0/Newtonsoft.Json.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\restsharp\\106.15.0\\lib/netstandard2.0/RestSharp.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.atlassian.jira.sdk\\13.0.2\\lib/net6.0-windows7.0/Atlassian.Jira.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.baflayer\\1.0.2\\lib/net6.0-windows7.0/UiPath.BAFLayer.Activities.Packaging.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.jira.activities\\2.4.5\\lib/net6.0-windows7.0/UiPath.Jira.Activities.Design.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.jira.activities\\2.4.5\\lib/net6.0-windows7.0/UiPath.Jira.Activities.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.jira.activities\\2.4.5\\lib/net6.0-windows7.0/UiPath.Jira.dll"
+      ],
+      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.jira.activities\\2.4.5"
+    },
+    {
+      "Package": {
         "Id": "UiPath.System.Activities",
         "Version": "25.4.2"
       },
@@ -546,14 +583,14 @@
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.codeanalysis.common\\4.5.0-2.22527.10\\lib/netcoreapp3.1/Microsoft.CodeAnalysis.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.codeanalysis.csharp\\4.5.0-2.22527.10\\lib/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.codeanalysis.visualbasic\\4.5.0-2.22527.10\\lib/netcoreapp3.1/Microsoft.CodeAnalysis.VisualBasic.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\lib/net7.0/Microsoft.Extensions.DependencyInjection.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\lib/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.1\\lib/net8.0/Microsoft.Extensions.DependencyInjection.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.features\\6.0.36\\lib/net6.0/Microsoft.Extensions.Features.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0\\lib/net7.0/Microsoft.Extensions.Logging.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\lib/net7.0/Microsoft.Extensions.Logging.Abstractions.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.logging\\8.0.1\\lib/net8.0/Microsoft.Extensions.Logging.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\lib/net8.0/Microsoft.Extensions.Logging.Abstractions.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.objectpool\\5.0.17\\lib/net5.0/Microsoft.Extensions.ObjectPool.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\lib/net7.0/Microsoft.Extensions.Options.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\lib/net7.0/Microsoft.Extensions.Primitives.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\lib/net8.0/Microsoft.Extensions.Options.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\lib/net8.0/Microsoft.Extensions.Primitives.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.management.infrastructure.cimcmdlets\\7.2.24\\runtimes/win/lib/net6.0/Microsoft.Management.Infrastructure.CimCmdlets.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\3.0.0\\runtimes/win-x64/lib/netstandard1.6/microsoft.management.infrastructure.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\3.0.0\\runtimes/win-x64/lib/netstandard1.6/microsoft.management.infrastructure.native.dll",
@@ -571,11 +608,19 @@
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\namotion.reflection\\2.0.10\\lib/netstandard2.0/Namotion.Reflection.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\net.adamec.lib.common.dmn.engine\\1.1.1\\lib/netstandard2.0/net.adamec.lib.common.dmn.engine.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib/net6.0/Newtonsoft.Json.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nito.asyncex.context\\5.1.2\\lib/netstandard2.0/Nito.AsyncEx.Context.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nito.asyncex.coordination\\5.1.2\\lib/netstandard2.0/Nito.AsyncEx.Coordination.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nito.asyncex.interop.waithandles\\5.1.2\\lib/netstandard2.0/Nito.AsyncEx.Interop.WaitHandles.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nito.asyncex.oop\\5.1.2\\lib/netstandard2.0/Nito.AsyncEx.Oop.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nito.asyncex.tasks\\5.1.2\\lib/netstandard2.0/Nito.AsyncEx.Tasks.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nito.cancellation\\1.1.2\\lib/netstandard2.0/Nito.Cancellation.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nito.collections.deque\\1.1.1\\lib/netstandard2.0/Nito.Collections.Deque.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nito.disposables\\2.2.1\\lib/netstandard2.1/Nito.Disposables.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\njsonschema\\10.5.2\\lib/netstandard2.0/NJsonSchema.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nlog\\4.7.15\\lib/netstandard2.0/NLog.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\radcommons.core\\2.0.1\\lib/netstandard2.0/net.adamec.lib.common.core.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\sharpziplib\\1.3.3\\lib/netstandard2.1/ICSharpCode.SharpZipLib.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\system.activities.viewmodels\\1.0.0-20250401.2\\lib/net6.0-windows7.0/System.Activities.ViewModels.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\system.activities.viewmodels\\1.0.0-20250925.3\\lib/net6.0-windows7.0/System.Activities.ViewModels.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\system.componentmodel.composition\\6.0.0\\lib/net6.0/System.ComponentModel.Composition.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\system.componentmodel.composition.registration\\6.0.0\\lib/net6.0/System.ComponentModel.Composition.Registration.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\system.data.odbc\\6.0.1\\runtimes/win/lib/net6.0/System.Data.Odbc.dll",
@@ -604,7 +649,7 @@
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\system.web.services.description\\4.9.0\\lib/netstandard2.0/System.Web.Services.Description.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.codedworkflows\\24.10.1\\lib/net6.0-windows7.0/UiPath.CodedWorkflows.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.opentelemetry.contracts\\2.6.1\\lib/netstandard2.0/UiPath.OpenTelemetry.Contracts.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.platform\\25.6.0\\lib/net6.0-windows7.0/UiPath.Platform.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.platform\\25.12.0\\lib/net6.0-windows7.0/UiPath.Platform.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.system.activities\\25.4.2\\lib/net6.0-windows7.0/UiPath.System.Activities.Design.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.system.activities\\25.4.2\\lib/net6.0-windows7.0/UiPath.System.Activities.ViewModels.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.system.activities.runtime\\25.4.2\\lib/net6.0-windows7.0/UiPath.System.Activities.Package.Runtime.dll",
@@ -622,13 +667,21 @@
       },
       "Assemblies": [
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.azure.cognitiveservices.vision.computervision\\7.0.1\\lib/netstandard2.0/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\lib/net7.0/Microsoft.Extensions.DependencyInjection.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\lib/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.1\\lib/net8.0/Microsoft.Extensions.DependencyInjection.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.rest.clientruntime\\2.3.24\\lib/netstandard2.0/Microsoft.Rest.ClientRuntime.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.rest.clientruntime.azure\\3.3.18\\lib/netstandard1.4/Microsoft.Rest.ClientRuntime.Azure.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib/net6.0/Newtonsoft.Json.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nito.asyncex.context\\5.1.2\\lib/netstandard2.0/Nito.AsyncEx.Context.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nito.asyncex.coordination\\5.1.2\\lib/netstandard2.0/Nito.AsyncEx.Coordination.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nito.asyncex.interop.waithandles\\5.1.2\\lib/netstandard2.0/Nito.AsyncEx.Interop.WaitHandles.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nito.asyncex.oop\\5.1.2\\lib/netstandard2.0/Nito.AsyncEx.Oop.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nito.asyncex.tasks\\5.1.2\\lib/netstandard2.0/Nito.AsyncEx.Tasks.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nito.cancellation\\1.1.2\\lib/netstandard2.0/Nito.Cancellation.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nito.collections.deque\\1.1.1\\lib/netstandard2.0/Nito.Collections.Deque.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nito.disposables\\2.2.1\\lib/netstandard2.1/Nito.Disposables.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nlog\\4.7.15\\lib/netstandard2.0/NLog.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\polly\\7.2.3\\lib/netstandard2.0/Polly.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\polly\\7.2.4\\lib/netstandard2.0/Polly.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\system.io.abstractions\\3.0.10\\lib/netstandard2.0/System.IO.Abstractions.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath\\25.6.140.65296\\lib/net6.0-windows7.0/SapAutomationConnectivitySdk.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath\\25.6.140.65296\\lib/net6.0-windows7.0/SapAutomationLogger.dll",
@@ -654,7 +707,7 @@
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.ocr.activities\\3.22.0\\lib/net6.0-windows7.0/UiPath.OCR.Core.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.ocr.contracts\\2.17.1\\lib/net6.0-windows7.0/UiPath.OCR.Contracts.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.opentelemetry.contracts\\2.6.1\\lib/netstandard2.0/UiPath.OpenTelemetry.Contracts.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.platform\\25.6.0\\lib/net6.0-windows7.0/UiPath.Platform.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.platform\\25.12.0\\lib/net6.0-windows7.0/UiPath.Platform.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.telemetry.client\\2.6.1\\lib/netstandard2.0/TelemetryClient.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities\\25.10.8\\lib/net6.0-windows7.0/UiPath.CV.Activities.Design.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities\\25.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomation.Activities.Design.dll",
@@ -682,20 +735,59 @@
     },
     {
       "Package": {
-        "Id": "UiPath.Jira.Activities",
-        "Version": "2.4.5"
+        "Id": "UiPath.IntegrationService.Activities",
+        "Version": "1.23.0"
       },
       "Assemblies": [
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\dotnetprojects.wpftoolkit.input\\6.0.90\\lib/netcoreapp3.0/DotNetProjects.Input.Toolkit.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.aspnetcore.hosting.abstractions\\2.3.0\\lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Abstractions.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.aspnetcore.hosting.server.abstractions\\2.3.0\\lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.3.0\\lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.aspnetcore.http.extensions\\2.3.0\\lib/netstandard2.0/Microsoft.AspNetCore.Http.Extensions.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.3.0\\lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.aspnetcore.staticfiles\\2.3.0\\lib/netstandard2.0/Microsoft.AspNetCore.StaticFiles.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\lib/net8.0/Microsoft.Extensions.Configuration.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\lib/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.configuration.binder\\8.0.0\\lib/net8.0/Microsoft.Extensions.Configuration.Binder.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.1\\lib/net8.0/Microsoft.Extensions.DependencyInjection.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.diagnostics\\8.0.1\\lib/net8.0/Microsoft.Extensions.Diagnostics.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.diagnostics.abstractions\\8.0.1\\lib/net8.0/Microsoft.Extensions.Diagnostics.Abstractions.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\8.0.0\\lib/net8.0/Microsoft.Extensions.FileProviders.Abstractions.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\8.0.1\\lib/net8.0/Microsoft.Extensions.Hosting.Abstractions.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.http\\8.0.1\\lib/net8.0/Microsoft.Extensions.Http.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.http.polly\\8.0.12\\lib/netstandard2.0/Microsoft.Extensions.Http.Polly.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.logging\\8.0.1\\lib/net8.0/Microsoft.Extensions.Logging.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\lib/net8.0/Microsoft.Extensions.Logging.Abstractions.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\lib/net8.0/Microsoft.Extensions.Options.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\8.0.0\\lib/net8.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\lib/net8.0/Microsoft.Extensions.Primitives.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.webencoders\\8.0.11\\lib/net8.0/Microsoft.Extensions.WebEncoders.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.net.http.headers\\2.3.0\\lib/netstandard2.0/Microsoft.Net.Http.Headers.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib/net6.0/Newtonsoft.Json.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\restsharp\\106.15.0\\lib/netstandard2.0/RestSharp.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.atlassian.jira.sdk\\13.0.2\\lib/net6.0-windows7.0/Atlassian.Jira.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.baflayer\\1.0.2\\lib/net6.0-windows7.0/UiPath.BAFLayer.Activities.Packaging.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.jira.activities\\2.4.5\\lib/net6.0-windows7.0/UiPath.Jira.Activities.Design.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.jira.activities\\2.4.5\\lib/net6.0-windows7.0/UiPath.Jira.Activities.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.jira.activities\\2.4.5\\lib/net6.0-windows7.0/UiPath.Jira.dll"
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nito.asyncex.context\\5.1.2\\lib/netstandard2.0/Nito.AsyncEx.Context.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nito.asyncex.coordination\\5.1.2\\lib/netstandard2.0/Nito.AsyncEx.Coordination.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nito.asyncex.interop.waithandles\\5.1.2\\lib/netstandard2.0/Nito.AsyncEx.Interop.WaitHandles.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nito.asyncex.oop\\5.1.2\\lib/netstandard2.0/Nito.AsyncEx.Oop.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nito.asyncex.tasks\\5.1.2\\lib/netstandard2.0/Nito.AsyncEx.Tasks.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nito.cancellation\\1.1.2\\lib/netstandard2.0/Nito.Cancellation.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nito.collections.deque\\1.1.1\\lib/netstandard2.0/Nito.Collections.Deque.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nito.disposables\\2.2.1\\lib/netstandard2.1/Nito.Disposables.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\polly\\7.2.4\\lib/netstandard2.0/Polly.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\polly.contrib.waitandretry\\1.1.1\\lib/netstandard2.0/Polly.Contrib.WaitAndRetry.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\polly.extensions.http\\3.0.0\\lib/netstandard2.0/Polly.Extensions.Http.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\system.activities.viewmodels\\1.0.0-20250925.3\\lib/net6.0-windows7.0/System.Activities.ViewModels.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\system.io.abstractions\\3.0.10\\lib/netstandard2.0/System.IO.Abstractions.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\system.runtime.caching\\6.0.0\\runtimes/win/lib/net6.0/System.Runtime.Caching.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.connectionclient\\2.0.14\\lib/net6.0/ConnectionClient.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.integrationservice.activities\\1.23.0\\lib/net8.0/UiPath.IntegrationService.Activities.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.integrationservice.activities\\1.23.0\\lib/net8.0/UiPath.IntegrationService.Activities.Runtime.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.integrationservice.adapters\\1.0.0\\lib/net8.0/UiPath.IntegrationService.Adapters.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.integrationservice.client\\1.0.0\\lib/net8.0/UiPath.IntegrationService.Client.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.opentelemetry.contracts\\2.6.1\\lib/netstandard2.0/UiPath.OpenTelemetry.Contracts.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.platform\\25.12.0\\lib/net6.0-windows7.0/UiPath.Platform.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.telemetry.client\\2.6.1\\lib/netstandard2.0/TelemetryClient.dll"
       ],
-      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.jira.activities\\2.4.5"
+      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.integrationservice.activities\\1.23.0"
     }
   ],
   "Conflicts": [],
@@ -1157,6 +1249,52 @@
         }
       ]
     },
+    "Microsoft.AspNetCore.Hosting.Abstractions": {
+      "Id": "Microsoft.AspNetCore.Hosting.Abstractions",
+      "Version": "2.3.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.AspNetCore.Hosting.Server.Abstractions",
+          "Item2": "[2.3.0, )"
+        },
+        {
+          "Item1": "Microsoft.AspNetCore.Http.Abstractions",
+          "Item2": "[2.3.0, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.Hosting.Abstractions",
+          "Item2": "[8.0.1, )"
+        }
+      ]
+    },
+    "Microsoft.AspNetCore.Hosting.Server.Abstractions": {
+      "Id": "Microsoft.AspNetCore.Hosting.Server.Abstractions",
+      "Version": "2.3.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.AspNetCore.Http.Features",
+          "Item2": "[2.3.0, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.Configuration.Abstractions",
+          "Item2": "[8.0.0, )"
+        }
+      ]
+    },
+    "Microsoft.AspNetCore.Http.Abstractions": {
+      "Id": "Microsoft.AspNetCore.Http.Abstractions",
+      "Version": "2.3.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.AspNetCore.Http.Features",
+          "Item2": "[2.3.0, )"
+        },
+        {
+          "Item1": "System.Text.Encodings.Web",
+          "Item2": "[8.0.0, )"
+        }
+      ]
+    },
     "Microsoft.AspNetCore.Http.Connections.Client": {
       "Id": "Microsoft.AspNetCore.Http.Connections.Client",
       "Version": "6.0.36",
@@ -1182,6 +1320,38 @@
         {
           "Item1": "Microsoft.AspNetCore.Connections.Abstractions",
           "Item2": "[6.0.36, )"
+        }
+      ]
+    },
+    "Microsoft.AspNetCore.Http.Extensions": {
+      "Id": "Microsoft.AspNetCore.Http.Extensions",
+      "Version": "2.3.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Net.Http.Headers",
+          "Item2": "[2.3.0, )"
+        },
+        {
+          "Item1": "Microsoft.AspNetCore.Http.Abstractions",
+          "Item2": "[2.3.0, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.FileProviders.Abstractions",
+          "Item2": "[8.0.0, )"
+        },
+        {
+          "Item1": "System.Buffers",
+          "Item2": "[4.6.0, )"
+        }
+      ]
+    },
+    "Microsoft.AspNetCore.Http.Features": {
+      "Id": "Microsoft.AspNetCore.Http.Features",
+      "Version": "2.3.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Extensions.Primitives",
+          "Item2": "[8.0.0, )"
         }
       ]
     },
@@ -1246,6 +1416,32 @@
         {
           "Item1": "Microsoft.AspNetCore.SignalR.Common",
           "Item2": "[6.0.36, )"
+        }
+      ]
+    },
+    "Microsoft.AspNetCore.StaticFiles": {
+      "Id": "Microsoft.AspNetCore.StaticFiles",
+      "Version": "2.3.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.AspNetCore.Hosting.Abstractions",
+          "Item2": "[2.3.0, )"
+        },
+        {
+          "Item1": "Microsoft.AspNetCore.Http.Extensions",
+          "Item2": "[2.3.0, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.FileProviders.Abstractions",
+          "Item2": "[8.0.0, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.Logging.Abstractions",
+          "Item2": "[8.0.2, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.WebEncoders",
+          "Item2": "[8.0.11, )"
         }
       ]
     },
@@ -1453,82 +1649,172 @@
     },
     "Microsoft.Extensions.Configuration": {
       "Id": "Microsoft.Extensions.Configuration",
-      "Version": "2.0.2",
+      "Version": "8.0.0",
       "Dependencies": [
         {
           "Item1": "Microsoft.Extensions.Configuration.Abstractions",
-          "Item2": "[2.0.2, )"
+          "Item2": "[8.0.0, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.Primitives",
+          "Item2": "[8.0.0, )"
         }
       ]
     },
     "Microsoft.Extensions.Configuration.Abstractions": {
       "Id": "Microsoft.Extensions.Configuration.Abstractions",
-      "Version": "2.0.2",
+      "Version": "8.0.0",
       "Dependencies": [
         {
           "Item1": "Microsoft.Extensions.Primitives",
-          "Item2": "[2.0.0, )"
+          "Item2": "[8.0.0, )"
+        }
+      ]
+    },
+    "Microsoft.Extensions.Configuration.Binder": {
+      "Id": "Microsoft.Extensions.Configuration.Binder",
+      "Version": "8.0.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Extensions.Configuration.Abstractions",
+          "Item2": "[8.0.0, )"
         }
       ]
     },
     "Microsoft.Extensions.DependencyInjection": {
       "Id": "Microsoft.Extensions.DependencyInjection",
-      "Version": "7.0.0",
+      "Version": "8.0.1",
       "Dependencies": [
         {
           "Item1": "Microsoft.Extensions.DependencyInjection.Abstractions",
-          "Item2": "[7.0.0, )"
+          "Item2": "[8.0.2, )"
         }
       ]
     },
     "Microsoft.Extensions.DependencyInjection.Abstractions": {
       "Id": "Microsoft.Extensions.DependencyInjection.Abstractions",
-      "Version": "7.0.0",
+      "Version": "8.0.2",
       "Dependencies": []
+    },
+    "Microsoft.Extensions.Diagnostics": {
+      "Id": "Microsoft.Extensions.Diagnostics",
+      "Version": "8.0.1",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Extensions.Configuration",
+          "Item2": "[8.0.0, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.Diagnostics.Abstractions",
+          "Item2": "[8.0.1, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.Options.ConfigurationExtensions",
+          "Item2": "[8.0.0, )"
+        }
+      ]
+    },
+    "Microsoft.Extensions.Diagnostics.Abstractions": {
+      "Id": "Microsoft.Extensions.Diagnostics.Abstractions",
+      "Version": "8.0.1",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Extensions.DependencyInjection.Abstractions",
+          "Item2": "[8.0.2, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.Options",
+          "Item2": "[8.0.2, )"
+        }
+      ]
     },
     "Microsoft.Extensions.Features": {
       "Id": "Microsoft.Extensions.Features",
       "Version": "6.0.36",
       "Dependencies": []
     },
+    "Microsoft.Extensions.FileProviders.Abstractions": {
+      "Id": "Microsoft.Extensions.FileProviders.Abstractions",
+      "Version": "8.0.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Extensions.Primitives",
+          "Item2": "[8.0.0, )"
+        }
+      ]
+    },
     "Microsoft.Extensions.FileSystemGlobbing": {
       "Id": "Microsoft.Extensions.FileSystemGlobbing",
       "Version": "5.0.0",
       "Dependencies": []
     },
-    "Microsoft.Extensions.Http": {
-      "Id": "Microsoft.Extensions.Http",
-      "Version": "7.0.0",
+    "Microsoft.Extensions.Hosting.Abstractions": {
+      "Id": "Microsoft.Extensions.Hosting.Abstractions",
+      "Version": "8.0.1",
       "Dependencies": [
         {
+          "Item1": "Microsoft.Extensions.Configuration.Abstractions",
+          "Item2": "[8.0.0, )"
+        },
+        {
           "Item1": "Microsoft.Extensions.DependencyInjection.Abstractions",
-          "Item2": "[7.0.0, )"
+          "Item2": "[8.0.2, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.Diagnostics.Abstractions",
+          "Item2": "[8.0.1, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.FileProviders.Abstractions",
+          "Item2": "[8.0.0, )"
         },
         {
           "Item1": "Microsoft.Extensions.Logging.Abstractions",
-          "Item2": "[7.0.0, )"
+          "Item2": "[8.0.2, )"
+        }
+      ]
+    },
+    "Microsoft.Extensions.Http": {
+      "Id": "Microsoft.Extensions.Http",
+      "Version": "8.0.1",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Extensions.Configuration.Abstractions",
+          "Item2": "[8.0.0, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.DependencyInjection.Abstractions",
+          "Item2": "[8.0.2, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.Diagnostics",
+          "Item2": "[8.0.1, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.Logging.Abstractions",
+          "Item2": "[8.0.2, )"
         },
         {
           "Item1": "Microsoft.Extensions.Logging",
-          "Item2": "[7.0.0, )"
+          "Item2": "[8.0.1, )"
         },
         {
           "Item1": "Microsoft.Extensions.Options",
-          "Item2": "[7.0.0, )"
+          "Item2": "[8.0.2, )"
         }
       ]
     },
     "Microsoft.Extensions.Http.Polly": {
       "Id": "Microsoft.Extensions.Http.Polly",
-      "Version": "7.0.5",
+      "Version": "8.0.12",
       "Dependencies": [
         {
           "Item1": "Microsoft.Extensions.Http",
-          "Item2": "[7.0.0, )"
+          "Item2": "[8.0.1, )"
         },
         {
           "Item1": "Polly",
-          "Item2": "[7.2.3, )"
+          "Item2": "[7.2.4, )"
         },
         {
           "Item1": "Polly.Extensions.Http",
@@ -1538,30 +1824,31 @@
     },
     "Microsoft.Extensions.Logging": {
       "Id": "Microsoft.Extensions.Logging",
-      "Version": "7.0.0",
+      "Version": "8.0.1",
       "Dependencies": [
         {
-          "Item1": "Microsoft.Extensions.DependencyInjection.Abstractions",
-          "Item2": "[7.0.0, )"
-        },
-        {
           "Item1": "Microsoft.Extensions.DependencyInjection",
-          "Item2": "[7.0.0, )"
+          "Item2": "[8.0.1, )"
         },
         {
           "Item1": "Microsoft.Extensions.Logging.Abstractions",
-          "Item2": "[7.0.0, )"
+          "Item2": "[8.0.2, )"
         },
         {
           "Item1": "Microsoft.Extensions.Options",
-          "Item2": "[7.0.0, )"
+          "Item2": "[8.0.2, )"
         }
       ]
     },
     "Microsoft.Extensions.Logging.Abstractions": {
       "Id": "Microsoft.Extensions.Logging.Abstractions",
-      "Version": "7.0.0",
-      "Dependencies": []
+      "Version": "8.0.2",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Extensions.DependencyInjection.Abstractions",
+          "Item2": "[8.0.2, )"
+        }
+      ]
     },
     "Microsoft.Extensions.ObjectPool": {
       "Id": "Microsoft.Extensions.ObjectPool",
@@ -1570,22 +1857,62 @@
     },
     "Microsoft.Extensions.Options": {
       "Id": "Microsoft.Extensions.Options",
-      "Version": "7.0.0",
+      "Version": "8.0.2",
       "Dependencies": [
         {
           "Item1": "Microsoft.Extensions.DependencyInjection.Abstractions",
-          "Item2": "[7.0.0, )"
+          "Item2": "[8.0.0, )"
         },
         {
           "Item1": "Microsoft.Extensions.Primitives",
-          "Item2": "[7.0.0, )"
+          "Item2": "[8.0.0, )"
+        }
+      ]
+    },
+    "Microsoft.Extensions.Options.ConfigurationExtensions": {
+      "Id": "Microsoft.Extensions.Options.ConfigurationExtensions",
+      "Version": "8.0.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Extensions.Configuration.Abstractions",
+          "Item2": "[8.0.0, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.Configuration.Binder",
+          "Item2": "[8.0.0, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.DependencyInjection.Abstractions",
+          "Item2": "[8.0.0, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.Options",
+          "Item2": "[8.0.0, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.Primitives",
+          "Item2": "[8.0.0, )"
         }
       ]
     },
     "Microsoft.Extensions.Primitives": {
       "Id": "Microsoft.Extensions.Primitives",
-      "Version": "7.0.0",
+      "Version": "8.0.0",
       "Dependencies": []
+    },
+    "Microsoft.Extensions.WebEncoders": {
+      "Id": "Microsoft.Extensions.WebEncoders",
+      "Version": "8.0.11",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Extensions.DependencyInjection.Abstractions",
+          "Item2": "[8.0.2, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.Options",
+          "Item2": "[8.0.2, )"
+        }
+      ]
     },
     "Microsoft.Graph": {
       "Id": "Microsoft.Graph",
@@ -1738,6 +2065,20 @@
       "Id": "Microsoft.Management.Infrastructure.Runtime.Win",
       "Version": "3.0.0",
       "Dependencies": []
+    },
+    "Microsoft.Net.Http.Headers": {
+      "Id": "Microsoft.Net.Http.Headers",
+      "Version": "2.3.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Extensions.Primitives",
+          "Item2": "[8.0.0, )"
+        },
+        {
+          "Item1": "System.Buffers",
+          "Item2": "[4.6.0, )"
+        }
+      ]
     },
     "Microsoft.NETCore.Platforms": {
       "Id": "Microsoft.NETCore.Platforms",
@@ -2458,6 +2799,46 @@
       "Version": "13.0.3",
       "Dependencies": []
     },
+    "Nito.AsyncEx": {
+      "Id": "Nito.AsyncEx",
+      "Version": "5.1.2",
+      "Dependencies": [
+        {
+          "Item1": "Nito.AsyncEx.Context",
+          "Item2": "[5.1.2, )"
+        },
+        {
+          "Item1": "Nito.AsyncEx.Coordination",
+          "Item2": "[5.1.2, )"
+        },
+        {
+          "Item1": "Nito.AsyncEx.Interop.WaitHandles",
+          "Item2": "[5.1.2, )"
+        },
+        {
+          "Item1": "Nito.AsyncEx.Oop",
+          "Item2": "[5.1.2, )"
+        },
+        {
+          "Item1": "Nito.AsyncEx.Tasks",
+          "Item2": "[5.1.2, )"
+        },
+        {
+          "Item1": "Nito.Cancellation",
+          "Item2": "[1.1.2, )"
+        }
+      ]
+    },
+    "Nito.AsyncEx.Context": {
+      "Id": "Nito.AsyncEx.Context",
+      "Version": "5.1.2",
+      "Dependencies": [
+        {
+          "Item1": "Nito.AsyncEx.Tasks",
+          "Item2": "[5.1.2, )"
+        }
+      ]
+    },
     "Nito.AsyncEx.Coordination": {
       "Id": "Nito.AsyncEx.Coordination",
       "Version": "5.1.2",
@@ -2472,9 +2853,39 @@
         }
       ]
     },
+    "Nito.AsyncEx.Interop.WaitHandles": {
+      "Id": "Nito.AsyncEx.Interop.WaitHandles",
+      "Version": "5.1.2",
+      "Dependencies": [
+        {
+          "Item1": "Nito.AsyncEx.Tasks",
+          "Item2": "[5.1.2, )"
+        }
+      ]
+    },
+    "Nito.AsyncEx.Oop": {
+      "Id": "Nito.AsyncEx.Oop",
+      "Version": "5.1.2",
+      "Dependencies": [
+        {
+          "Item1": "Nito.AsyncEx.Coordination",
+          "Item2": "[5.1.2, )"
+        }
+      ]
+    },
     "Nito.AsyncEx.Tasks": {
       "Id": "Nito.AsyncEx.Tasks",
       "Version": "5.1.2",
+      "Dependencies": [
+        {
+          "Item1": "Nito.Disposables",
+          "Item2": "[2.2.1, )"
+        }
+      ]
+    },
+    "Nito.Cancellation": {
+      "Id": "Nito.Cancellation",
+      "Version": "1.1.2",
       "Dependencies": [
         {
           "Item1": "Nito.Disposables",
@@ -2687,7 +3098,7 @@
     },
     "Polly": {
       "Id": "Polly",
-      "Version": "7.2.3",
+      "Version": "7.2.4",
       "Dependencies": []
     },
     "Polly.Contrib.WaitAndRetry": {
@@ -2973,7 +3384,7 @@
     },
     "System.Activities.ViewModels": {
       "Id": "System.Activities.ViewModels",
-      "Version": "1.0.0-20250401.2",
+      "Version": "1.0.0-20250925.3",
       "Dependencies": []
     },
     "System.AppContext": {
@@ -2988,7 +3399,7 @@
     },
     "System.Buffers": {
       "Id": "System.Buffers",
-      "Version": "4.5.1",
+      "Version": "4.6.0",
       "Dependencies": []
     },
     "System.CodeDom": {
@@ -4984,13 +5395,8 @@
     },
     "System.Text.Encodings.Web": {
       "Id": "System.Text.Encodings.Web",
-      "Version": "6.0.0",
-      "Dependencies": [
-        {
-          "Item1": "System.Runtime.CompilerServices.Unsafe",
-          "Item2": "[6.0.0, )"
-        }
-      ]
+      "Version": "8.0.0",
+      "Dependencies": []
     },
     "System.Text.Json": {
       "Id": "System.Text.Json",
@@ -5368,7 +5774,7 @@
     },
     "UiPath.ConnectionClient": {
       "Id": "UiPath.ConnectionClient",
-      "Version": "2.0.12",
+      "Version": "2.0.14",
       "Dependencies": [
         {
           "Item1": "Newtonsoft.Json",
@@ -5607,19 +6013,19 @@
     },
     "UiPath.IntegrationService.Activities": {
       "Id": "UiPath.IntegrationService.Activities",
-      "Version": "1.16.0",
+      "Version": "1.23.0",
       "Dependencies": [
         {
           "Item1": "Microsoft.Extensions.DependencyInjection",
-          "Item2": "[7.0.0, )"
+          "Item2": "[8.0.1, )"
         },
         {
           "Item1": "Microsoft.Extensions.Http",
-          "Item2": "[7.0.0, )"
+          "Item2": "[8.0.1, )"
         },
         {
           "Item1": "Microsoft.Extensions.Http.Polly",
-          "Item2": "[7.0.5, )"
+          "Item2": "[8.0.12, )"
         },
         {
           "Item1": "Nito.AsyncEx.Coordination",
@@ -5631,19 +6037,59 @@
         },
         {
           "Item1": "System.Activities.ViewModels",
-          "Item2": "[1.0.0-20250401.2, )"
+          "Item2": "[1.0.0-20250925.3, )"
         },
         {
           "Item1": "UiPath.ConnectionClient",
-          "Item2": "[2.0.12, )"
+          "Item2": "[2.0.14, )"
+        },
+        {
+          "Item1": "UiPath.IntegrationService.Client",
+          "Item2": "[1.0.0, )"
         },
         {
           "Item1": "UiPath.Platform",
-          "Item2": "[25.6.0, )"
+          "Item2": "[25.12.0, )"
         },
         {
           "Item1": "UiPath.Telemetry.Client",
           "Item2": "[2.6.1, )"
+        }
+      ]
+    },
+    "UiPath.IntegrationService.Adapters": {
+      "Id": "UiPath.IntegrationService.Adapters",
+      "Version": "1.0.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.AspNetCore.StaticFiles",
+          "Item2": "[2.3.0, )"
+        },
+        {
+          "Item1": "UiPath.Platform",
+          "Item2": "[24.12.2, )"
+        }
+      ]
+    },
+    "UiPath.IntegrationService.Client": {
+      "Id": "UiPath.IntegrationService.Client",
+      "Version": "1.0.0",
+      "Dependencies": [
+        {
+          "Item1": "UiPath.IntegrationService.Adapters",
+          "Item2": "[1.0.0, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.Http.Polly",
+          "Item2": "[8.0.12, )"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[13.0.3, )"
+        },
+        {
+          "Item1": "Polly.Contrib.WaitAndRetry",
+          "Item2": "[1.1.1, )"
         }
       ]
     },
@@ -5837,11 +6283,15 @@
     },
     "UiPath.Platform": {
       "Id": "UiPath.Platform",
-      "Version": "25.6.0",
+      "Version": "25.12.0",
       "Dependencies": [
         {
           "Item1": "Newtonsoft.Json",
           "Item2": "[13.0.1, )"
+        },
+        {
+          "Item1": "Nito.AsyncEx",
+          "Item2": "[5.1.2, )"
         },
         {
           "Item1": "System.IO.Abstractions",
@@ -6618,6 +7068,36 @@
     },
     {
       "Package": {
+        "Id": "Microsoft.AspNetCore.Hosting.Abstractions",
+        "Version": "2.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.aspnetcore.hosting.abstractions\\2.3.0\\lib\\netstandard2.0\\Microsoft.AspNetCore.Hosting.Abstractions.dll"
+      ],
+      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.aspnetcore.hosting.abstractions\\2.3.0"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.AspNetCore.Hosting.Server.Abstractions",
+        "Version": "2.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.aspnetcore.hosting.server.abstractions\\2.3.0\\lib\\netstandard2.0\\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll"
+      ],
+      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.aspnetcore.hosting.server.abstractions\\2.3.0"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.AspNetCore.Http.Abstractions",
+        "Version": "2.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.3.0\\lib\\netstandard2.0\\Microsoft.AspNetCore.Http.Abstractions.dll"
+      ],
+      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.3.0"
+    },
+    {
+      "Package": {
         "Id": "Microsoft.AspNetCore.Http.Connections.Client",
         "Version": "6.0.36"
       },
@@ -6635,6 +7115,26 @@
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.aspnetcore.http.connections.common\\6.0.36\\lib\\net6.0\\Microsoft.AspNetCore.Http.Connections.Common.dll"
       ],
       "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.aspnetcore.http.connections.common\\6.0.36"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.AspNetCore.Http.Extensions",
+        "Version": "2.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.aspnetcore.http.extensions\\2.3.0\\lib\\netstandard2.0\\Microsoft.AspNetCore.Http.Extensions.dll"
+      ],
+      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.aspnetcore.http.extensions\\2.3.0"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.AspNetCore.Http.Features",
+        "Version": "2.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.3.0\\lib\\netstandard2.0\\Microsoft.AspNetCore.Http.Features.dll"
+      ],
+      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.3.0"
     },
     {
       "Package": {
@@ -6675,6 +7175,16 @@
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.aspnetcore.signalr.protocols.json\\6.0.36\\lib\\net6.0\\Microsoft.AspNetCore.SignalR.Protocols.Json.dll"
       ],
       "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.aspnetcore.signalr.protocols.json\\6.0.36"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.AspNetCore.StaticFiles",
+        "Version": "2.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.aspnetcore.staticfiles\\2.3.0\\lib\\netstandard2.0\\Microsoft.AspNetCore.StaticFiles.dll"
+      ],
+      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.aspnetcore.staticfiles\\2.3.0"
     },
     {
       "Package": {
@@ -6785,42 +7295,72 @@
     {
       "Package": {
         "Id": "Microsoft.Extensions.Configuration",
-        "Version": "2.0.2"
+        "Version": "8.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.configuration\\2.0.2\\lib\\netstandard2.0\\Microsoft.Extensions.Configuration.dll"
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\lib\\net8.0\\Microsoft.Extensions.Configuration.dll"
       ],
-      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.configuration\\2.0.2"
+      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0"
     },
     {
       "Package": {
         "Id": "Microsoft.Extensions.Configuration.Abstractions",
-        "Version": "2.0.2"
+        "Version": "8.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\2.0.2\\lib\\netstandard2.0\\Microsoft.Extensions.Configuration.Abstractions.dll"
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\lib\\net8.0\\Microsoft.Extensions.Configuration.Abstractions.dll"
       ],
-      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\2.0.2"
+      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Extensions.Configuration.Binder",
+        "Version": "8.0.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.configuration.binder\\8.0.0\\lib\\net8.0\\Microsoft.Extensions.Configuration.Binder.dll"
+      ],
+      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.configuration.binder\\8.0.0"
     },
     {
       "Package": {
         "Id": "Microsoft.Extensions.DependencyInjection",
-        "Version": "7.0.0"
+        "Version": "8.0.1"
       },
       "Assemblies": [
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\lib\\net7.0\\Microsoft.Extensions.DependencyInjection.dll"
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.1\\lib\\net8.0\\Microsoft.Extensions.DependencyInjection.dll"
       ],
-      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0"
+      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.1"
     },
     {
       "Package": {
         "Id": "Microsoft.Extensions.DependencyInjection.Abstractions",
-        "Version": "7.0.0"
+        "Version": "8.0.2"
       },
       "Assemblies": [
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\lib\\net7.0\\Microsoft.Extensions.DependencyInjection.Abstractions.dll"
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\lib\\net8.0\\Microsoft.Extensions.DependencyInjection.Abstractions.dll"
       ],
-      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0"
+      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Extensions.Diagnostics",
+        "Version": "8.0.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.diagnostics\\8.0.1\\lib\\net8.0\\Microsoft.Extensions.Diagnostics.dll"
+      ],
+      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.diagnostics\\8.0.1"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Extensions.Diagnostics.Abstractions",
+        "Version": "8.0.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.diagnostics.abstractions\\8.0.1\\lib\\net8.0\\Microsoft.Extensions.Diagnostics.Abstractions.dll"
+      ],
+      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.diagnostics.abstractions\\8.0.1"
     },
     {
       "Package": {
@@ -6834,6 +7374,16 @@
     },
     {
       "Package": {
+        "Id": "Microsoft.Extensions.FileProviders.Abstractions",
+        "Version": "8.0.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\8.0.0\\lib\\net8.0\\Microsoft.Extensions.FileProviders.Abstractions.dll"
+      ],
+      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\8.0.0"
+    },
+    {
+      "Package": {
         "Id": "Microsoft.Extensions.FileSystemGlobbing",
         "Version": "5.0.0"
       },
@@ -6844,43 +7394,53 @@
     },
     {
       "Package": {
-        "Id": "Microsoft.Extensions.Http",
-        "Version": "7.0.0"
+        "Id": "Microsoft.Extensions.Hosting.Abstractions",
+        "Version": "8.0.1"
       },
       "Assemblies": [
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.http\\7.0.0\\lib\\net7.0\\Microsoft.Extensions.Http.dll"
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\8.0.1\\lib\\net8.0\\Microsoft.Extensions.Hosting.Abstractions.dll"
       ],
-      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.http\\7.0.0"
+      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\8.0.1"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Extensions.Http",
+        "Version": "8.0.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.http\\8.0.1\\lib\\net8.0\\Microsoft.Extensions.Http.dll"
+      ],
+      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.http\\8.0.1"
     },
     {
       "Package": {
         "Id": "Microsoft.Extensions.Http.Polly",
-        "Version": "7.0.5"
+        "Version": "8.0.12"
       },
       "Assemblies": [
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.http.polly\\7.0.5\\lib\\netstandard2.0\\Microsoft.Extensions.Http.Polly.dll"
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.http.polly\\8.0.12\\lib\\netstandard2.0\\Microsoft.Extensions.Http.Polly.dll"
       ],
-      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.http.polly\\7.0.5"
+      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.http.polly\\8.0.12"
     },
     {
       "Package": {
         "Id": "Microsoft.Extensions.Logging",
-        "Version": "7.0.0"
+        "Version": "8.0.1"
       },
       "Assemblies": [
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0\\lib\\net7.0\\Microsoft.Extensions.Logging.dll"
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.logging\\8.0.1\\lib\\net8.0\\Microsoft.Extensions.Logging.dll"
       ],
-      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0"
+      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.logging\\8.0.1"
     },
     {
       "Package": {
         "Id": "Microsoft.Extensions.Logging.Abstractions",
-        "Version": "7.0.0"
+        "Version": "8.0.2"
       },
       "Assemblies": [
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\lib\\net7.0\\Microsoft.Extensions.Logging.Abstractions.dll"
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\lib\\net8.0\\Microsoft.Extensions.Logging.Abstractions.dll"
       ],
-      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0"
+      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2"
     },
     {
       "Package": {
@@ -6895,22 +7455,42 @@
     {
       "Package": {
         "Id": "Microsoft.Extensions.Options",
-        "Version": "7.0.0"
+        "Version": "8.0.2"
       },
       "Assemblies": [
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\lib\\net7.0\\Microsoft.Extensions.Options.dll"
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\lib\\net8.0\\Microsoft.Extensions.Options.dll"
       ],
-      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.options\\7.0.0"
+      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.options\\8.0.2"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Extensions.Options.ConfigurationExtensions",
+        "Version": "8.0.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\8.0.0\\lib\\net8.0\\Microsoft.Extensions.Options.ConfigurationExtensions.dll"
+      ],
+      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\8.0.0"
     },
     {
       "Package": {
         "Id": "Microsoft.Extensions.Primitives",
-        "Version": "7.0.0"
+        "Version": "8.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\lib\\net7.0\\Microsoft.Extensions.Primitives.dll"
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\lib\\net8.0\\Microsoft.Extensions.Primitives.dll"
       ],
-      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0"
+      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Extensions.WebEncoders",
+        "Version": "8.0.11"
+      },
+      "Assemblies": [
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.webencoders\\8.0.11\\lib\\net8.0\\Microsoft.Extensions.WebEncoders.dll"
+      ],
+      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.extensions.webencoders\\8.0.11"
     },
     {
       "Package": {
@@ -7048,6 +7628,16 @@
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\3.0.0\\runtimes\\win-x64\\lib\\netstandard1.6\\microsoft.management.infrastructure.native.dll"
       ],
       "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\3.0.0"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Net.Http.Headers",
+        "Version": "2.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.net.http.headers\\2.3.0\\lib\\netstandard2.0\\Microsoft.Net.Http.Headers.dll"
+      ],
+      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\microsoft.net.http.headers\\2.3.0"
     },
     {
       "Package": {
@@ -7321,6 +7911,24 @@
     },
     {
       "Package": {
+        "Id": "Nito.AsyncEx",
+        "Version": "5.1.2"
+      },
+      "Assemblies": [],
+      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nito.asyncex\\5.1.2"
+    },
+    {
+      "Package": {
+        "Id": "Nito.AsyncEx.Context",
+        "Version": "5.1.2"
+      },
+      "Assemblies": [
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nito.asyncex.context\\5.1.2\\lib\\netstandard2.0\\Nito.AsyncEx.Context.dll"
+      ],
+      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nito.asyncex.context\\5.1.2"
+    },
+    {
+      "Package": {
         "Id": "Nito.AsyncEx.Coordination",
         "Version": "5.1.2"
       },
@@ -7331,6 +7939,26 @@
     },
     {
       "Package": {
+        "Id": "Nito.AsyncEx.Interop.WaitHandles",
+        "Version": "5.1.2"
+      },
+      "Assemblies": [
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nito.asyncex.interop.waithandles\\5.1.2\\lib\\netstandard2.0\\Nito.AsyncEx.Interop.WaitHandles.dll"
+      ],
+      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nito.asyncex.interop.waithandles\\5.1.2"
+    },
+    {
+      "Package": {
+        "Id": "Nito.AsyncEx.Oop",
+        "Version": "5.1.2"
+      },
+      "Assemblies": [
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nito.asyncex.oop\\5.1.2\\lib\\netstandard2.0\\Nito.AsyncEx.Oop.dll"
+      ],
+      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nito.asyncex.oop\\5.1.2"
+    },
+    {
+      "Package": {
         "Id": "Nito.AsyncEx.Tasks",
         "Version": "5.1.2"
       },
@@ -7338,6 +7966,16 @@
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nito.asyncex.tasks\\5.1.2\\lib\\netstandard2.0\\Nito.AsyncEx.Tasks.dll"
       ],
       "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nito.asyncex.tasks\\5.1.2"
+    },
+    {
+      "Package": {
+        "Id": "Nito.Cancellation",
+        "Version": "1.1.2"
+      },
+      "Assemblies": [
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nito.cancellation\\1.1.2\\lib\\netstandard2.0\\Nito.Cancellation.dll"
+      ],
+      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nito.cancellation\\1.1.2"
     },
     {
       "Package": {
@@ -7698,12 +8336,12 @@
     {
       "Package": {
         "Id": "Polly",
-        "Version": "7.2.3"
+        "Version": "7.2.4"
       },
       "Assemblies": [
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\polly\\7.2.3\\lib\\netstandard2.0\\Polly.dll"
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\polly\\7.2.4\\lib\\netstandard2.0\\Polly.dll"
       ],
-      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\polly\\7.2.3"
+      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\polly\\7.2.4"
     },
     {
       "Package": {
@@ -8226,12 +8864,12 @@
     {
       "Package": {
         "Id": "System.Activities.ViewModels",
-        "Version": "1.0.0-20250401.2"
+        "Version": "1.0.0-20250925.3"
       },
       "Assemblies": [
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\system.activities.viewmodels\\1.0.0-20250401.2\\lib\\net6.0-windows7.0\\System.Activities.ViewModels.dll"
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\system.activities.viewmodels\\1.0.0-20250925.3\\lib\\net6.0-windows7.0\\System.Activities.ViewModels.dll"
       ],
-      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\system.activities.viewmodels\\1.0.0-20250401.2"
+      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\system.activities.viewmodels\\1.0.0-20250925.3"
     },
     {
       "Package": {
@@ -8246,12 +8884,12 @@
     {
       "Package": {
         "Id": "System.Buffers",
-        "Version": "4.5.1"
+        "Version": "4.6.0"
       },
       "Assemblies": [
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\system.buffers\\4.5.1\\lib\\netcoreapp2.0\\_._"
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\system.buffers\\4.6.0\\lib\\netcoreapp2.1\\_._"
       ],
-      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\system.buffers\\4.5.1"
+      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\system.buffers\\4.6.0"
     },
     {
       "Package": {
@@ -9204,12 +9842,12 @@
     {
       "Package": {
         "Id": "System.Text.Encodings.Web",
-        "Version": "6.0.0"
+        "Version": "8.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\lib\\net6.0\\System.Text.Encodings.Web.dll"
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\lib\\net8.0\\System.Text.Encodings.Web.dll"
       ],
-      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\system.text.encodings.web\\6.0.0"
+      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\system.text.encodings.web\\8.0.0"
     },
     {
       "Package": {
@@ -9435,12 +10073,12 @@
     {
       "Package": {
         "Id": "UiPath.ConnectionClient",
-        "Version": "2.0.12"
+        "Version": "2.0.14"
       },
       "Assemblies": [
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.connectionclient\\2.0.12\\lib\\net6.0\\ConnectionClient.dll"
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.connectionclient\\2.0.14\\lib\\net6.0\\ConnectionClient.dll"
       ],
-      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.connectionclient\\2.0.12"
+      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.connectionclient\\2.0.14"
     },
     {
       "Package": {
@@ -9539,13 +10177,33 @@
     {
       "Package": {
         "Id": "UiPath.IntegrationService.Activities",
-        "Version": "1.16.0"
+        "Version": "1.23.0"
       },
       "Assemblies": [
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.integrationservice.activities\\1.16.0\\lib\\net8.0\\UiPath.IntegrationService.Activities.Runtime.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.integrationservice.activities\\1.16.0\\lib\\net8.0\\UiPath.IntegrationService.Activities.dll"
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.integrationservice.activities\\1.23.0\\lib\\net8.0\\UiPath.IntegrationService.Activities.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.integrationservice.activities\\1.23.0\\lib\\net8.0\\UiPath.IntegrationService.Activities.Runtime.dll"
       ],
-      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.integrationservice.activities\\1.16.0"
+      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.integrationservice.activities\\1.23.0"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.IntegrationService.Adapters",
+        "Version": "1.0.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.integrationservice.adapters\\1.0.0\\lib\\net8.0\\UiPath.IntegrationService.Adapters.dll"
+      ],
+      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.integrationservice.adapters\\1.0.0"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.IntegrationService.Client",
+        "Version": "1.0.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.integrationservice.client\\1.0.0\\lib\\net8.0\\UiPath.IntegrationService.Client.dll"
+      ],
+      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.integrationservice.client\\1.0.0"
     },
     {
       "Package": {
@@ -9624,12 +10282,12 @@
     {
       "Package": {
         "Id": "UiPath.Platform",
-        "Version": "25.6.0"
+        "Version": "25.12.0"
       },
       "Assemblies": [
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.platform\\25.6.0\\lib\\net6.0-windows7.0\\UiPath.Platform.dll"
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.platform\\25.12.0\\lib\\net6.0-windows7.0\\UiPath.Platform.dll"
       ],
-      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.platform\\25.6.0"
+      "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.platform\\25.12.0"
     },
     {
       "Package": {

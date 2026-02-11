@@ -5,6 +5,7 @@
   "main": "NewActivity.xaml",
   "dependencies": {
     "Nubank": "6.3.7",
+    "UiPath.IntegrationService.Activities": "1.23.0",
     "UiPath.Jira.Activities": "2.4.5",
     "UiPath.System.Activities": "[25.4.2]",
     "UiPath.UIAutomation.Activities": "25.10.8"
