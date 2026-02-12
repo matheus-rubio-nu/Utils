@@ -88,6 +88,18 @@
       "IsPrincipal": true,
       "ArgumentType": 0,
       "DataSourceItems": null
+    },
+    {
+      "Name": "in_iHoursToSubstract",
+      "DisplayName": "in_iHoursToSubstract",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "10",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
     }
   ]
 }

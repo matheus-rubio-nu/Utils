@@ -121,6 +121,8 @@
         "dtCollectedMessages&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [
+        "in_sModernJiraIssueType",
+        "in_sModernJiraProject",
         "in_sJiraProjectKey",
         "in_sExpextedReaction",
         "in_sUserName",
