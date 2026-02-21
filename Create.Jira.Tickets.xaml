@@ -182,7 +182,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Create_Jira_Tickets" sap:VirtualizedContainerService.HintSize="790,2715" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Create_Jira_Tickets" sap:VirtualizedContainerService.HintSize="790,3009" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dtCollectedMessages" />
       <Variable x:TypeArguments="sd:DataTable" Name="dtCrashMessages" />
@@ -194,13 +194,14 @@
       <Variable x:TypeArguments="x:String" Name="sAuthAlpha" />
       <Variable x:TypeArguments="x:String" Name="sJiraUser" />
       <Variable x:TypeArguments="ss:SecureString" Name="sJiraPw" />
+      <Variable x:TypeArguments="x:Int32" Name="iTicketsCount" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ns:Get_Slack_Channel_Message_API DisplayName="Get Slack Channel Message API" sap:VirtualizedContainerService.HintSize="565,326" sap2010:WorkflowViewState.IdRef="Get_Slack_Channel_Message_API_1" in_sRowLimit="100" in_sSlackChannelID="[in_sSlackChannelToRead]" in_tEndDate_Latest="[Now]" in_tStartDate_Oldest="[Now.AddHours(-in_iHoursToSubstract)]" out_dtMessages="[dtCollectedMessages]">
+    <ns:Get_Slack_Channel_Message_API DisplayName="Get Slack Channel Message API" sap:VirtualizedContainerService.HintSize="518,326" sap2010:WorkflowViewState.IdRef="Get_Slack_Channel_Message_API_1" in_sRowLimit="100" in_sSlackChannelID="[in_sSlackChannelToRead]" in_tEndDate_Latest="[Now]" in_tStartDate_Oldest="[Now.AddHours(-in_iHoursToSubstract)]" out_dtMessages="[dtCollectedMessages]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -208,7 +209,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ns:Get_Slack_Channel_Message_API>
-    <n:Connect_Database DisplayName="Connect Database" sap:VirtualizedContainerService.HintSize="565,57" sap2010:WorkflowViewState.IdRef="Connect_Database_1" in_DatabaseToConnect="EASYBI" out_Connection="[dcRPAConnection]">
+    <n:Connect_Database DisplayName="Connect Database" sap:VirtualizedContainerService.HintSize="518,57" sap2010:WorkflowViewState.IdRef="Connect_Database_1" in_DatabaseToConnect="EASYBI" out_Connection="[dcRPAConnection]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -216,7 +217,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </n:Connect_Database>
-    <Sequence DisplayName="Connect to Database" sap:VirtualizedContainerService.HintSize="565,57" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence DisplayName="Connect to Database" sap:VirtualizedContainerService.HintSize="518,57" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <Sequence.Variables>
         <Variable x:TypeArguments="sd:DataTable" Name="dtReviewerInfos" />
       </Sequence.Variables>
@@ -308,7 +309,7 @@
         </If.Else>
       </If>
     </Sequence>
-    <ui:FilterDataTable DataTable="[dtCollectedMessages]" DisplayName="Filter Data Table - Keeps crash messages" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="565,57" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[dtCrashMessages]" SelectColumnsMode="Remove">
+    <ui:FilterDataTable DataTable="[dtCollectedMessages]" DisplayName="Filter Data Table - Keeps crash messages" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="518,57" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[dtCrashMessages]" SelectColumnsMode="Remove">
       <ui:FilterDataTable.Filters>
         <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
           <ui:FilterOperationArgument BooleanOperator="And" Operator="CONTAINS">
@@ -333,7 +334,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:FilterDataTable>
-    <Assign sap:VirtualizedContainerService.HintSize="565,57" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <Assign sap:VirtualizedContainerService.HintSize="518,57" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="sd:DataTable">[dtReactedMessages]</OutArgument>
       </Assign.To>
@@ -341,7 +342,7 @@
         <InArgument x:TypeArguments="sd:DataTable">[dtCrashMessages.Clone]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtCrashMessages]" DisplayName="For Each Row in Data Table - Crash Message" sap:VirtualizedContainerService.HintSize="565,418" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtCrashMessages]" DisplayName="For Each Row in Data Table - Crash Message" sap:VirtualizedContainerService.HintSize="518,57" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
@@ -410,7 +411,7 @@
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentReaction" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="513,815" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_7">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:String" Name="sCurReaction" />
                       <Variable x:TypeArguments="x:String" Name="sCurReactionUser" />
@@ -481,7 +482,7 @@
               </ui:ForEachRow.Body>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
@@ -491,13 +492,13 @@
       </ui:ForEachRow.Body>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ForEachRow>
-    <ui:ReadTextFile File="{x:Null}" Content="[sTemplateTicketBody]" DisplayName="Read Text File" FileName="template_ticket_body.txt" sap:VirtualizedContainerService.HintSize="565,57" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
-    <ui:RetryScope DisplayName="Retry Scope - Slack and Jira Cred" sap:VirtualizedContainerService.HintSize="565,57" sap2010:WorkflowViewState.IdRef="RetryScope_1">
+    <ui:ReadTextFile File="{x:Null}" Content="[sTemplateTicketBody]" DisplayName="Read Text File" FileName="template_ticket_body.txt" sap:VirtualizedContainerService.HintSize="518,57" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
+    <ui:RetryScope DisplayName="Retry Scope - Slack and Jira Cred" sap:VirtualizedContainerService.HintSize="518,57" sap2010:WorkflowViewState.IdRef="RetryScope_1">
       <ui:RetryScope.ActivityBody>
         <ActivityAction>
           <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="416,401" sap2010:WorkflowViewState.IdRef="Sequence_15">
@@ -537,13 +538,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:RetryScope>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtReactedMessages]" DisplayName="For Each Row in Data Table - Create Jira Tickets" sap:VirtualizedContainerService.HintSize="565,1606" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtReactedMessages]" DisplayName="For Each Row in Data Table - Create Jira Tickets" sap:VirtualizedContainerService.HintSize="518,2213" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CCrashMessage" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body For Each Row in Data Table - Create Jira Tickets" sap:VirtualizedContainerService.HintSize="531,1419" sap2010:WorkflowViewState.IdRef="Sequence_11">
+          <Sequence DisplayName="Body For Each Row in Data Table - Create Jira Tickets" sap:VirtualizedContainerService.HintSize="484,2017" sap2010:WorkflowViewState.IdRef="Sequence_11">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="sCurMessageText" />
               <Variable x:TypeArguments="x:String" Name="sCurMessageUser" />
@@ -564,7 +565,7 @@
                 <x:Boolean x:Key="IsPinned">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:MultipleAssign DisplayName="Multiple Assign - Crash Message Infos" sap:VirtualizedContainerService.HintSize="497,210" sap2010:WorkflowViewState.IdRef="MultipleAssign_5">
+            <ui:MultipleAssign DisplayName="Multiple Assign - Crash Message Infos" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="MultipleAssign_5">
               <ui:MultipleAssign.AssignOperations>
                 <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_9">
@@ -595,12 +596,12 @@
               </ui:MultipleAssign.AssignOperations>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:MultipleAssign>
-            <ui:MultipleAssign DisplayName="Multiple Assign - Exec Details" sap:VirtualizedContainerService.HintSize="497,241" sap2010:WorkflowViewState.IdRef="MultipleAssign_6">
+            <ui:MultipleAssign DisplayName="Multiple Assign - Exec Details" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="MultipleAssign_6">
               <ui:MultipleAssign.AssignOperations>
                 <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_13">
@@ -639,16 +640,16 @@
               </ui:MultipleAssign.AssignOperations>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:MultipleAssign>
-            <Switch x:TypeArguments="x:String" DisplayName="Switch - Sev" Expression="[sMessageSev]" sap:VirtualizedContainerService.HintSize="497,214" sap2010:WorkflowViewState.IdRef="Switch`1_2">
+            <Switch x:TypeArguments="x:String" DisplayName="Switch - Sev" Expression="[sMessageSev]" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Switch`1_2">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <Assign x:Key="1" sap:VirtualizedContainerService.HintSize="457,40" sap2010:WorkflowViewState.IdRef="Assign_3">
@@ -692,7 +693,7 @@
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
             </Switch>
-            <Sequence DisplayName="Exec DateTime" sap:VirtualizedContainerService.HintSize="497,57" sap2010:WorkflowViewState.IdRef="Sequence_10">
+            <Sequence DisplayName="Exec DateTime" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_10">
               <Sequence.Variables>
                 <Variable x:TypeArguments="sd:DataTable" Name="dtExecInfo" />
               </Sequence.Variables>
@@ -742,7 +743,7 @@
                 </sap:WorkflowViewStateService.ViewState>
               </ui:MultipleAssign>
             </Sequence>
-            <Assign DisplayName="Assign - Ticket Title" sap:VirtualizedContainerService.HintSize="497,57" sap2010:WorkflowViewState.IdRef="Assign_6">
+            <Assign DisplayName="Assign - Ticket Title" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Assign_6">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[sTicketTitle]</OutArgument>
               </Assign.To>
@@ -750,7 +751,7 @@
                 <InArgument x:TypeArguments="x:String">[String.Format("[crash] - bot {0} {1}", sMessageIdBot, sMessageNameBot)]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:MultipleAssign DisplayName="Multiple Assign - Ticket Body" sap:VirtualizedContainerService.HintSize="497,57" sap2010:WorkflowViewState.IdRef="MultipleAssign_9">
+            <ui:MultipleAssign DisplayName="Multiple Assign - Ticket Body" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="MultipleAssign_9">
               <ui:MultipleAssign.AssignOperations>
                 <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_20">
@@ -788,13 +789,13 @@
                 </scg:List>
               </ui:MultipleAssign.AssignOperations>
             </ui:MultipleAssign>
-            <uja:JiraScope ClientID="{x:Null}" ClientSecret="{x:Null}" Connection="{x:Null}" ContinueOnError="{x:Null}" JiraConnection="{x:Null}" ApiToken="[sJiraPw]" AuthenticationType="Api Token" DisplayName="Jira Scope - Create Ticket" sap:VirtualizedContainerService.HintSize="497,523" sap2010:WorkflowViewState.IdRef="JiraScope_1" ServerURL="https://nubank.atlassian.net/" UserName="[sJiraUser]">
+            <uja:JiraScope ClientID="{x:Null}" ClientSecret="{x:Null}" Connection="{x:Null}" ContinueOnError="{x:Null}" JiraConnection="{x:Null}" ApiToken="[sJiraPw]" AuthenticationType="Api Token" DisplayName="Jira Scope - Create Ticket" sap:VirtualizedContainerService.HintSize="450,1510" sap2010:WorkflowViewState.IdRef="JiraScope_1" ServerURL="https://nubank.atlassian.net/" UserName="[sJiraUser]">
               <uja:JiraScope.Body>
                 <ActivityAction x:TypeArguments="usa:IObjectContainer">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="usa:IObjectContainer" Name="ScopeActivity" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Sequence Jira Scope - Create Ticket" sap:VirtualizedContainerService.HintSize="416,413" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                  <Sequence DisplayName="Sequence Jira Scope - Create Ticket" sap:VirtualizedContainerService.HintSize="416,1351" sap2010:WorkflowViewState.IdRef="Sequence_18">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="aj:Issue" Name="createdTicket" />
                     </Sequence.Variables>
@@ -826,7 +827,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:LogMessage>
-                    <isactr:ConnectorActivity Configuration="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" ConnectionId="921eb518-7f1f-45ec-ad5f-18703363d9ab" DisplayName="Update Issue" sap:VirtualizedContainerService.HintSize="382,84" sap2010:WorkflowViewState.IdRef="ConnectorActivity_5" UiPathActivityTypeId="dcb4b963-e57b-38a2-8591-7e8fe41bcbea">
+                    <isactr:ConnectorActivity Configuration="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" ConnectionId="921eb518-7f1f-45ec-ad5f-18703363d9ab" DisplayName="Update Issue" sap:VirtualizedContainerService.HintSize="382,1022" sap2010:WorkflowViewState.IdRef="ConnectorActivity_5" UiPathActivityTypeId="dcb4b963-e57b-38a2-8591-7e8fe41bcbea">
                       <isactr:ConnectorActivity.FieldObjects>
                         <isactr:FieldObject Name="project" Type="FieldArgument">
                           <isactr:FieldObject.Value>
@@ -859,13 +860,21 @@
                           </isactr:FieldObject.Value>
                         </isactr:FieldObject>
                         <isactr:FieldObject Name="fields_sub_reporter_sub_id" Type="FieldArgument" />
-                        <isactr:FieldObject Name="fields_sub_targetStart_Customfield10291" Type="FieldArgument" />
-                        <isactr:FieldObject Name="fields_sub_targetEnd_Customfield10292" Type="FieldArgument" />
+                        <isactr:FieldObject Name="fields_sub_targetStart_Customfield10291" Type="FieldArgument">
+                          <isactr:FieldObject.Value>
+                            <InArgument x:TypeArguments="s:DateTimeOffset">[Now]</InArgument>
+                          </isactr:FieldObject.Value>
+                        </isactr:FieldObject>
+                        <isactr:FieldObject Name="fields_sub_targetEnd_Customfield10292" Type="FieldArgument">
+                          <isactr:FieldObject.Value>
+                            <InArgument x:TypeArguments="s:DateTimeOffset">[Now.AddDays(1)]</InArgument>
+                          </isactr:FieldObject.Value>
+                        </isactr:FieldObject>
                       </isactr:ConnectorActivity.FieldObjects>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </isactr:ConnectorActivity>
@@ -883,6 +892,19 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uja:JiraScope>
+            <Assign sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Assign_7">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[iTicketsCount]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">[iTicketsCount + 1]</InArgument>
+              </Assign.Value>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </Assign>
           </Sequence>
         </ActivityAction>
       </ui:ForEachRow.Body>
@@ -893,5 +915,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ForEachRow>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="518,48" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[String.Format(&quot;Tickets created [{0}]&quot;, iTicketsCount)]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:LogMessage>
   </Sequence>
 </Activity>

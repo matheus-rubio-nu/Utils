@@ -87,6 +87,7 @@
       "Path": "Create.Jira.Tickets.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "iTicketsCount&Sequence_1",
         "createdTicket&Sequence_18",
         "sJiraPw&Sequence_1",
         "sJiraUser&Sequence_1",
@@ -121,12 +122,13 @@
         "dtCollectedMessages&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [
-        "in_sModernJiraIssueType",
-        "in_sModernJiraProject",
-        "in_sJiraProjectKey",
-        "in_sExpextedReaction",
+        "in_sSlackChannelToRead",
         "in_sUserName",
-        "in_sSlackChannelToRead"
+        "in_sExpextedReaction",
+        "in_sJiraProjectKey",
+        "in_sModernJiraProject",
+        "in_sModernJiraIssueType",
+        "in_iHoursToSubstract"
       ],
       "ConstantsSectionElementsOrder": null,
       "AddedNamespaces": null
