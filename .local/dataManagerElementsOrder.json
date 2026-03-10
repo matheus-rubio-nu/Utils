@@ -87,6 +87,9 @@
       "Path": "Create.Jira.Tickets.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "bCrashHasTicket&Sequence_19",
+        "dtCurrentThreadMessages&Sequence_19",
+        "sCThreadMessage&Sequence_20",
         "iTicketsCount&Sequence_1",
         "createdTicket&Sequence_18",
         "sJiraPw&Sequence_1",
