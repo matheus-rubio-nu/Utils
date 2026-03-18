@@ -1,0 +1,545 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Sincad_Inactivate_Account" this:Sincad_Inactivate_Account.in_sSincadURL="https://corporativo.bvmfnet.com.br/icadx-web/pages/default.jsf" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:nas="clr-namespace:Nubank.Applications.Sincad;assembly=Nubank" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=Studio.Generated.TypedDataTable5" xmlns:sd1="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugam="clr-namespace:UiPath.GSuite.Activities.Models;assembly=UiPath.GSuite.Activities" xmlns:ugase="clr-namespace:UiPath.GSuite.Activities.Sheets.Enums;assembly=UiPath.GSuite.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_sSincadURL" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1274,1747</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>Dispatcher_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="104">
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>Nubank</x:String>
+      <x:String>Nubank.Applications.Sincad</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Core.Activities.Orchestrator</x:String>
+      <x:String>UiPath.Core.Activities.SAP</x:String>
+      <x:String>UiPath.Database</x:String>
+      <x:String>UiPath.Database.Activities</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.GSuite.Activities</x:String>
+      <x:String>UiPath.GSuite.Activities.Contracts</x:String>
+      <x:String>UiPath.GSuite.Activities.Sheets</x:String>
+      <x:String>UiPath.GSuite.Activities.Sheets.Enums</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>Nubank.Slack</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>UiPath.Core.Activities.Storage</x:String>
+      <x:String>UiPath.Web</x:String>
+      <x:String>UiPath.Web.Activities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.GSuite.Activities.Models</x:String>
+      <x:String>UiPath.GSuite.Sheets.Enums</x:String>
+      <x:String>UiPath.GSuite.Sheets.Models</x:String>
+      <x:String>UiPath.GSuite.Activities.Drive.Enums</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.GSuite.Drive.Models</x:String>
+      <x:String>UiPath.GSuite.Sheets.Contracts</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="86">
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>Nubank</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices.RuntimeInformation</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Database</AssemblyReference>
+      <AssemblyReference>UiPath.Database.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Python</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>System.Collections.Specialized</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.Web</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>UiPath.Cryptography</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable1</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable3</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable2</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable5</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable4</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite</AssemblyReference>
+      <AssemblyReference>UiPath.AmazonWebServices.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
+      <x:Boolean x:Key="ShouldCollapseAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Sincad.InactivateAccount" sap:VirtualizedContainerService.HintSize="789,925" sap2010:WorkflowViewState.IdRef="Sequence_9">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd1:DataTable" Name="dtAccountID" />
+      <Variable x:TypeArguments="x:String" Name="sSheetId" />
+      <Variable x:TypeArguments="x:String" Name="sSheetName" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,179" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+      <ui:MultipleAssign.AssignOperations>
+        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[sSheetId]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">1jx6pv_Ons403QitrlAXURoc6-Edj29eux-CuCZ8gV0g</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[sSheetName]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">RPA_REPORT</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+        </scg:List>
+      </ui:MultipleAssign.AssignOperations>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:MultipleAssign>
+    <uga:ReadRangeConnections x:TypeArguments="sd:DataTable5" BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ColumnNames="{x:Array Type=x:String}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" RangeInformation="{x:Null}" RangeMetadata="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" ConnectionId="c592ec09-009c-4bd5-b8c7-1a691a25d546" DisplayName="Read Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="479,84" sap2010:WorkflowViewState.IdRef="ReadRangeConnections`1_1" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="[sSheetId]" Range="[sSheetName]" ReadAs="Values" Result="[dtAccountID]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False">
+      <uga:ReadRangeConnections.FileIdBackup>
+        <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID0" StoredValue="UrlOrId">
+          <usau:BackupSlot.BackupValues>
+            <scg:List x:TypeArguments="x:Object" x:Key="Browse" Capacity="2">
+              <x:Null />
+              <x:Null />
+            </scg:List>
+            <scg:List x:TypeArguments="x:Object" x:Key="UrlOrId" Capacity="1">
+              <x:Null />
+            </scg:List>
+          </usau:BackupSlot.BackupValues>
+        </usau:BackupSlot>
+      </uga:ReadRangeConnections.FileIdBackup>
+      <uga:ReadRangeConnections.Item>
+        <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID0}" BrowserId="{x:Null}" ConnectionDescriptor="{x:Null}" ConnectionKey="{x:Null}" Existing="{x:Null}" FriendlyName="{x:Null}" FullPath="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" IdOrUrl="[sSheetId]" InputMode="UrlOrId">
+          <ugam:DriveItemArgument.FullPathHint>
+            <InArgument x:TypeArguments="x:String">
+              <Literal x:TypeArguments="x:String" Value="" />
+            </InArgument>
+          </ugam:DriveItemArgument.FullPathHint>
+          <ugam:DriveItemArgument.ParentIdFullPathHint>
+            <InArgument x:TypeArguments="x:String">
+              <Literal x:TypeArguments="x:String" Value="" />
+            </InArgument>
+          </ugam:DriveItemArgument.ParentIdFullPathHint>
+        </ugam:DriveItemArgument>
+      </uga:ReadRangeConnections.Item>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uga:ReadRangeConnections>
+    <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="479,591" sap2010:WorkflowViewState.IdRef="RetryScope_2">
+      <ui:RetryScope.ActivityBody>
+        <ActivityAction>
+          <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="416,384" sap2010:WorkflowViewState.IdRef="Sequence_37">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="382,165" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="chrome">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:KillProcess>
+            <nas:Sincad_Login DisplayName="Sincad.Login" sap:VirtualizedContainerService.HintSize="382,84" sap2010:WorkflowViewState.IdRef="Sincad_Login_3" in_sCategoria="ACST" in_sParticipante="90" />
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: SINCAD - Sistema de Cadastro Integrado B3" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="382,75" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="5bf4bcb8-4bbc-40be-ba8c-d8bca32968fa" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="536,951" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="sChangeStatus" />
+                      <Variable x:TypeArguments="x:Int32" Name="iIndexRow" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NGoToUrl DisplayName="Go To URL - bvmfnet.com.br" sap:VirtualizedContainerService.HintSize="502,114" sap2010:WorkflowViewState.IdRef="NGoToUrl_2" Url="https://corporativo.bvmfnet.com.br/icadx-web/pages/accounts/account/situation/AccountSituationMaintenance.jsf" Version="V3">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NGoToUrl>
+                    <uix:NSelectItem DisplayName="Select Item 'Tipo da Conta'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="502,57" sap2010:WorkflowViewState.IdRef="NSelectItem_3" Item="NORMAL" ScopeIdentifier="5bf4bcb8-4bbc-40be-ba8c-d8bca32968fa" Version="V3">
+                      <uix:NSelectItem.Items>
+                        <scg:List x:TypeArguments="x:String" Capacity="18">
+                          <x:String>Selecione</x:String>
+                          <x:String>ADMINCON</x:String>
+                          <x:String>CONTA A TERMO</x:String>
+                          <x:String>CONTA DE TRANSICAO</x:String>
+                          <x:String>DESDOBRO</x:String>
+                          <x:String>GARANTIAS - OUTROS ATIVOS</x:String>
+                          <x:String>GRUPO QUALIFICADO</x:String>
+                          <x:String>LASTRO</x:String>
+                          <x:String>LRV-CTA.PROPRI.RESTRICAO</x:String>
+                          <x:String>MASTER</x:String>
+                          <x:String>NORMAL</x:String>
+                          <x:String>RISCO - FUNDO DE LIQUIDACAO</x:String>
+                          <x:String>RISCO - LIMITE OPERACIONAL</x:String>
+                          <x:String>SELIC CUSTODIA</x:String>
+                          <x:String>SELIC ESPECIAL CAMARA</x:String>
+                          <x:String>SELIC LIQUIDACAO</x:String>
+                          <x:String>SELIC OUTROS</x:String>
+                          <x:String>SINTETICA</x:String>
+                        </scg:List>
+                      </uix:NSelectItem.Items>
+                      <uix:NSelectItem.Target>
+                        <uix:TargetAnchorable BrowserURL="https://corporativo.bvmfnet.com.br/icadx-web/pages/accounts/account/situation/AccountSituationMaintenance.jsf" DesignTimeRectangle="143, 277, 250, 22" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='accountSituationSearchForm:accountSearchFields:accountSearchFields_accountSearch:accountSearchFields_accountSearch_AccountType:accountSearchFields_accountSearch_AccountType_SelectOneMenuConverter' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='accountSituationSearchForm:accountSearchFields:accountSearchFields_accountSearch:accountSearchFields_accountSearch_AccountType:accountSearchFields_accountSearch_AccountType_SelectOneMenuConverter' tag='SELECT' type='' class='value-holder full-width inputPadraoPesquisa' aaname='Tipo Conta' /&gt;" Guid="521bab96-8e6f-4f75-89f1-7462e99250ce" InformativeScreenshot="49dbf32f5d115d8a0deeb4f52beed686.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SINCAD - Sistema de Cadastro Integrado B3' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="33, 282, 82, 13" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='label_account_type_accountSearchFields_accountSearch' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='label_account_type_accountSearchFields_accountSearch' tag='SPAN' type='' class='' aaname='Tipo da Conta:' check:innerText='Tipo da Conta:' /&gt;" Guid="bca8c307-884a-46e8-baa4-33de7e1df296" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFYAAAARCAYAAABHC1sjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF0SURBVFhH7ZTZsYQgEEXJkLAIhVAMxTB4NDSvF5ZxUKz54Fb5IS29HK6YsLVEG+wibbCLtMEu0jWwpw/W+nDi6/M6gjM2+HUFXheChcFMMK1nKdCiO2Dr3t2BoRmBiYyLWe+pduzhXoLJNQs2Q7ViY1y70/+rYPlVgIWd6zgE9uP6+IDO4C3lMP9g9Xp/yNPbYIb2lLno03yQzsX9GMuHo2pj/6lOWYtPPW/d4yRYlpwnTjFy3mjwAw6GknQd+ymHdKtUv4ZyOpqFZhg4VsefBcsTsYZhL4fQbRKcwUEqsKlZcsgcWF2Df68PEt6xz2bP+SCop9ZMUr8HNu2h2Mix46vgKbD5emi6e6DbYNNwInYNinAb36fyy99ZKztJujauYT9yL4f5PVhKA38Ti+t31PQd2/0tUiGM6TxCGUr+zooDSUAwZmOsDxbE8qSHA8tQSozSDMDCW6lf+hczQa8zYD+pOtGtljbYRfoe7NYlbbBLFMIfrg/rxixrkZ8AAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NSelectItem.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NSelectItem>
+                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[iIndexRow]" DataTable="[dtAccountID]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="502,718" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                      <ui:ForEachRow.Body>
+                        <ActivityAction x:TypeArguments="sd1:DataRow">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="sd1:DataRow" Name="AccountID" />
+                          </ActivityAction.Argument>
+                          <Sequence sap:VirtualizedContainerService.HintSize="468,507" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="x:String" Name="sSituacao" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[String.Format(&quot;---Items [{0}]/[{1}] ---&quot;, iIndexRow+1, dtAccountID.RowCount)]">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:LogMessage>
+                            <If Condition="[String.IsNullOrEmpty(AccountID(&quot;STATUS_SINCAD&quot;).ToString) = True]" DisplayName="If - Status is empty" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="If_8">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <If.Then>
+                                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Sequence>
+                              </If.Then>
+                              <If.Else>
+                                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:Continue sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="Continue_1" />
+                                </Sequence>
+                              </If.Else>
+                            </If>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'ID da Conta'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="5bf4bcb8-4bbc-40be-ba8c-d8bca32968fa" Text="[AccountID.Item(&quot;ACCOUNTID&quot;).ToString]" Version="V3">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="https://corporativo.bvmfnet.com.br/icadx-web/pages/accounts/account/situation/AccountSituationMaintenance.jsf" DesignTimeRectangle="529, 277, 146, 22" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='accountSituationSearchForm:accountSearchFields:accountSearchFields_accountSearch:accountSearchFields_accountSearch_AccountID:accountSearchFields_accountSearch_AccountID_InputNumeric' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='accountSituationSearchForm:accountSearchFields:accountSearchFields_accountSearch:accountSearchFields_accountSearch_AccountID:accountSearchFields_accountSearch_AccountID_InputNumeric' tag='INPUT' type='text' class='inputNumberField value-holder inputPadraoPesquisa' aaname='ID da Conta' /&gt;" Guid="7550ee86-8bce-4d58-b80e-8f771018c4a8" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJYAAAAaCAYAAABVc6VBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABsSURBVGhD7dKxDYAwAMAwPucSDuG6MrUSA1PJZkv5IMeAgLFIrLHO65a2m15jwQ5jkTAWCWORMBYJY5EwFgljkTAWCWORMBYJY5EwFgljkTAWCWORMBYJY5EwFgljkfgcS9ptWmPBn4xFYIwHTUg2pkjXfYoAAAAASUVORK5CYII=" InformativeScreenshot="2a3ca9fd578ead4b4e9fc660c567002c.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SINCAD - Sistema de Cadastro Integrado B3' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target DesignTimeRectangle="445, 282, 72, 13" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='label_account_id_accountSearchFields_accountSearch' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='label_account_id_accountSearchFields_accountSearch' tag='SPAN' type='' class='' aaname='ID da Conta:' check:innerText='ID da Conta:' /&gt;" Guid="cd080bf6-5935-4c3f-8e27-ed3d113027a0" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEwAAAARCAYAAAB3h0oCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFaSURBVFhH7ZXhkcQgCIXToWVZiqWklJTBBsSIRNnF7N3N3Phm/LFg4PlJshssubSAObWAObWAOfWzwPYIW0hw8M//oAoMD7dteZVDHglCiZUVd9r+kZ4Au/UOkB6QP1LweR+onTB9QDIdQbbZI5pvY0PNAmNYzfkw9uDAfwYMhdDC6Lr1ZFz1dojd+F1mfVTTQ/hjv5EuNS9ipDzl2gekUGN6CGgwOoCngI1vK0O5UsaEjaHkg4yHwejBYHq5dxOm878DDPfL51U9eu660UlgugcB5O+b9iv2dj2jP+HHAlr03VfSAkbmai3rtbNytx6zwGhv/SMZDoHS3Ee/MSwlzJ8iExLY9VyeIhPKeeONf4xR4N0r6QHWXqDM699FFRhNAI9mY4BjZXWKNBJ1QhDAGFLOhTNnAEPdeisQw3gf2GmMQJMv7ktQSgy9uoAtfaQFzKkFzKkFzCWAF6GWeRikBkdHAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NTypeInto>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Enviar'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5bf4bcb8-4bbc-40be-ba8c-d8bca32968fa" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://corporativo.bvmfnet.com.br/icadx-web/pages/accounts/account/situation/AccountSituationMaintenance.jsf" DesignTimeRectangle="1303, 276, 57, 22" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='accountSituationSearchForm:accountSearchFields:accountSituationS*' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='accountSituationSearchForm:accountSearchFields:accountSituationS*' tag='SPAN' type='' class='ui-button-text' aaname='Enviar' check:innerText='Enviar' /&gt;" Guid="ac077a81-f1d3-4735-a131-74149e295426" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAD0AAAAaCAYAAAAEy1RnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALNSURBVFhH7VhLTxNRFL4r/4B/wB+AP6BrE3auXODOx0YSu3CjkZWsWBCJiaIxMRFDUgPyUAKWkNgaWx5CUUOLIKhAQyUwbe2bTmdKPs9M70yHaWmm6oLk9iRfzj33O9859/TOpMkwCGitoUUxdvvpNESDmEPzGxfK2MzCBkQDG/WFIRrYwGQIpwKrWZSULBbrcf8Z7NHwLB4OzaJZHzhQ+RtisVIaAYf6Gv8hio1oFBNO8//Bs54BH3Q8595h/Dl7BChFOqhUwQ5hawtDJ+Sfpph19U+jq99LaM5/zNDQxVTNvuYnYwrwOweJPwBADssaH0jgUF8b+V/xUwakNYoDSRzKCUzq+7sWLZm5762pLa1V+zr1zN37Gu7eNw1Qnw+maWi7FeMYNbkS9jb3sEJIliiKhuF+tY44rbMRXseXhlKWsemj9ZcC1HIBQb1+GH6u1fX0w8iavk5tv6/587Or3cO40j2EZr0/Rc3lPD6txwi7FR+J4D7xFS4ND89fpqdCTf3QdR6Jbiq3pe979stQ83ukobxQnobOw8/re7bp17GYoa/Wbny+Rp5dujOIv8FMkpoX4o44LVaTG5V4IkWPuIrViSXsKEdIf3tX2V/I0dA5zGjrUJrGVCCtRrFIkOimDX2jvk7B2t3P0H6TYPUG7PsWfipRBvIHdXmTs8RqYo3H81jJlVGS6caLGQw+5rpgFqqaxZRWZ5umpFsP8nztNTb0jfqa3sAJPHNd78cxXLPFdnB+PE7N7VaI4QHxOpffNzVarMQjpv5WuED3SOm/AmaO630GiprBuFb/ZQwp8x9RgUxrQ2+vXQMH52fnL/ehraMPzfrOkXX4lr4fx9w8Oom/oXFv/Wa+FntHxqr6nnl4KX/whaWutsf1bR1jeDJn1CUtrQ293pdq28/TjGfnLvZANLCzF+5BNLAzrrsQDa0vJ6Kg9TVUFBNwaOAPqjEgDBublVQAAAAASUVORK5CYII=" InformativeScreenshot="5202fb0584c712c360d45510828a2fd5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SINCAD - Sistema de Cadastro Integrado B3' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <uix:NGetText DisplayName="Get Text 'Situação'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="5bf4bcb8-4bbc-40be-ba8c-d8bca32968fa" TextString="[sSituacao]" Version="V3">
+                              <uix:NGetText.Target>
+                                <uix:TargetAnchorable BrowserURL="https://corporativo.bvmfnet.com.br/icadx-web/pages/accounts/account/situation/AccountSituationMaintenance.jsf" DesignTimeRectangle="1549, 358, 153, 28" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='9' tableRow='3' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='TD' aaname='' /&gt;" Guid="87c15e6a-dfd1-4943-8e84-981914838954" ImageBase64="" InformativeScreenshot="ba875b466351a302e9a3259a0fdaf608.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SINCAD - Sistema de Cadastro Integrado B3' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V1" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target DesignTimeRectangle="1602, 338, 47, 13" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Situação' tableRow='1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Situação' type='' tag='SPAN' class='' check:innerText='Situação' /&gt;" Guid="15a31c4f-87af-4fc8-8890-24cf07fea4ab" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADMAAAARCAYAAABwxZQXAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKISURBVEhL3VVNaxsxEM2Pyn/wrwl7yjl/wOBjMDn45lxKjXOzDzUUWlriELApaesQsymObcxm8cfGX4XXGWmk1a5FA62huAMPSxrtk2bmjXx0dHyK/wbexUOFd/FQ4V08VHgXPQjaL4jbda9v/7jGHchm9wiO62jNxqh49+WQmRTvETOJY3dX2lco3+KyfKHGHBj61+l3e0bQ3iAadtGJNuoOy4iD8u/NIJ1wNjYY97qotQS9BaLH3WqcD34C03BnfV/gxJWK+pfvYZL4KuygOMEKS9yeOM6TJkpONZTMqHpzlS9tZi1WkpDvrsYiEZ6LZIy5+3I+LWOWlSwoy0mMuY1luAh2QBd/SGQTmZGXAVdjPfio9t3EVJnkOc3amwjrTYRzs79LRHZeR8lUmhAugLlzaZaT9j1hHD/R5S5w1kj3d+JtKmnVBltMRD1Khq7c7YAQVA3JMyIJyjS9DUbGGZn9NhjpMcc0zzewFr6QnDQPBVFtosBjN/ts5qxPlIkkwpmop/BhTo0xSyunifKQbA5XwIqz9RfBqIstEUqmQ3JpnpASluCz+cYgn31WgTmLefPnuhzWwYfmXqjgkUq8GKhsvRoMFmjKvMJlNcHwBbYx3ipfHb21CaaLH0Q/snIm2fWpBxRX2rtNfl7NWe9iqsQGLalm8J1klozSvtFEBMrIhA7KWByhVt2VWaEcUXFlC8sw12+jKVXUBMO8+oUloyeGxpqHeyOVM9ty9BWFHNfL2kkc+S6HS/GQreboyP0U7CDXeArORvd/xm1q+99j+62LUvU9ag3Rf4aXOGjs4wmTFR48XJcNep7dCxeJW3zpGQI7+Eeo9CXLU0cufwrv4qHCu3iQOMUvMHuL1EFc/boAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NGetText.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NGetText>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_3">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Object">[AccountID("STATUS_SINCAD")]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Object">[sSituacao]</InArgument>
+                              </Assign.Value>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Assign>
+                            <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="434,48" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="5" RetryInterval="00:00:30">
+                              <ui:RetryScope.ActivityBody>
+                                <ActivityAction>
+                                  <uga:WriteRowConnections AllFields="{x:Null}" ArrayRow="{x:Null}" BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" ConnectionId="c592ec09-009c-4bd5-b8c7-1a691a25d546" DataRow="[AccountID]" DataType="DataRow" DisplayName="Write Row" HasHeaders="False" sap:VirtualizedContainerService.HintSize="334,464" sap2010:WorkflowViewState.IdRef="WriteRowConnections_1" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="[sSheetId]" Range="[sSheetName]" RowPosition="[iIndexRow+1]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False" WriteMode="Overwrite">
+                                    <uga:WriteRowConnections.FileIdBackup>
+                                      <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID1" StoredValue="UrlOrId">
+                                        <usau:BackupSlot.BackupValues>
+                                          <scg:List x:TypeArguments="x:Object" x:Key="Browse" Capacity="2">
+                                            <x:Null />
+                                            <x:Null />
+                                          </scg:List>
+                                        </usau:BackupSlot.BackupValues>
+                                      </usau:BackupSlot>
+                                    </uga:WriteRowConnections.FileIdBackup>
+                                    <uga:WriteRowConnections.InputDataTypeBackup>
+                                      <usau:BackupSlot x:TypeArguments="ugase:InputDataType" StoredValue="DataRow">
+                                        <usau:BackupSlot.BackupValues>
+                                          <scg:Dictionary x:TypeArguments="ugase:InputDataType, scg:List(x:Object)" />
+                                        </usau:BackupSlot.BackupValues>
+                                      </usau:BackupSlot>
+                                    </uga:WriteRowConnections.InputDataTypeBackup>
+                                    <uga:WriteRowConnections.Item>
+                                      <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID1}" BrowserId="{x:Null}" ConnectionDescriptor="{x:Null}" ConnectionKey="{x:Null}" Existing="{x:Null}" FriendlyName="{x:Null}" FullPath="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" IdOrUrl="[sSheetId]" InputMode="UrlOrId">
+                                        <ugam:DriveItemArgument.FullPathHint>
+                                          <InArgument x:TypeArguments="x:String">
+                                            <Literal x:TypeArguments="x:String" Value="" />
+                                          </InArgument>
+                                        </ugam:DriveItemArgument.FullPathHint>
+                                        <ugam:DriveItemArgument.ParentIdFullPathHint>
+                                          <InArgument x:TypeArguments="x:String">
+                                            <Literal x:TypeArguments="x:String" Value="" />
+                                          </InArgument>
+                                        </ugam:DriveItemArgument.ParentIdFullPathHint>
+                                      </ugam:DriveItemArgument>
+                                    </uga:WriteRowConnections.Item>
+                                    <uga:WriteRowConnections.RangeWriteModeBackup>
+                                      <usau:BackupSlot x:TypeArguments="ugase:RangeWriteMode" StoredValue="Overwrite">
+                                        <usau:BackupSlot.BackupValues>
+                                          <scg:List x:TypeArguments="x:Object" x:Key="Append" Capacity="1">
+                                            <x:String></x:String>
+                                          </scg:List>
+                                        </usau:BackupSlot.BackupValues>
+                                      </usau:BackupSlot>
+                                    </uga:WriteRowConnections.RangeWriteModeBackup>
+                                    <uga:WriteRowConnections.State>
+                                      <uga:ActivityState />
+                                    </uga:WriteRowConnections.State>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </uga:WriteRowConnections>
+                                </ActivityAction>
+                              </ui:RetryScope.ActivityBody>
+                              <ui:RetryScope.Condition>
+                                <ActivityFunc x:TypeArguments="x:Boolean" />
+                              </ui:RetryScope.Condition>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:RetryScope>
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:ForEachRow.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:ForEachRow>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHVSURBVDhPlZJLSFRhFMfPvSM6UBuhZYswe0CFbwKjooWQO122iEpw02ZMfGRJpYjtWkQaunKh4LPMooeLCcONpuigMKiLysU8nBqZaSwf1M/vuzY4MzTUXfw39zv/3/mfc65IwW3syChsQs7Uc+BiCwtfQtgGOIrvILk1dPZP0hfFHsAyH7/Fpepu5jfB+cZOAh09rxGz5C4zyz7KPTFkyPf/AKv7URePet4zsP4bGfbheBlMBhh/Cq1FJXw3tflELaVXn7Cy9YuD4yr68wBGKkDyG5FjNcjpekwFydCwoiaM/L33D4urVHh/WNGt7mOJAGXOOttMZUMvhy63IydrrcgONbfkuLj/9B1jERV9xI+pjXFps+4kuS5utAzzFZgNxRicWORm2whZFx5QeOUxy5s7ZLu/7UePA6x58xrILL2H5/Ma5z9GMV6HuL6yRV8Epv0RwuEo1d4NtTg/GYlmLau7itraNU6/3q6azxwNIIPqRMqQ7Q5TNvcdZ6oxLjlVx5HyhyxFNjg8EUaeBTBVsV6SQxeoyHpuI9UYl/4te0enaA2q7qprakRt1LC0gHPXOvDEdnC+VbdV0dMWppN7/hNVSz+Tb2tL69vIqzXkxd8e/6Ugu8AoTIh/JjprAAAAAElFTkSuQmCC" InformativeScreenshot="06bd8df8d955a711dfad1f60662f7aec.jpg" Selector="&lt;html app='chrome.exe' title='SINCAD - Sistema de Cadastro Integrado B3' /&gt;" Url="[in_sSincadURL]" />
+              </uix:NApplicationCard.TargetApp>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ui:RetryScope.ActivityBody>
+      <ui:RetryScope.Condition>
+        <ActivityFunc x:TypeArguments="x:Boolean" />
+      </ui:RetryScope.Condition>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:RetryScope>
+    <nas:Sincad_Logout DisplayName="Sincad.Logout" sap:VirtualizedContainerService.HintSize="479,48" sap2010:WorkflowViewState.IdRef="Sincad_Logout_2" />
+  </Sequence>
+</Activity>
