@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="GetAccountId" this:GetAccountId.in_sExecType="report" this:GetAccountId.in_sDateToFilter="2026-03-14" this:GetAccountId.in_sReportType="sincad" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:n="clr-namespace:Nubank;assembly=Nubank" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=Studio.Generated.TypedDataTable5" xmlns:sd1="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:sd2="clr-namespace:System.Data;assembly=Studio.Generated.TypedDataTable4" xmlns:this="clr-namespace:" xmlns:ucas="clr-namespace:UiPath.Core.Activities.Storage;assembly=UiPath.System.Activities" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugam="clr-namespace:UiPath.GSuite.Activities.Models;assembly=UiPath.GSuite.Activities" xmlns:ugas="clr-namespace:UiPath.GSuite.Activities.Sheets;assembly=UiPath.GSuite.Activities" xmlns:ugase="clr-namespace:UiPath.GSuite.Activities.Sheets.Enums;assembly=UiPath.GSuite.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="GetAccountId" this:GetAccountId.in_sExecType="databricks" this:GetAccountId.in_sReportType="sincad" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:n="clr-namespace:Nubank;assembly=Nubank" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=Studio.Generated.TypedDataTable5" xmlns:sd1="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:sd2="clr-namespace:System.Data;assembly=Studio.Generated.TypedDataTable4" xmlns:this="clr-namespace:" xmlns:ucas="clr-namespace:UiPath.Core.Activities.Storage;assembly=UiPath.System.Activities" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugam="clr-namespace:UiPath.GSuite.Activities.Models;assembly=UiPath.GSuite.Activities" xmlns:ugas="clr-namespace:UiPath.GSuite.Activities.Sheets;assembly=UiPath.GSuite.Activities" xmlns:ugase="clr-namespace:UiPath.GSuite.Activities.Sheets.Enums;assembly=UiPath.GSuite.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_sExecType" Type="InArgument(x:String)" />
     <x:Property Name="in_sDateToFilter" Type="InArgument(x:String)" />
@@ -175,10 +175,9 @@
       <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="GetAccountId" sap:VirtualizedContainerService.HintSize="789,1505" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="GetAccountId" sap:VirtualizedContainerService.HintSize="592,1652" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:DatabaseConnection" Name="dcRPADatabase" />
-      <Variable x:TypeArguments="ui:DatabaseConnection" Name="dcTITU" />
       <Variable x:TypeArguments="x:Int32" Name="iIndexRow" />
       <Variable x:TypeArguments="x:String" Name="sQueryRpaDb" />
     </Sequence.Variables>
@@ -187,34 +186,35 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[in_sExecType]" sap:VirtualizedContainerService.HintSize="618,1482" sap2010:WorkflowViewState.IdRef="Switch`1_4">
+    <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[in_sExecType]" sap:VirtualizedContainerService.HintSize="592,1629" sap2010:WorkflowViewState.IdRef="Switch`1_4">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsPinned">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Switch x:TypeArguments="x:String" x:Key="report" DisplayName="Switch - Report type" Expression="[in_sReportType]" sap:VirtualizedContainerService.HintSize="498,462" sap2010:WorkflowViewState.IdRef="Switch`1_20">
+      <Switch x:TypeArguments="x:String" x:Key="report" DisplayName="Switch - Report type" Expression="[in_sReportType]" sap:VirtualizedContainerService.HintSize="498,177" sap2010:WorkflowViewState.IdRef="Switch`1_20">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsPinned">True</x:Boolean>
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <Sequence x:Key="95" DisplayName="Report 95" sap:VirtualizedContainerService.HintSize="506,57" sap2010:WorkflowViewState.IdRef="Sequence_250">
+        <Sequence x:Key="95" DisplayName="Report 95" sap:VirtualizedContainerService.HintSize="514,675" sap2010:WorkflowViewState.IdRef="Sequence_250">
           <Sequence.Variables>
             <Variable x:TypeArguments="ui:DatabaseConnection" Name="dcDatabricks" />
             <Variable x:TypeArguments="x:String" Name="sSheetId" />
             <Variable x:TypeArguments="x:String" Name="sSheetName" />
             <Variable x:TypeArguments="sd1:DataTable" Name="dtContasInativar" />
             <Variable x:TypeArguments="s:String[]" Name="arrTabelasCorrwin" />
+            <Variable x:TypeArguments="ui:DatabaseConnection" Name="dcTITU" />
           </Sequence.Variables>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="472,57" sap2010:WorkflowViewState.IdRef="MultipleAssign_128">
+          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,210" sap2010:WorkflowViewState.IdRef="MultipleAssign_128">
             <ui:MultipleAssign.AssignOperations>
               <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                 <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_468">
@@ -245,12 +245,12 @@
             </ui:MultipleAssign.AssignOperations>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:MultipleAssign>
-          <uga:ReadRangeConnections x:TypeArguments="sd:DataTable5" BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ColumnNames="{x:Array Type=x:String}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" RangeInformation="{x:Null}" RangeMetadata="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" ConnectionId="c592ec09-009c-4bd5-b8c7-1a691a25d546" DisplayName="Read Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="472,57" sap2010:WorkflowViewState.IdRef="ReadRangeConnections`1_9" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="[sSheetId]" Range="[sSheetName]" ReadAs="Values" Result="[dtContasInativar]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False">
+          <uga:ReadRangeConnections x:TypeArguments="sd:DataTable5" BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ColumnNames="{x:Array Type=x:String}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" RangeInformation="{x:Null}" RangeMetadata="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" ConnectionId="c592ec09-009c-4bd5-b8c7-1a691a25d546" DisplayName="Read Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="ReadRangeConnections`1_9" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="[sSheetId]" Range="[sSheetName]" ReadAs="Values" Result="[dtContasInativar]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False">
             <uga:ReadRangeConnections.FileIdBackup>
               <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID0" StoredValue="UrlOrId">
                 <usau:BackupSlot.BackupValues>
@@ -285,7 +285,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </uga:ReadRangeConnections>
-          <n:Connect_Database DisplayName="Connect Database" sap:VirtualizedContainerService.HintSize="472,57" sap2010:WorkflowViewState.IdRef="Connect_Database_25" in_DatabaseToConnect="EASYBI" out_Connection="[dcRPADatabase]">
+          <n:Connect_Database DisplayName="Connect Database" sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="Connect_Database_25" in_DatabaseToConnect="EASYBI" out_Connection="[dcRPADatabase]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -293,7 +293,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </n:Connect_Database>
-          <n:Connect_Database DisplayName="Connect Database" sap:VirtualizedContainerService.HintSize="472,57" sap2010:WorkflowViewState.IdRef="Connect_Database_26" in_DatabaseToConnect="TITUPROD" out_Connection="[dcTITU]">
+          <n:Connect_Database DisplayName="Connect Database" sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="Connect_Database_26" in_DatabaseToConnect="TITUPROD" out_Connection="[dcTITU]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -301,40 +301,46 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </n:Connect_Database>
-          <n:Connect_Database DisplayName="Connect Database" sap:VirtualizedContainerService.HintSize="472,57" sap2010:WorkflowViewState.IdRef="Connect_Database_27" in_DatabaseToConnect="LAKE NUBANK" out_Connection="[dcDatabricks]">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-          </n:Connect_Database>
-          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[iIndexRow]" DataTable="[dtContasInativar]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="472,513" sap2010:WorkflowViewState.IdRef="ForEachRow_17">
+          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="CommentOut_16">
+            <ui:CommentOut.Body>
+              <Sequence DisplayName="Ignored Activities" sap2010:WorkflowViewState.IdRef="Sequence_292">
+                <n:Connect_Database DisplayName="Connect Database" sap:VirtualizedContainerService.HintSize="472,84" sap2010:WorkflowViewState.IdRef="Connect_Database_27" in_DatabaseToConnect="LAKE NUBANK" out_Connection="[dcDatabricks]">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </n:Connect_Database>
+              </Sequence>
+            </ui:CommentOut.Body>
+          </ui:CommentOut>
+          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[iIndexRow]" DataTable="[dtContasInativar]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="ForEachRow_17">
             <ui:ForEachRow.Body>
               <ActivityAction x:TypeArguments="sd1:DataRow">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="sd1:DataRow" Name="CurrentContaAtiva" />
                 </ActivityAction.Argument>
-                <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438,293" sap2010:WorkflowViewState.IdRef="TryCatch_5">
+                <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="619,955" sap2010:WorkflowViewState.IdRef="TryCatch_5">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <TryCatch.Try>
-                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_251">
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="581,727" sap2010:WorkflowViewState.IdRef="Sequence_251">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="x:String" Name="sCurContaAtiva" />
                         <Variable x:TypeArguments="x:Boolean" Name="bShouldStop" />
                       </Sequence.Variables>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="544,85" sap2010:WorkflowViewState.IdRef="LogMessage_112" Level="Info" Message="[String.Format(&quot;[{0}]/[{1}]&quot;, iIndexRow + 1, dtContasInativar.RowCount)]">
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="LogMessage_112" Level="Info" Message="[String.Format(&quot;[{0}]/[{1}]&quot;, iIndexRow + 1, dtContasInativar.RowCount)]">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -342,7 +348,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:LogMessage>
-                      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="544,85" sap2010:WorkflowViewState.IdRef="MultipleAssign_129">
+                      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="MultipleAssign_129">
                         <ui:MultipleAssign.AssignOperations>
                           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_471">
@@ -362,7 +368,35 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:MultipleAssign>
-                      <Sequence DisplayName="RPA BD" sap:VirtualizedContainerService.HintSize="544,884" sap2010:WorkflowViewState.IdRef="Sequence_252">
+                      <If Condition="[String.IsNullOrEmpty(CurrentContaAtiva(&quot;RPA-TITU_REGS.CUSTOMER_USERS_ACI&quot;).ToString) = False]" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="If_69">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If.Then>
+                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="Sequence_290">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:Continue sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="Continue_1" />
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_291">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                      <Sequence DisplayName="RPA BD" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_252">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="x:Object" Name="sBDCustomerId" />
                           <Variable x:TypeArguments="x:Object" Name="sBDBirthday" />
@@ -374,21 +408,21 @@
                         </Sequence.Variables>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:RetryScope DisplayName="Retry Scope - Run query RPA BD" sap:VirtualizedContainerService.HintSize="510,631" sap2010:WorkflowViewState.IdRef="RetryScope_42" NumberOfRetries="3" RetryInterval="00:00:15">
+                        <ui:RetryScope DisplayName="Retry Scope - Run query RPA BD" sap:VirtualizedContainerService.HintSize="479,232" sap2010:WorkflowViewState.IdRef="RetryScope_42" NumberOfRetries="3" RetryInterval="00:00:15">
                           <ui:RetryScope.ActivityBody>
                             <ActivityAction>
-                              <Sequence DisplayName="Action Retry Scope - Run query RPA BD" sap:VirtualizedContainerService.HintSize="468,422" sap2010:WorkflowViewState.IdRef="Sequence_265">
+                              <Sequence DisplayName="Action Retry Scope - Run query RPA BD" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_265">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <Assign DisplayName="Assign - Build Query RPA BD" sap:VirtualizedContainerService.HintSize="434,116" sap2010:WorkflowViewState.IdRef="Assign_86">
+                                <Assign DisplayName="Assign - Build Query RPA BD" sap:VirtualizedContainerService.HintSize="434,115" sap2010:WorkflowViewState.IdRef="Assign_86">
                                   <Assign.To>
                                     <OutArgument x:TypeArguments="x:String">[sQueryRpaDb]</OutArgument>
                                   </Assign.To>
@@ -414,8 +448,8 @@ ORDER BY TRUNC(DT_EXEC) DESC "]</InArgument>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </Assign>
-                                <ui:LogMessage DisplayName="Log Message - Query RPA BD" sap:VirtualizedContainerService.HintSize="434,85" sap2010:WorkflowViewState.IdRef="LogMessage_113" Level="Info" Message="[String.Format(&quot;Running query [{0}]&quot;, sQueryRpaDb)]" />
-                                <ui:ExecuteQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[dtExecAccountId]" DisplayName="Run query" ExistingDbConnection="[dcRPADatabase]" sap:VirtualizedContainerService.HintSize="434,85" sap2010:WorkflowViewState.IdRef="ExecuteQuery_43" Sql="[sQueryRpaDb]">
+                                <ui:LogMessage DisplayName="Log Message - Query RPA BD" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="LogMessage_113" Level="Info" Message="[String.Format(&quot;Running query [{0}]&quot;, sQueryRpaDb)]" />
+                                <ui:ExecuteQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[dtExecAccountId]" DisplayName="Run query" ExistingDbConnection="[dcRPADatabase]" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="ExecuteQuery_43" Sql="[sQueryRpaDb]">
                                   <ui:ExecuteQuery.Parameters>
                                     <scg:Dictionary x:TypeArguments="x:String, Argument" />
                                   </ui:ExecuteQuery.Parameters>
@@ -426,7 +460,7 @@ ORDER BY TRUNC(DT_EXEC) DESC "]</InArgument>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:ExecuteQuery>
-                                <ui:LogMessage DisplayName="Log Message - Rows RPA BD" sap:VirtualizedContainerService.HintSize="434,76" sap2010:WorkflowViewState.IdRef="LogMessage_114" Level="Info" Message="[String.Format(&quot;Rows returned: [{0}]&quot;, dtExecAccountId.RowCount)]">
+                                <ui:LogMessage DisplayName="Log Message - Rows RPA BD" sap:VirtualizedContainerService.HintSize="434,48" sap2010:WorkflowViewState.IdRef="LogMessage_114" Level="Info" Message="[String.Format(&quot;Rows returned: [{0}]&quot;, dtExecAccountId.RowCount)]">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -447,7 +481,7 @@ ORDER BY TRUNC(DT_EXEC) DESC "]</InArgument>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:RetryScope>
-                        <If Condition="[dtExecAccountId.RowCount = 0]" sap:VirtualizedContainerService.HintSize="510,85" sap2010:WorkflowViewState.IdRef="If_58">
+                        <If Condition="[dtExecAccountId.RowCount = 0]" sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="If_58">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -604,26 +638,76 @@ ORDER BY TRUNC(DT_EXEC) DESC "]</InArgument>
                             </Sequence>
                           </If.Else>
                         </If>
-                        <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="510,76" sap2010:WorkflowViewState.IdRef="MultipleAssign_132">
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="CommentOut_14">
+                          <ui:CommentOut.Body>
+                            <Sequence DisplayName="Ignored Activities" sap2010:WorkflowViewState.IdRef="Sequence_286">
+                              <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,303" sap2010:WorkflowViewState.IdRef="MultipleAssign_132">
+                                <ui:MultipleAssign.AssignOperations>
+                                  <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_484">
+                                      <ui:AssignOperation.To>
+                                        <OutArgument x:TypeArguments="x:Object">[CurrentContaAtiva("RPA-DB_CUSTOMERID")]</OutArgument>
+                                      </ui:AssignOperation.To>
+                                      <ui:AssignOperation.Value>
+                                        <InArgument x:TypeArguments="x:Object">[sBDCustomerId]</InArgument>
+                                      </ui:AssignOperation.Value>
+                                    </ui:AssignOperation>
+                                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_485">
+                                      <ui:AssignOperation.To>
+                                        <OutArgument x:TypeArguments="x:Object">[CurrentContaAtiva("RPA-DB_BIRTHDATE")]</OutArgument>
+                                      </ui:AssignOperation.To>
+                                      <ui:AssignOperation.Value>
+                                        <InArgument x:TypeArguments="x:Object">[sBDBirthday]</InArgument>
+                                      </ui:AssignOperation.Value>
+                                    </ui:AssignOperation>
+                                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_486">
+                                      <ui:AssignOperation.To>
+                                        <OutArgument x:TypeArguments="x:Object">[CurrentContaAtiva("RPA-DB_DT_SINACOR_INACTIVATE_ACCOUNT")]</OutArgument>
+                                      </ui:AssignOperation.To>
+                                      <ui:AssignOperation.Value>
+                                        <InArgument x:TypeArguments="x:Object">[sBDInactivateDate]</InArgument>
+                                      </ui:AssignOperation.Value>
+                                    </ui:AssignOperation>
+                                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_487">
+                                      <ui:AssignOperation.To>
+                                        <OutArgument x:TypeArguments="x:Object">[CurrentContaAtiva("RPA-DB_SINACOR_INACTIVATE_ACCOUNT")]</OutArgument>
+                                      </ui:AssignOperation.To>
+                                      <ui:AssignOperation.Value>
+                                        <InArgument x:TypeArguments="x:Object">[sBDSinacorColumn]</InArgument>
+                                      </ui:AssignOperation.Value>
+                                    </ui:AssignOperation>
+                                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_488">
+                                      <ui:AssignOperation.To>
+                                        <OutArgument x:TypeArguments="x:Object">[CurrentContaAtiva("RPA-DB_DT_STATUS")]</OutArgument>
+                                      </ui:AssignOperation.To>
+                                      <ui:AssignOperation.Value>
+                                        <InArgument x:TypeArguments="x:Object">[sBDStatus]</InArgument>
+                                      </ui:AssignOperation.Value>
+                                    </ui:AssignOperation>
+                                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_489">
+                                      <ui:AssignOperation.To>
+                                        <OutArgument x:TypeArguments="x:Object">[CurrentContaAtiva("RPA-BD_DT_EXEC")]</OutArgument>
+                                      </ui:AssignOperation.To>
+                                      <ui:AssignOperation.Value>
+                                        <InArgument x:TypeArguments="x:Object">[sBDDateExec]</InArgument>
+                                      </ui:AssignOperation.Value>
+                                    </ui:AssignOperation>
+                                  </scg:List>
+                                </ui:MultipleAssign.AssignOperations>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:MultipleAssign>
+                            </Sequence>
+                          </ui:CommentOut.Body>
+                        </ui:CommentOut>
+                        <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,139" sap2010:WorkflowViewState.IdRef="MultipleAssign_157">
                           <ui:MultipleAssign.AssignOperations>
                             <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
-                              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_484">
-                                <ui:AssignOperation.To>
-                                  <OutArgument x:TypeArguments="x:Object">[CurrentContaAtiva("RPA-DB_CUSTOMERID")]</OutArgument>
-                                </ui:AssignOperation.To>
-                                <ui:AssignOperation.Value>
-                                  <InArgument x:TypeArguments="x:Object">[sBDCustomerId]</InArgument>
-                                </ui:AssignOperation.Value>
-                              </ui:AssignOperation>
-                              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_485">
-                                <ui:AssignOperation.To>
-                                  <OutArgument x:TypeArguments="x:Object">[CurrentContaAtiva("RPA-DB_BIRTHDATE")]</OutArgument>
-                                </ui:AssignOperation.To>
-                                <ui:AssignOperation.Value>
-                                  <InArgument x:TypeArguments="x:Object">[sBDBirthday]</InArgument>
-                                </ui:AssignOperation.Value>
-                              </ui:AssignOperation>
-                              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_486">
+                              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_548">
                                 <ui:AssignOperation.To>
                                   <OutArgument x:TypeArguments="x:Object">[CurrentContaAtiva("RPA-DB_DT_SINACOR_INACTIVATE_ACCOUNT")]</OutArgument>
                                 </ui:AssignOperation.To>
@@ -631,48 +715,353 @@ ORDER BY TRUNC(DT_EXEC) DESC "]</InArgument>
                                   <InArgument x:TypeArguments="x:Object">[sBDInactivateDate]</InArgument>
                                 </ui:AssignOperation.Value>
                               </ui:AssignOperation>
-                              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_487">
-                                <ui:AssignOperation.To>
-                                  <OutArgument x:TypeArguments="x:Object">[CurrentContaAtiva("RPA-DB_SINACOR_INACTIVATE_ACCOUNT")]</OutArgument>
-                                </ui:AssignOperation.To>
-                                <ui:AssignOperation.Value>
-                                  <InArgument x:TypeArguments="x:Object">[sBDSinacorColumn]</InArgument>
-                                </ui:AssignOperation.Value>
-                              </ui:AssignOperation>
-                              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_488">
-                                <ui:AssignOperation.To>
-                                  <OutArgument x:TypeArguments="x:Object">[CurrentContaAtiva("RPA-DB_DT_STATUS")]</OutArgument>
-                                </ui:AssignOperation.To>
-                                <ui:AssignOperation.Value>
-                                  <InArgument x:TypeArguments="x:Object">[sBDStatus]</InArgument>
-                                </ui:AssignOperation.Value>
-                              </ui:AssignOperation>
-                              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_489">
-                                <ui:AssignOperation.To>
-                                  <OutArgument x:TypeArguments="x:Object">[CurrentContaAtiva("RPA-BD_DT_EXEC")]</OutArgument>
-                                </ui:AssignOperation.To>
-                                <ui:AssignOperation.Value>
-                                  <InArgument x:TypeArguments="x:Object">[sBDDateExec]</InArgument>
-                                </ui:AssignOperation.Value>
-                              </ui:AssignOperation>
                             </scg:List>
                           </ui:MultipleAssign.AssignOperations>
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:MultipleAssign>
                       </Sequence>
-                      <Sequence DisplayName="TITU" sap:VirtualizedContainerService.HintSize="544,101" sap2010:WorkflowViewState.IdRef="Sequence_272">
+                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="CommentOut_19">
+                        <ui:CommentOut.Body>
+                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="484,108" sap2010:WorkflowViewState.IdRef="Sequence_309">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Sequence DisplayName="TITU" sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="Sequence_272">
+                              <Sequence.Variables>
+                                <Variable x:TypeArguments="sd1:DataTable" Name="dtResultTitu" />
+                                <Variable x:TypeArguments="x:String" Name="sTITUACI" />
+                                <Variable x:TypeArguments="x:String" Name="sQueryTitu" />
+                                <Variable x:TypeArguments="x:String" Name="sTITU_BMF_Status" />
+                                <Variable x:TypeArguments="x:String" Name="sTITU_BOL_In_Situac" />
+                                <Variable x:TypeArguments="x:String" Name="sTITU_CC_In_Situac" />
+                                <Variable x:TypeArguments="x:String" Name="sTITU_CUS_In_Situac" />
+                                <Variable x:TypeArguments="x:String" Name="sTITU_TSD_In_Situac" />
+                              </Sequence.Variables>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:RetryScope DisplayName="Retry Scope - Run query TITU" sap:VirtualizedContainerService.HintSize="547,742" sap2010:WorkflowViewState.IdRef="RetryScope_43" NumberOfRetries="3" RetryInterval="00:00:15">
+                                <ui:RetryScope.ActivityBody>
+                                  <ActivityAction>
+                                    <Sequence DisplayName="Action Retry Scope - Run query TITU" sap:VirtualizedContainerService.HintSize="468,455" sap2010:WorkflowViewState.IdRef="Sequence_266">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <Assign DisplayName="Assign - Build Query TITU" sap:VirtualizedContainerService.HintSize="434,115" sap2010:WorkflowViewState.IdRef="Assign_88">
+                                        <Assign.To>
+                                          <OutArgument x:TypeArguments="x:String">[sQueryTitu]</OutArgument>
+                                        </Assign.To>
+                                        <Assign.Value>
+                                          <InArgument x:TypeArguments="x:String" xml:space="preserve">["SELECT
+	ACI
+	,BMF.STATUS AS TSCCLIBMF_STATUS
+	,BOL.IN_SITUAC AS TSCCLIBOL_IN_SITUAC
+	,CC.IN_SITUAC AS TSCCLICC_IN_SITUAC	
+	,CUS.IN_SITUAC AS TSCCLICUS_IN_SITUAC
+	,TSD.IN_SITUAC AS TSCCLITSD_IN_SITUAC
+FROM
+	REGS.CUSTOMER_USERS F
+LEFT JOIN CORRWIN.TSCCLIBMF BMF
+	ON F.ACCOUNTNUMBER = BMF.CODCLI
+LEFT JOIN CORRWIN.TSCCLIBOL BOL
+	ON F.ACCOUNTNUMBER = BOL.CD_CLIENTE
+LEFT JOIN CORRWIN.TSCCLICC CC
+	ON F.ACCOUNTNUMBER = CC.CD_CLIENTE
+LEFT JOIN CORRWIN.TSCCLICUS CUS
+	ON F.ACCOUNTNUMBER = CUS.CD_CLIENTE
+LEFT JOIN CORRWIN.TSCCLITSD TSD
+	ON F.ACCOUNTNUMBER = TSD.CD_CLIENTE
+WHERE
+	F.ACCOUNTNUMBER = '"+sCurContaAtiva+"'"]</InArgument>
+                                        </Assign.Value>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </Assign>
+                                      <ui:LogMessage DisplayName="Log Message - Query TITU" sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="LogMessage_115" Level="Info" Message="[String.Format(&quot;Running query [{0}]&quot;, sQueryTitu)]" />
+                                      <ui:ExecuteQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[dtResultTitu]" DisplayName="Run query" ExistingDbConnection="[dcTITU]" sap:VirtualizedContainerService.HintSize="434,121" sap2010:WorkflowViewState.IdRef="ExecuteQuery_44" Sql="[sQueryTitu]">
+                                        <ui:ExecuteQuery.Parameters>
+                                          <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                                        </ui:ExecuteQuery.Parameters>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </ui:ExecuteQuery>
+                                      <ui:LogMessage DisplayName="Log Message - Rows TITU" sap:VirtualizedContainerService.HintSize="434,75" sap2010:WorkflowViewState.IdRef="LogMessage_116" Level="Info" Message="[String.Format(&quot;Rows returned: [{0}]&quot;, dtResultTitu.RowCount)]" />
+                                    </Sequence>
+                                  </ActivityAction>
+                                </ui:RetryScope.ActivityBody>
+                                <ui:RetryScope.Condition>
+                                  <ActivityFunc x:TypeArguments="x:Boolean" />
+                                </ui:RetryScope.Condition>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:RetryScope>
+                              <If Condition="[dtResultTitu.RowCount = 0]" sap:VirtualizedContainerService.HintSize="547,825" sap2010:WorkflowViewState.IdRef="If_59">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <If.Then>
+                                  <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="513,52" sap2010:WorkflowViewState.IdRef="MultipleAssign_133">
+                                    <ui:MultipleAssign.AssignOperations>
+                                      <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                                        <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_490">
+                                          <ui:AssignOperation.To>
+                                            <OutArgument x:TypeArguments="x:String">[sTITUACI]</OutArgument>
+                                          </ui:AssignOperation.To>
+                                          <ui:AssignOperation.Value>
+                                            <InArgument x:TypeArguments="x:String">-</InArgument>
+                                          </ui:AssignOperation.Value>
+                                        </ui:AssignOperation>
+                                        <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_572">
+                                          <ui:AssignOperation.To>
+                                            <OutArgument x:TypeArguments="x:String">[sTITU_BMF_Status]</OutArgument>
+                                          </ui:AssignOperation.To>
+                                          <ui:AssignOperation.Value>
+                                            <InArgument x:TypeArguments="x:String">-</InArgument>
+                                          </ui:AssignOperation.Value>
+                                        </ui:AssignOperation>
+                                        <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_573">
+                                          <ui:AssignOperation.To>
+                                            <OutArgument x:TypeArguments="x:String">[sTITU_BOL_In_Situac]</OutArgument>
+                                          </ui:AssignOperation.To>
+                                          <ui:AssignOperation.Value>
+                                            <InArgument x:TypeArguments="x:String">-</InArgument>
+                                          </ui:AssignOperation.Value>
+                                        </ui:AssignOperation>
+                                        <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_574">
+                                          <ui:AssignOperation.To>
+                                            <OutArgument x:TypeArguments="x:String">[sTITU_CC_In_Situac]</OutArgument>
+                                          </ui:AssignOperation.To>
+                                          <ui:AssignOperation.Value>
+                                            <InArgument x:TypeArguments="x:String">-</InArgument>
+                                          </ui:AssignOperation.Value>
+                                        </ui:AssignOperation>
+                                        <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_575">
+                                          <ui:AssignOperation.To>
+                                            <OutArgument x:TypeArguments="x:String">[sTITU_CUS_In_Situac]</OutArgument>
+                                          </ui:AssignOperation.To>
+                                          <ui:AssignOperation.Value>
+                                            <InArgument x:TypeArguments="x:String">-</InArgument>
+                                          </ui:AssignOperation.Value>
+                                        </ui:AssignOperation>
+                                        <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_576">
+                                          <ui:AssignOperation.To>
+                                            <OutArgument x:TypeArguments="x:String">[sTITU_TSD_In_Situac]</OutArgument>
+                                          </ui:AssignOperation.To>
+                                          <ui:AssignOperation.Value>
+                                            <InArgument x:TypeArguments="x:String">-</InArgument>
+                                          </ui:AssignOperation.Value>
+                                        </ui:AssignOperation>
+                                      </scg:List>
+                                    </ui:MultipleAssign.AssignOperations>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:MultipleAssign>
+                                </If.Then>
+                                <If.Else>
+                                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="513,581" sap2010:WorkflowViewState.IdRef="Sequence_255">
+                                    <Sequence.Variables>
+                                      <Variable x:TypeArguments="sd1:DataRow" Name="drCustomerExec" />
+                                    </Sequence.Variables>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Assign sap:VirtualizedContainerService.HintSize="479,114" sap2010:WorkflowViewState.IdRef="Assign_89">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="sd1:DataRow">[drCustomerExec]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="sd1:DataRow">[dtResultTitu.Rows(0)]</InArgument>
+                                      </Assign.Value>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </Assign>
+                                    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,303" sap2010:WorkflowViewState.IdRef="MultipleAssign_169">
+                                      <ui:MultipleAssign.AssignOperations>
+                                        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_577">
+                                            <ui:AssignOperation.To>
+                                              <OutArgument x:TypeArguments="x:String">[sTITUACI]</OutArgument>
+                                            </ui:AssignOperation.To>
+                                            <ui:AssignOperation.Value>
+                                              <InArgument x:TypeArguments="x:String">[drCustomerExec("ACI").ToString]</InArgument>
+                                            </ui:AssignOperation.Value>
+                                          </ui:AssignOperation>
+                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_578">
+                                            <ui:AssignOperation.To>
+                                              <OutArgument x:TypeArguments="x:String">[sTITU_BMF_Status]</OutArgument>
+                                            </ui:AssignOperation.To>
+                                            <ui:AssignOperation.Value>
+                                              <InArgument x:TypeArguments="x:String">[drCustomerExec("TSCCLIBMF_STATUS").ToString]</InArgument>
+                                            </ui:AssignOperation.Value>
+                                          </ui:AssignOperation>
+                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_579">
+                                            <ui:AssignOperation.To>
+                                              <OutArgument x:TypeArguments="x:String">[sTITU_BOL_In_Situac]</OutArgument>
+                                            </ui:AssignOperation.To>
+                                            <ui:AssignOperation.Value>
+                                              <InArgument x:TypeArguments="x:String">[drCustomerExec("TSCCLIBOL_IN_SITUAC").ToString]</InArgument>
+                                            </ui:AssignOperation.Value>
+                                          </ui:AssignOperation>
+                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_580">
+                                            <ui:AssignOperation.To>
+                                              <OutArgument x:TypeArguments="x:String">[sTITU_CC_In_Situac]</OutArgument>
+                                            </ui:AssignOperation.To>
+                                            <ui:AssignOperation.Value>
+                                              <InArgument x:TypeArguments="x:String">[drCustomerExec("TSCCLICC_IN_SITUAC").ToString]</InArgument>
+                                            </ui:AssignOperation.Value>
+                                          </ui:AssignOperation>
+                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_581">
+                                            <ui:AssignOperation.To>
+                                              <OutArgument x:TypeArguments="x:String">[sTITU_CUS_In_Situac]</OutArgument>
+                                            </ui:AssignOperation.To>
+                                            <ui:AssignOperation.Value>
+                                              <InArgument x:TypeArguments="x:String">[drCustomerExec("TSCCLICUS_IN_SITUAC").ToString]</InArgument>
+                                            </ui:AssignOperation.Value>
+                                          </ui:AssignOperation>
+                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_582">
+                                            <ui:AssignOperation.To>
+                                              <OutArgument x:TypeArguments="x:String">[sTITU_TSD_In_Situac]</OutArgument>
+                                            </ui:AssignOperation.To>
+                                            <ui:AssignOperation.Value>
+                                              <InArgument x:TypeArguments="x:String">[drCustomerExec("TSCCLITSD_IN_SITUAC").ToString]</InArgument>
+                                            </ui:AssignOperation.Value>
+                                          </ui:AssignOperation>
+                                        </scg:List>
+                                      </ui:MultipleAssign.AssignOperations>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </ui:MultipleAssign>
+                                    <Sequence sap:VirtualizedContainerService.HintSize="479,104" sap2010:WorkflowViewState.IdRef="Sequence_308">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </Sequence>
+                                  </Sequence>
+                                </If.Else>
+                              </If>
+                              <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="547,294" sap2010:WorkflowViewState.IdRef="MultipleAssign_135">
+                                <ui:MultipleAssign.AssignOperations>
+                                  <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_492">
+                                      <ui:AssignOperation.To>
+                                        <OutArgument x:TypeArguments="x:Object">[CurrentContaAtiva("RPA-TITU_REGS.CUSTOMER_USERS_ACI")]</OutArgument>
+                                      </ui:AssignOperation.To>
+                                      <ui:AssignOperation.Value>
+                                        <InArgument x:TypeArguments="x:String">[sTITUACI]</InArgument>
+                                      </ui:AssignOperation.Value>
+                                    </ui:AssignOperation>
+                                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_583">
+                                      <ui:AssignOperation.To>
+                                        <OutArgument x:TypeArguments="x:Object">[CurrentContaAtiva("RPA-TITU_CORRWIN.TSCCLIBMF_STATUS")]</OutArgument>
+                                      </ui:AssignOperation.To>
+                                      <ui:AssignOperation.Value>
+                                        <InArgument x:TypeArguments="x:String">[sTITU_BMF_Status]</InArgument>
+                                      </ui:AssignOperation.Value>
+                                    </ui:AssignOperation>
+                                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_584">
+                                      <ui:AssignOperation.To>
+                                        <OutArgument x:TypeArguments="x:Object">[CurrentContaAtiva("RPA-TITU_CORRWIN.TSCCLIBOL_IN_SITUAC")]</OutArgument>
+                                      </ui:AssignOperation.To>
+                                      <ui:AssignOperation.Value>
+                                        <InArgument x:TypeArguments="x:String">[sTITU_BOL_In_Situac]</InArgument>
+                                      </ui:AssignOperation.Value>
+                                    </ui:AssignOperation>
+                                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_585">
+                                      <ui:AssignOperation.To>
+                                        <OutArgument x:TypeArguments="x:Object">[CurrentContaAtiva("RPA-TITU_CORRWIN.TSCCLICC_IN_SITUAC")]</OutArgument>
+                                      </ui:AssignOperation.To>
+                                      <ui:AssignOperation.Value>
+                                        <InArgument x:TypeArguments="x:String">[sTITU_CC_In_Situac]</InArgument>
+                                      </ui:AssignOperation.Value>
+                                    </ui:AssignOperation>
+                                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_586">
+                                      <ui:AssignOperation.To>
+                                        <OutArgument x:TypeArguments="x:Object">[CurrentContaAtiva("RPA-TITU_CORRWIN.TSCCLICUS_IN_SITUAC")]</OutArgument>
+                                      </ui:AssignOperation.To>
+                                      <ui:AssignOperation.Value>
+                                        <InArgument x:TypeArguments="x:String">[sTITU_CUS_In_Situac]</InArgument>
+                                      </ui:AssignOperation.Value>
+                                    </ui:AssignOperation>
+                                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_587">
+                                      <ui:AssignOperation.To>
+                                        <OutArgument x:TypeArguments="x:Object">[CurrentContaAtiva("RPA-TITU_CORRWIN.TSCCLITSD_IN_SITUAC")]</OutArgument>
+                                      </ui:AssignOperation.To>
+                                      <ui:AssignOperation.Value>
+                                        <InArgument x:TypeArguments="x:String">[sTITU_TSD_In_Situac]</InArgument>
+                                      </ui:AssignOperation.Value>
+                                    </ui:AssignOperation>
+                                  </scg:List>
+                                </ui:MultipleAssign.AssignOperations>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:MultipleAssign>
+                            </Sequence>
+                          </Sequence>
+                        </ui:CommentOut.Body>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:CommentOut>
+                      <Sequence DisplayName="TITU" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_310">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <Sequence DisplayName="REGS.CUSTOMER_USERS" sap:VirtualizedContainerService.HintSize="615,57" sap2010:WorkflowViewState.IdRef="Sequence_254">
+                        <Sequence DisplayName="REGS.CUSTOMER_USERS" sap:VirtualizedContainerService.HintSize="513,345" sap2010:WorkflowViewState.IdRef="Sequence_293">
                           <Sequence.Variables>
                             <Variable x:TypeArguments="sd1:DataTable" Name="dtResultTitu" />
                             <Variable x:TypeArguments="x:String" Name="sTITUACI" />
@@ -680,21 +1069,21 @@ ORDER BY TRUNC(DT_EXEC) DESC "]</InArgument>
                           </Sequence.Variables>
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:RetryScope DisplayName="Retry Scope - Run query TITU" sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="RetryScope_43" NumberOfRetries="3" RetryInterval="00:00:15">
+                          <ui:RetryScope DisplayName="Retry Scope - Run query TITU" sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="RetryScope_50" NumberOfRetries="3" RetryInterval="00:00:15">
                             <ui:RetryScope.ActivityBody>
                               <ActivityAction>
-                                <Sequence DisplayName="Action Retry Scope - Run query TITU" sap:VirtualizedContainerService.HintSize="468,338" sap2010:WorkflowViewState.IdRef="Sequence_266">
+                                <Sequence DisplayName="Action Retry Scope - Run query TITU" sap:VirtualizedContainerService.HintSize="468,338" sap2010:WorkflowViewState.IdRef="Sequence_299">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <Assign DisplayName="Assign - Build Query TITU" sap:VirtualizedContainerService.HintSize="434,116" sap2010:WorkflowViewState.IdRef="Assign_88">
+                                  <Assign DisplayName="Assign - Build Query TITU" sap:VirtualizedContainerService.HintSize="434,116" sap2010:WorkflowViewState.IdRef="Assign_101">
                                     <Assign.To>
                                       <OutArgument x:TypeArguments="x:String">[sQueryTitu]</OutArgument>
                                     </Assign.To>
@@ -714,8 +1103,8 @@ WHERE
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                   </Assign>
-                                  <ui:LogMessage DisplayName="Log Message - Query TITU" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="LogMessage_115" Level="Info" Message="[String.Format(&quot;Running query [{0}]&quot;, sQueryTitu)]" />
-                                  <ui:ExecuteQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[dtResultTitu]" DisplayName="Run query" ExistingDbConnection="[dcTITU]" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="ExecuteQuery_44" Sql="[sQueryTitu]">
+                                  <ui:LogMessage DisplayName="Log Message - Query TITU" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="LogMessage_128" Level="Info" Message="[String.Format(&quot;Running query [{0}]&quot;, sQueryTitu)]" />
+                                  <ui:ExecuteQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[dtResultTitu]" DisplayName="Run query" ExistingDbConnection="[dcTITU]" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="ExecuteQuery_49" Sql="[sQueryTitu]">
                                     <ui:ExecuteQuery.Parameters>
                                       <scg:Dictionary x:TypeArguments="x:String, Argument" />
                                     </ui:ExecuteQuery.Parameters>
@@ -726,7 +1115,7 @@ WHERE
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                   </ui:ExecuteQuery>
-                                  <ui:LogMessage DisplayName="Log Message - Rows TITU" sap:VirtualizedContainerService.HintSize="434,48" sap2010:WorkflowViewState.IdRef="LogMessage_116" Level="Info" Message="[String.Format(&quot;Rows returned: [{0}]&quot;, dtResultTitu.RowCount)]" />
+                                  <ui:LogMessage DisplayName="Log Message - Rows TITU" sap:VirtualizedContainerService.HintSize="434,48" sap2010:WorkflowViewState.IdRef="LogMessage_129" Level="Info" Message="[String.Format(&quot;Rows returned: [{0}]&quot;, dtResultTitu.RowCount)]" />
                                 </Sequence>
                               </ActivityAction>
                             </ui:RetryScope.ActivityBody>
@@ -740,7 +1129,7 @@ WHERE
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:RetryScope>
-                          <If Condition="[dtResultTitu.RowCount = 0]" sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="If_59">
+                          <If Condition="[dtResultTitu.RowCount = 0]" sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="If_70">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -748,10 +1137,10 @@ WHERE
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <If.Then>
-                              <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="513,25" sap2010:WorkflowViewState.IdRef="MultipleAssign_133">
+                              <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="513,25" sap2010:WorkflowViewState.IdRef="MultipleAssign_160">
                                 <ui:MultipleAssign.AssignOperations>
                                   <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
-                                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_490">
+                                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_551">
                                       <ui:AssignOperation.To>
                                         <OutArgument x:TypeArguments="x:String">[sTITUACI]</OutArgument>
                                       </ui:AssignOperation.To>
@@ -770,7 +1159,7 @@ WHERE
                               </ui:MultipleAssign>
                             </If.Then>
                             <If.Else>
-                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="513,257" sap2010:WorkflowViewState.IdRef="Sequence_255">
+                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="513,257" sap2010:WorkflowViewState.IdRef="Sequence_294">
                                 <Sequence.Variables>
                                   <Variable x:TypeArguments="sd1:DataRow" Name="drCustomerExec" />
                                 </Sequence.Variables>
@@ -780,7 +1169,7 @@ WHERE
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <Assign sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="Assign_89">
+                                <Assign sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="Assign_102">
                                   <Assign.To>
                                     <OutArgument x:TypeArguments="sd1:DataRow">[drCustomerExec]</OutArgument>
                                   </Assign.To>
@@ -788,10 +1177,10 @@ WHERE
                                     <InArgument x:TypeArguments="sd1:DataRow">[dtResultTitu.Rows(0)]</InArgument>
                                   </Assign.Value>
                                 </Assign>
-                                <ui:MultipleAssign DisplayName="Multiple Assign - Get values for 1 ROW" sap:VirtualizedContainerService.HintSize="479,140" sap2010:WorkflowViewState.IdRef="MultipleAssign_134">
+                                <ui:MultipleAssign DisplayName="Multiple Assign - Get values for 1 ROW" sap:VirtualizedContainerService.HintSize="479,140" sap2010:WorkflowViewState.IdRef="MultipleAssign_161">
                                   <ui:MultipleAssign.AssignOperations>
                                     <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
-                                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_491">
+                                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_552">
                                         <ui:AssignOperation.To>
                                           <OutArgument x:TypeArguments="x:String">[sTITUACI]</OutArgument>
                                         </ui:AssignOperation.To>
@@ -811,10 +1200,10 @@ WHERE
                               </Sequence>
                             </If.Else>
                           </If>
-                          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,140" sap2010:WorkflowViewState.IdRef="MultipleAssign_135">
+                          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,139" sap2010:WorkflowViewState.IdRef="MultipleAssign_162">
                             <ui:MultipleAssign.AssignOperations>
                               <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
-                                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_492">
+                                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_553">
                                   <ui:AssignOperation.To>
                                     <OutArgument x:TypeArguments="x:Object">[CurrentContaAtiva("RPA-TITU_REGS.CUSTOMER_USERS_ACI")]</OutArgument>
                                   </ui:AssignOperation.To>
@@ -827,18 +1216,18 @@ WHERE
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:MultipleAssign>
                         </Sequence>
-                        <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each - CORRWIN Table" sap:VirtualizedContainerService.HintSize="615,2230" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[arrTabelasCorrwin]">
+                        <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each - CORRWIN Table" sap:VirtualizedContainerService.HintSize="513,48" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[arrTabelasCorrwin]">
                           <ui:ForEach.Body>
                             <ActivityAction x:TypeArguments="x:String">
                               <ActivityAction.Argument>
                                 <DelegateInArgument x:TypeArguments="x:String" Name="cTable" />
                               </ActivityAction.Argument>
-                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="581,2092" sap2010:WorkflowViewState.IdRef="Sequence_256">
+                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="581,2189" sap2010:WorkflowViewState.IdRef="Sequence_295">
                                 <Sequence.Variables>
                                   <Variable x:TypeArguments="sd1:DataTable" Name="dtResultTitu" />
                                   <Variable x:TypeArguments="x:String" Name="sTITUCdCliente" />
@@ -853,17 +1242,17 @@ WHERE
                                     <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <ui:RetryScope DisplayName="Retry Scope - Run query TITU" sap:VirtualizedContainerService.HintSize="547,716" sap2010:WorkflowViewState.IdRef="RetryScope_44" NumberOfRetries="3" RetryInterval="00:00:15">
+                                <ui:RetryScope DisplayName="Retry Scope - Run query TITU" sap:VirtualizedContainerService.HintSize="547,709" sap2010:WorkflowViewState.IdRef="RetryScope_51" NumberOfRetries="3" RetryInterval="00:00:15">
                                   <ui:RetryScope.ActivityBody>
                                     <ActivityAction>
-                                      <Sequence DisplayName="Action Retry Scope - Run query TITU" sap:VirtualizedContainerService.HintSize="468,507" sap2010:WorkflowViewState.IdRef="Sequence_269">
+                                      <Sequence DisplayName="Action Retry Scope - Run query TITU" sap:VirtualizedContainerService.HintSize="468,502" sap2010:WorkflowViewState.IdRef="Sequence_302">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <Assign DisplayName="Assign - Build Query TITU" sap:VirtualizedContainerService.HintSize="434,116" sap2010:WorkflowViewState.IdRef="Assign_90">
+                                        <Assign DisplayName="Assign - Build Query TITU" sap:VirtualizedContainerService.HintSize="434,115" sap2010:WorkflowViewState.IdRef="Assign_103">
                                           <Assign.To>
                                             <OutArgument x:TypeArguments="x:String">[sQueryTitu]</OutArgument>
                                           </Assign.To>
@@ -885,7 +1274,7 @@ WHERE
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
                                         </Assign>
-                                        <If Condition="[cTable = &quot;CORRWIN.TSCCLIBMF&quot;]" DisplayName="If - Table is CORRWIN.TSCCLIBMF" sap:VirtualizedContainerService.HintSize="434,85" sap2010:WorkflowViewState.IdRef="If_60">
+                                        <If Condition="[cTable = &quot;CORRWIN.TSCCLIBMF&quot;]" DisplayName="If - Table is CORRWIN.TSCCLIBMF" sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="If_71">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -893,14 +1282,14 @@ WHERE
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
                                           <If.Then>
-                                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,166" sap2010:WorkflowViewState.IdRef="Sequence_267">
+                                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,166" sap2010:WorkflowViewState.IdRef="Sequence_300">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
-                                              <Assign DisplayName="Assign - Build Query TITU" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Assign_91">
+                                              <Assign DisplayName="Assign - Build Query TITU" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Assign_104">
                                                 <Assign.To>
                                                   <OutArgument x:TypeArguments="x:String">[sQueryTitu]</OutArgument>
                                                 </Assign.To>
@@ -917,7 +1306,7 @@ WHERE
                                             </Sequence>
                                           </If.Then>
                                           <If.Else>
-                                            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,25" sap2010:WorkflowViewState.IdRef="Sequence_268">
+                                            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,25" sap2010:WorkflowViewState.IdRef="Sequence_301">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -926,8 +1315,8 @@ WHERE
                                             </Sequence>
                                           </If.Else>
                                         </If>
-                                        <ui:LogMessage DisplayName="Log Message - Query TITU" sap:VirtualizedContainerService.HintSize="434,85" sap2010:WorkflowViewState.IdRef="LogMessage_117" Level="Info" Message="[String.Format(&quot;Running query [{0}]&quot;, sQueryTitu)]" />
-                                        <ui:ExecuteQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[dtResultTitu]" DisplayName="Run query" ExistingDbConnection="[dcTITU]" sap:VirtualizedContainerService.HintSize="434,85" sap2010:WorkflowViewState.IdRef="ExecuteQuery_45" Sql="[sQueryTitu]">
+                                        <ui:LogMessage DisplayName="Log Message - Query TITU" sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="LogMessage_130" Level="Info" Message="[String.Format(&quot;Running query [{0}]&quot;, sQueryTitu)]" />
+                                        <ui:ExecuteQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[dtResultTitu]" DisplayName="Run query" ExistingDbConnection="[dcTITU]" sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="ExecuteQuery_50" Sql="[sQueryTitu]">
                                           <ui:ExecuteQuery.Parameters>
                                             <scg:Dictionary x:TypeArguments="x:String, Argument" />
                                           </ui:ExecuteQuery.Parameters>
@@ -938,7 +1327,7 @@ WHERE
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
                                         </ui:ExecuteQuery>
-                                        <ui:LogMessage DisplayName="Log Message - Rows TITU" sap:VirtualizedContainerService.HintSize="434,76" sap2010:WorkflowViewState.IdRef="LogMessage_118" Level="Info" Message="[String.Format(&quot;Rows returned: [{0}]&quot;, dtResultTitu.RowCount)]" />
+                                        <ui:LogMessage DisplayName="Log Message - Rows TITU" sap:VirtualizedContainerService.HintSize="434,75" sap2010:WorkflowViewState.IdRef="LogMessage_131" Level="Info" Message="[String.Format(&quot;Rows returned: [{0}]&quot;, dtResultTitu.RowCount)]" />
                                       </Sequence>
                                     </ActivityAction>
                                   </ui:RetryScope.ActivityBody>
@@ -952,7 +1341,7 @@ WHERE
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:RetryScope>
-                                <If Condition="[dtResultTitu.RowCount = 0]" sap:VirtualizedContainerService.HintSize="547,568" sap2010:WorkflowViewState.IdRef="If_61">
+                                <If Condition="[dtResultTitu.RowCount = 0]" sap:VirtualizedContainerService.HintSize="547,777" sap2010:WorkflowViewState.IdRef="If_72">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -960,10 +1349,10 @@ WHERE
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                   <If.Then>
-                                    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="513,25" sap2010:WorkflowViewState.IdRef="MultipleAssign_136">
+                                    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="513,209" sap2010:WorkflowViewState.IdRef="MultipleAssign_163">
                                       <ui:MultipleAssign.AssignOperations>
                                         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
-                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_493">
+                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_554">
                                             <ui:AssignOperation.To>
                                               <OutArgument x:TypeArguments="x:String">[sTITUCdCliente]</OutArgument>
                                             </ui:AssignOperation.To>
@@ -971,7 +1360,7 @@ WHERE
                                               <InArgument x:TypeArguments="x:String">-</InArgument>
                                             </ui:AssignOperation.Value>
                                           </ui:AssignOperation>
-                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_494">
+                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_555">
                                             <ui:AssignOperation.To>
                                               <OutArgument x:TypeArguments="x:Object">[sTITUDtNasc]</OutArgument>
                                             </ui:AssignOperation.To>
@@ -979,7 +1368,7 @@ WHERE
                                               <InArgument x:TypeArguments="x:Object">["-"]</InArgument>
                                             </ui:AssignOperation.Value>
                                           </ui:AssignOperation>
-                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_495">
+                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_556">
                                             <ui:AssignOperation.To>
                                               <OutArgument x:TypeArguments="x:Object">[sTITUCdConDEP]</OutArgument>
                                             </ui:AssignOperation.To>
@@ -987,7 +1376,7 @@ WHERE
                                               <InArgument x:TypeArguments="x:Object">["-"]</InArgument>
                                             </ui:AssignOperation.Value>
                                           </ui:AssignOperation>
-                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_496">
+                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_557">
                                             <ui:AssignOperation.To>
                                               <OutArgument x:TypeArguments="x:Object">[sTITUStatus]</OutArgument>
                                             </ui:AssignOperation.To>
@@ -1000,13 +1389,13 @@ WHERE
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </ui:MultipleAssign>
                                   </If.Then>
                                   <If.Else>
-                                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="513,350" sap2010:WorkflowViewState.IdRef="Sequence_257">
+                                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="513,376" sap2010:WorkflowViewState.IdRef="Sequence_296">
                                       <Sequence.Variables>
                                         <Variable x:TypeArguments="sd1:DataRow" Name="drCustomerExec" />
                                       </Sequence.Variables>
@@ -1016,7 +1405,7 @@ WHERE
                                           <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <Assign sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="Assign_92">
+                                      <Assign sap:VirtualizedContainerService.HintSize="479,84" sap2010:WorkflowViewState.IdRef="Assign_105">
                                         <Assign.To>
                                           <OutArgument x:TypeArguments="sd1:DataRow">[drCustomerExec]</OutArgument>
                                         </Assign.To>
@@ -1024,10 +1413,10 @@ WHERE
                                           <InArgument x:TypeArguments="sd1:DataRow">[dtResultTitu.Rows(0)]</InArgument>
                                         </Assign.Value>
                                       </Assign>
-                                      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,233" sap2010:WorkflowViewState.IdRef="MultipleAssign_137">
+                                      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,232" sap2010:WorkflowViewState.IdRef="MultipleAssign_164">
                                         <ui:MultipleAssign.AssignOperations>
                                           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
-                                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_497">
+                                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_558">
                                               <ui:AssignOperation.To>
                                                 <OutArgument x:TypeArguments="x:String">[sTITUCdCliente]</OutArgument>
                                               </ui:AssignOperation.To>
@@ -1035,7 +1424,7 @@ WHERE
                                                 <InArgument x:TypeArguments="x:String">[drCustomerExec("CODCLI").ToString]</InArgument>
                                               </ui:AssignOperation.Value>
                                             </ui:AssignOperation>
-                                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_498">
+                                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_559">
                                               <ui:AssignOperation.To>
                                                 <OutArgument x:TypeArguments="x:Object">[sTITUDtNasc]</OutArgument>
                                               </ui:AssignOperation.To>
@@ -1043,7 +1432,7 @@ WHERE
                                                 <InArgument x:TypeArguments="x:Object">[drCustomerExec("DT_NASC_FUND").ToString]</InArgument>
                                               </ui:AssignOperation.Value>
                                             </ui:AssignOperation>
-                                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_499">
+                                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_560">
                                               <ui:AssignOperation.To>
                                                 <OutArgument x:TypeArguments="x:Object">[sTITUCdConDEP]</OutArgument>
                                               </ui:AssignOperation.To>
@@ -1051,7 +1440,7 @@ WHERE
                                                 <InArgument x:TypeArguments="x:Object">[drCustomerExec("CD_CON_DEP").ToString]</InArgument>
                                               </ui:AssignOperation.Value>
                                             </ui:AssignOperation>
-                                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_500">
+                                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_561">
                                               <ui:AssignOperation.To>
                                                 <OutArgument x:TypeArguments="x:Object">[sTITUStatus]</OutArgument>
                                               </ui:AssignOperation.To>
@@ -1071,7 +1460,129 @@ WHERE
                                     </Sequence>
                                   </If.Else>
                                 </If>
-                                <If Condition="[cTable = &quot;CORRWIN.TSCCLIBMF&quot;]" DisplayName="If - Table is CORRWIN.TSCCLIBMF" sap:VirtualizedContainerService.HintSize="547,748" sap2010:WorkflowViewState.IdRef="If_62">
+                                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="547,84" sap2010:WorkflowViewState.IdRef="CommentOut_18">
+                                  <ui:CommentOut.Body>
+                                    <Sequence DisplayName="Ignored Activities" sap2010:WorkflowViewState.IdRef="Sequence_305">
+                                      <If Condition="[cTable = &quot;CORRWIN.TSCCLIBMF&quot;]" DisplayName="If - Table is CORRWIN.TSCCLIBMF" sap:VirtualizedContainerService.HintSize="547,57" sap2010:WorkflowViewState.IdRef="If_73">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <If.Then>
+                                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="513,292" sap2010:WorkflowViewState.IdRef="Sequence_303">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,232" sap2010:WorkflowViewState.IdRef="MultipleAssign_165">
+                                              <ui:MultipleAssign.AssignOperations>
+                                                <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_562">
+                                                    <ui:AssignOperation.To>
+                                                      <OutArgument x:TypeArguments="x:Object">[CurrentContaAtiva("RPA-TITU_"+cTable+"_CODCLI")]</OutArgument>
+                                                    </ui:AssignOperation.To>
+                                                    <ui:AssignOperation.Value>
+                                                      <InArgument x:TypeArguments="x:Object">[sTITUCdCliente]</InArgument>
+                                                    </ui:AssignOperation.Value>
+                                                  </ui:AssignOperation>
+                                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_563">
+                                                    <ui:AssignOperation.To>
+                                                      <OutArgument x:TypeArguments="x:Object">[CurrentContaAtiva("RPA-TITU_"+cTable+"_DT_NASC_FUND")]</OutArgument>
+                                                    </ui:AssignOperation.To>
+                                                    <ui:AssignOperation.Value>
+                                                      <InArgument x:TypeArguments="x:Object">[sTITUDtNasc]</InArgument>
+                                                    </ui:AssignOperation.Value>
+                                                  </ui:AssignOperation>
+                                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_564">
+                                                    <ui:AssignOperation.To>
+                                                      <OutArgument x:TypeArguments="x:Object">[CurrentContaAtiva("RPA-TITU_"+cTable+"_CD_CON_DEP")]</OutArgument>
+                                                    </ui:AssignOperation.To>
+                                                    <ui:AssignOperation.Value>
+                                                      <InArgument x:TypeArguments="x:Object">[sTITUCdConDEP]</InArgument>
+                                                    </ui:AssignOperation.Value>
+                                                  </ui:AssignOperation>
+                                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_565">
+                                                    <ui:AssignOperation.To>
+                                                      <OutArgument x:TypeArguments="x:Object">[CurrentContaAtiva("RPA-TITU_"+cTable+"_STATUS")]</OutArgument>
+                                                    </ui:AssignOperation.To>
+                                                    <ui:AssignOperation.Value>
+                                                      <InArgument x:TypeArguments="x:Object">[sTITUStatus]</InArgument>
+                                                    </ui:AssignOperation.Value>
+                                                  </ui:AssignOperation>
+                                                </scg:List>
+                                              </ui:MultipleAssign.AssignOperations>
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </ui:MultipleAssign>
+                                          </Sequence>
+                                        </If.Then>
+                                        <If.Else>
+                                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="513,292" sap2010:WorkflowViewState.IdRef="Sequence_304">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,232" sap2010:WorkflowViewState.IdRef="MultipleAssign_166">
+                                              <ui:MultipleAssign.AssignOperations>
+                                                <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_566">
+                                                    <ui:AssignOperation.To>
+                                                      <OutArgument x:TypeArguments="x:Object">[CurrentContaAtiva("RPA-TITU_"+cTable+"_CD_CLIENTE")]</OutArgument>
+                                                    </ui:AssignOperation.To>
+                                                    <ui:AssignOperation.Value>
+                                                      <InArgument x:TypeArguments="x:Object">[sTITUCdCliente]</InArgument>
+                                                    </ui:AssignOperation.Value>
+                                                  </ui:AssignOperation>
+                                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_567">
+                                                    <ui:AssignOperation.To>
+                                                      <OutArgument x:TypeArguments="x:Object">[CurrentContaAtiva("RPA-TITU_"+cTable+"_DT_NASC_FUND")]</OutArgument>
+                                                    </ui:AssignOperation.To>
+                                                    <ui:AssignOperation.Value>
+                                                      <InArgument x:TypeArguments="x:Object">[sTITUDtNasc]</InArgument>
+                                                    </ui:AssignOperation.Value>
+                                                  </ui:AssignOperation>
+                                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_568">
+                                                    <ui:AssignOperation.To>
+                                                      <OutArgument x:TypeArguments="x:Object">[CurrentContaAtiva("RPA-TITU_"+cTable+"_CD_CON_DEP")]</OutArgument>
+                                                    </ui:AssignOperation.To>
+                                                    <ui:AssignOperation.Value>
+                                                      <InArgument x:TypeArguments="x:Object">[sTITUCdConDEP]</InArgument>
+                                                    </ui:AssignOperation.Value>
+                                                  </ui:AssignOperation>
+                                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_569">
+                                                    <ui:AssignOperation.To>
+                                                      <OutArgument x:TypeArguments="x:Object">[CurrentContaAtiva("RPA-TITU_"+cTable+"_IN_SITUAC")]</OutArgument>
+                                                    </ui:AssignOperation.To>
+                                                    <ui:AssignOperation.Value>
+                                                      <InArgument x:TypeArguments="x:Object">[sTITUStatus]</InArgument>
+                                                    </ui:AssignOperation.Value>
+                                                  </ui:AssignOperation>
+                                                </scg:List>
+                                              </ui:MultipleAssign.AssignOperations>
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </ui:MultipleAssign>
+                                          </Sequence>
+                                        </If.Else>
+                                      </If>
+                                    </Sequence>
+                                  </ui:CommentOut.Body>
+                                </ui:CommentOut>
+                                <If Condition="[cTable = &quot;CORRWIN.TSCCLIBMF&quot;]" DisplayName="If - Table is CORRWIN.TSCCLIBMF" sap:VirtualizedContainerService.HintSize="547,559" sap2010:WorkflowViewState.IdRef="If_74">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsPinned">True</x:Boolean>
@@ -1079,41 +1590,17 @@ WHERE
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                   <If.Then>
-                                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="513,293" sap2010:WorkflowViewState.IdRef="Sequence_270">
+                                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="513,199" sap2010:WorkflowViewState.IdRef="Sequence_306">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,233" sap2010:WorkflowViewState.IdRef="MultipleAssign_138">
+                                      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,139" sap2010:WorkflowViewState.IdRef="MultipleAssign_167">
                                         <ui:MultipleAssign.AssignOperations>
                                           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
-                                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_501">
-                                              <ui:AssignOperation.To>
-                                                <OutArgument x:TypeArguments="x:Object">[CurrentContaAtiva("RPA-TITU_"+cTable+"_CODCLI")]</OutArgument>
-                                              </ui:AssignOperation.To>
-                                              <ui:AssignOperation.Value>
-                                                <InArgument x:TypeArguments="x:Object">[sTITUCdCliente]</InArgument>
-                                              </ui:AssignOperation.Value>
-                                            </ui:AssignOperation>
-                                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_502">
-                                              <ui:AssignOperation.To>
-                                                <OutArgument x:TypeArguments="x:Object">[CurrentContaAtiva("RPA-TITU_"+cTable+"_DT_NASC_FUND")]</OutArgument>
-                                              </ui:AssignOperation.To>
-                                              <ui:AssignOperation.Value>
-                                                <InArgument x:TypeArguments="x:Object">[sTITUDtNasc]</InArgument>
-                                              </ui:AssignOperation.Value>
-                                            </ui:AssignOperation>
-                                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_503">
-                                              <ui:AssignOperation.To>
-                                                <OutArgument x:TypeArguments="x:Object">[CurrentContaAtiva("RPA-TITU_"+cTable+"_CD_CON_DEP")]</OutArgument>
-                                              </ui:AssignOperation.To>
-                                              <ui:AssignOperation.Value>
-                                                <InArgument x:TypeArguments="x:Object">[sTITUCdConDEP]</InArgument>
-                                              </ui:AssignOperation.Value>
-                                            </ui:AssignOperation>
-                                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_504">
+                                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_570">
                                               <ui:AssignOperation.To>
                                                 <OutArgument x:TypeArguments="x:Object">[CurrentContaAtiva("RPA-TITU_"+cTable+"_STATUS")]</OutArgument>
                                               </ui:AssignOperation.To>
@@ -1133,41 +1620,17 @@ WHERE
                                     </Sequence>
                                   </If.Then>
                                   <If.Else>
-                                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="513,293" sap2010:WorkflowViewState.IdRef="Sequence_271">
+                                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="513,199" sap2010:WorkflowViewState.IdRef="Sequence_307">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           <x:Boolean x:Key="IsPinned">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,233" sap2010:WorkflowViewState.IdRef="MultipleAssign_139">
+                                      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,139" sap2010:WorkflowViewState.IdRef="MultipleAssign_168">
                                         <ui:MultipleAssign.AssignOperations>
                                           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
-                                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_505">
-                                              <ui:AssignOperation.To>
-                                                <OutArgument x:TypeArguments="x:Object">[CurrentContaAtiva("RPA-TITU_"+cTable+"_CD_CLIENTE")]</OutArgument>
-                                              </ui:AssignOperation.To>
-                                              <ui:AssignOperation.Value>
-                                                <InArgument x:TypeArguments="x:Object">[sTITUCdCliente]</InArgument>
-                                              </ui:AssignOperation.Value>
-                                            </ui:AssignOperation>
-                                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_506">
-                                              <ui:AssignOperation.To>
-                                                <OutArgument x:TypeArguments="x:Object">[CurrentContaAtiva("RPA-TITU_"+cTable+"_DT_NASC_FUND")]</OutArgument>
-                                              </ui:AssignOperation.To>
-                                              <ui:AssignOperation.Value>
-                                                <InArgument x:TypeArguments="x:Object">[sTITUDtNasc]</InArgument>
-                                              </ui:AssignOperation.Value>
-                                            </ui:AssignOperation>
-                                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_507">
-                                              <ui:AssignOperation.To>
-                                                <OutArgument x:TypeArguments="x:Object">[CurrentContaAtiva("RPA-TITU_"+cTable+"_CD_CON_DEP")]</OutArgument>
-                                              </ui:AssignOperation.To>
-                                              <ui:AssignOperation.Value>
-                                                <InArgument x:TypeArguments="x:Object">[sTITUCdConDEP]</InArgument>
-                                              </ui:AssignOperation.Value>
-                                            </ui:AssignOperation>
-                                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_508">
+                                            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_571">
                                               <ui:AssignOperation.To>
                                                 <OutArgument x:TypeArguments="x:Object">[CurrentContaAtiva("RPA-TITU_"+cTable+"_IN_SITUAC")]</OutArgument>
                                               </ui:AssignOperation.To>
@@ -1192,12 +1655,13 @@ WHERE
                           </ui:ForEach.Body>
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:ForEach>
                       </Sequence>
-                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="544,85" sap2010:WorkflowViewState.IdRef="CommentOut_13">
+                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="CommentOut_13">
                         <ui:CommentOut.Body>
                           <Sequence DisplayName="Ignored Activities" sap2010:WorkflowViewState.IdRef="Sequence_276">
                             <Sequence DisplayName="DATABRICKS" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_258">
@@ -1620,11 +2084,77 @@ WHERE
                           </Sequence>
                         </ui:CommentOut.Body>
                       </ui:CommentOut>
-                      <If Condition="[bShouldStop = True]" sap:VirtualizedContainerService.HintSize="544,76" sap2010:WorkflowViewState.IdRef="If_64">
+                      <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="RetryScope_49" NumberOfRetries="5" RetryInterval="00:00:30">
+                        <ui:RetryScope.ActivityBody>
+                          <ActivityAction>
+                            <uga:WriteRowConnections AllFields="{x:Null}" ArrayRow="{x:Null}" BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" ConnectionId="c592ec09-009c-4bd5-b8c7-1a691a25d546" DataRow="[CurrentContaAtiva]" DataType="DataRow" DisplayName="Write Row" HasHeaders="False" sap:VirtualizedContainerService.HintSize="292,25" sap2010:WorkflowViewState.IdRef="WriteRowConnections_4" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="[sSheetId]" Range="[sSheetName]" RowPosition="[iIndexRow+1]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False" WriteMode="Overwrite">
+                              <uga:WriteRowConnections.FileIdBackup>
+                                <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID1" StoredValue="UrlOrId">
+                                  <usau:BackupSlot.BackupValues>
+                                    <scg:List x:TypeArguments="x:Object" x:Key="Browse" Capacity="2">
+                                      <x:Null />
+                                      <x:Null />
+                                    </scg:List>
+                                  </usau:BackupSlot.BackupValues>
+                                </usau:BackupSlot>
+                              </uga:WriteRowConnections.FileIdBackup>
+                              <uga:WriteRowConnections.InputDataTypeBackup>
+                                <usau:BackupSlot x:TypeArguments="ugase:InputDataType" StoredValue="DataRow">
+                                  <usau:BackupSlot.BackupValues>
+                                    <scg:Dictionary x:TypeArguments="ugase:InputDataType, scg:List(x:Object)" />
+                                  </usau:BackupSlot.BackupValues>
+                                </usau:BackupSlot>
+                              </uga:WriteRowConnections.InputDataTypeBackup>
+                              <uga:WriteRowConnections.Item>
+                                <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID1}" BrowserId="{x:Null}" ConnectionDescriptor="{x:Null}" ConnectionKey="{x:Null}" Existing="{x:Null}" FriendlyName="{x:Null}" FullPath="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" IdOrUrl="[sSheetId]" InputMode="UrlOrId">
+                                  <ugam:DriveItemArgument.FullPathHint>
+                                    <InArgument x:TypeArguments="x:String">
+                                      <Literal x:TypeArguments="x:String" Value="" />
+                                    </InArgument>
+                                  </ugam:DriveItemArgument.FullPathHint>
+                                  <ugam:DriveItemArgument.ParentIdFullPathHint>
+                                    <InArgument x:TypeArguments="x:String">
+                                      <Literal x:TypeArguments="x:String" Value="" />
+                                    </InArgument>
+                                  </ugam:DriveItemArgument.ParentIdFullPathHint>
+                                </ugam:DriveItemArgument>
+                              </uga:WriteRowConnections.Item>
+                              <uga:WriteRowConnections.RangeWriteModeBackup>
+                                <usau:BackupSlot x:TypeArguments="ugase:RangeWriteMode" StoredValue="Overwrite">
+                                  <usau:BackupSlot.BackupValues>
+                                    <scg:List x:TypeArguments="x:Object" x:Key="Append" Capacity="1">
+                                      <x:String></x:String>
+                                    </scg:List>
+                                  </usau:BackupSlot.BackupValues>
+                                </usau:BackupSlot>
+                              </uga:WriteRowConnections.RangeWriteModeBackup>
+                              <uga:WriteRowConnections.State>
+                                <uga:ActivityState />
+                              </uga:WriteRowConnections.State>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uga:WriteRowConnections>
+                          </ActivityAction>
+                        </ui:RetryScope.ActivityBody>
+                        <ui:RetryScope.Condition>
+                          <ActivityFunc x:TypeArguments="x:Boolean" />
+                        </ui:RetryScope.Condition>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:RetryScope>
+                      <If Condition="[bShouldStop = True]" sap:VirtualizedContainerService.HintSize="450,211" sap2010:WorkflowViewState.IdRef="If_64">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <If.Then>
@@ -1652,7 +2182,7 @@ WHERE
                     </Sequence>
                   </TryCatch.Try>
                   <TryCatch.Catches>
-                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,23" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="585,22" sap2010:WorkflowViewState.IdRef="Catch`1_2">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1663,7 +2193,7 @@ WHERE
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                         </ActivityAction.Argument>
-                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="647,41" sap2010:WorkflowViewState.IdRef="LogMessage_122" Level="Warn" Message="[String.Format(&quot;Error [{0}]&quot;, exception.Message)]">
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="647,40" sap2010:WorkflowViewState.IdRef="LogMessage_122" Level="Warn" Message="[String.Format(&quot;Error [{0}]&quot;, exception.Message)]">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -1674,93 +2204,26 @@ WHERE
                       </ActivityAction>
                     </Catch>
                   </TryCatch.Catches>
-                  <TryCatch.Finally>
-                    <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="400,25" sap2010:WorkflowViewState.IdRef="RetryScope_46" NumberOfRetries="5" RetryInterval="00:00:30">
-                      <ui:RetryScope.ActivityBody>
-                        <ActivityAction>
-                          <uga:WriteRowConnections AllFields="{x:Null}" ArrayRow="{x:Null}" BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" ConnectionId="c592ec09-009c-4bd5-b8c7-1a691a25d546" DataRow="[CurrentContaAtiva]" DataType="DataRow" DisplayName="Write Row" HasHeaders="False" sap:VirtualizedContainerService.HintSize="292,25" sap2010:WorkflowViewState.IdRef="WriteRowConnections_3" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="[sSheetId]" Range="[sSheetName]" RowPosition="[iIndexRow+1]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False" WriteMode="Overwrite">
-                            <uga:WriteRowConnections.FileIdBackup>
-                              <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID1" StoredValue="UrlOrId">
-                                <usau:BackupSlot.BackupValues>
-                                  <scg:List x:TypeArguments="x:Object" x:Key="Browse" Capacity="2">
-                                    <x:Null />
-                                    <x:Null />
-                                  </scg:List>
-                                </usau:BackupSlot.BackupValues>
-                              </usau:BackupSlot>
-                            </uga:WriteRowConnections.FileIdBackup>
-                            <uga:WriteRowConnections.InputDataTypeBackup>
-                              <usau:BackupSlot x:TypeArguments="ugase:InputDataType" StoredValue="DataRow">
-                                <usau:BackupSlot.BackupValues>
-                                  <scg:Dictionary x:TypeArguments="ugase:InputDataType, scg:List(x:Object)" />
-                                </usau:BackupSlot.BackupValues>
-                              </usau:BackupSlot>
-                            </uga:WriteRowConnections.InputDataTypeBackup>
-                            <uga:WriteRowConnections.Item>
-                              <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID1}" BrowserId="{x:Null}" ConnectionDescriptor="{x:Null}" ConnectionKey="{x:Null}" Existing="{x:Null}" FriendlyName="{x:Null}" FullPath="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" IdOrUrl="[sSheetId]" InputMode="UrlOrId">
-                                <ugam:DriveItemArgument.FullPathHint>
-                                  <InArgument x:TypeArguments="x:String">
-                                    <Literal x:TypeArguments="x:String" Value="" />
-                                  </InArgument>
-                                </ugam:DriveItemArgument.FullPathHint>
-                                <ugam:DriveItemArgument.ParentIdFullPathHint>
-                                  <InArgument x:TypeArguments="x:String">
-                                    <Literal x:TypeArguments="x:String" Value="" />
-                                  </InArgument>
-                                </ugam:DriveItemArgument.ParentIdFullPathHint>
-                              </ugam:DriveItemArgument>
-                            </uga:WriteRowConnections.Item>
-                            <uga:WriteRowConnections.RangeWriteModeBackup>
-                              <usau:BackupSlot x:TypeArguments="ugase:RangeWriteMode" StoredValue="Overwrite">
-                                <usau:BackupSlot.BackupValues>
-                                  <scg:List x:TypeArguments="x:Object" x:Key="Append" Capacity="1">
-                                    <x:String></x:String>
-                                  </scg:List>
-                                </usau:BackupSlot.BackupValues>
-                              </usau:BackupSlot>
-                            </uga:WriteRowConnections.RangeWriteModeBackup>
-                            <uga:WriteRowConnections.State>
-                              <uga:ActivityState />
-                            </uga:WriteRowConnections.State>
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                          </uga:WriteRowConnections>
-                        </ActivityAction>
-                      </ui:RetryScope.ActivityBody>
-                      <ui:RetryScope.Condition>
-                        <ActivityFunc x:TypeArguments="x:Boolean" />
-                      </ui:RetryScope.Condition>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </ui:RetryScope>
-                  </TryCatch.Finally>
                 </TryCatch>
               </ActivityAction>
             </ui:ForEachRow.Body>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:ForEachRow>
-          <ui:DatabaseDisconnect DatabaseConnection="[dcRPADatabase]" DisplayName="Disconnect from database" sap:VirtualizedContainerService.HintSize="472,57" sap2010:WorkflowViewState.IdRef="DatabaseDisconnect_14" />
-          <ui:DatabaseDisconnect DatabaseConnection="[dcTITU]" DisplayName="Disconnect from database" sap:VirtualizedContainerService.HintSize="472,48" sap2010:WorkflowViewState.IdRef="DatabaseDisconnect_15" />
+          <ui:DatabaseDisconnect DatabaseConnection="[dcRPADatabase]" DisplayName="Disconnect from database" sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="DatabaseDisconnect_14" />
+          <ui:DatabaseDisconnect DatabaseConnection="[dcTITU]" DisplayName="Disconnect from database" sap:VirtualizedContainerService.HintSize="479,48" sap2010:WorkflowViewState.IdRef="DatabaseDisconnect_15" />
         </Sequence>
-        <Sequence x:Key="237" DisplayName="Report 237" sap:VirtualizedContainerService.HintSize="457,57" sap2010:WorkflowViewState.IdRef="Sequence_259">
+        <Sequence x:Key="237" DisplayName="Report 237" sap:VirtualizedContainerService.HintSize="457,25" sap2010:WorkflowViewState.IdRef="Sequence_259">
           <Sequence.Variables>
             <Variable x:TypeArguments="ui:DatabaseConnection" Name="dcDatabricks" />
             <Variable x:TypeArguments="x:String" Name="sSheetId" />
             <Variable x:TypeArguments="x:String" Name="sSheetName" />
             <Variable x:TypeArguments="sd2:DataTable4" Name="dtCustomersId" />
+            <Variable x:TypeArguments="ui:DatabaseConnection" Name="dcTITU" />
           </Sequence.Variables>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -1768,7 +2231,7 @@ WHERE
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="615,179" sap2010:WorkflowViewState.IdRef="MultipleAssign_148">
+          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="MultipleAssign_148">
             <ui:MultipleAssign.AssignOperations>
               <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                 <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_531">
@@ -1795,7 +2258,7 @@ WHERE
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:MultipleAssign>
-          <uga:ReadRangeConnections x:TypeArguments="sd2:DataTable4" BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ColumnNames="{x:Array Type=x:String}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" RangeInformation="{x:Null}" RangeMetadata="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" ConnectionId="c592ec09-009c-4bd5-b8c7-1a691a25d546" DisplayName="Read Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="615,57" sap2010:WorkflowViewState.IdRef="ReadRangeConnections`1_10" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="[sSheetId]" Range="[sSheetName]" ReadAs="Values" Result="[dtCustomersId]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False">
+          <uga:ReadRangeConnections x:TypeArguments="sd2:DataTable4" BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ColumnNames="{x:Array Type=x:String}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" RangeInformation="{x:Null}" RangeMetadata="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" ConnectionId="c592ec09-009c-4bd5-b8c7-1a691a25d546" DisplayName="Read Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="ReadRangeConnections`1_10" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="[sSheetId]" Range="[sSheetName]" ReadAs="Values" Result="[dtCustomersId]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False">
             <uga:ReadRangeConnections.FileIdBackup>
               <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID2" StoredValue="UrlOrId">
                 <usau:BackupSlot.BackupValues>
@@ -1830,7 +2293,7 @@ WHERE
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </uga:ReadRangeConnections>
-          <Sequence DisplayName="COLUMNS" sap:VirtualizedContainerService.HintSize="615,57" sap2010:WorkflowViewState.IdRef="Sequence_279">
+          <Sequence DisplayName="COLUMNS" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_279">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1966,7 +2429,7 @@ WHERE
               </sap:WorkflowViewStateService.ViewState>
             </ui:AddDataColumn>
           </Sequence>
-          <n:Connect_Database DisplayName="Connect Database" sap:VirtualizedContainerService.HintSize="615,57" sap2010:WorkflowViewState.IdRef="Connect_Database_28" in_DatabaseToConnect="EASYBI" out_Connection="[dcRPADatabase]">
+          <n:Connect_Database DisplayName="Connect Database" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Connect_Database_28" in_DatabaseToConnect="EASYBI" out_Connection="[dcRPADatabase]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1974,7 +2437,7 @@ WHERE
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </n:Connect_Database>
-          <n:Connect_Database DisplayName="Connect Database" sap:VirtualizedContainerService.HintSize="615,57" sap2010:WorkflowViewState.IdRef="Connect_Database_29" in_DatabaseToConnect="TITUPROD" out_Connection="[dcTITU]">
+          <n:Connect_Database DisplayName="Connect Database" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Connect_Database_29" in_DatabaseToConnect="TITUPROD" out_Connection="[dcTITU]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1982,7 +2445,7 @@ WHERE
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </n:Connect_Database>
-          <n:Connect_Database DisplayName="Connect Database" sap:VirtualizedContainerService.HintSize="615,57" sap2010:WorkflowViewState.IdRef="Connect_Database_30" in_DatabaseToConnect="LAKE NUBANK" out_Connection="[dcDatabricks]">
+          <n:Connect_Database DisplayName="Connect Database" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Connect_Database_30" in_DatabaseToConnect="LAKE NUBANK" out_Connection="[dcDatabricks]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1990,7 +2453,7 @@ WHERE
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </n:Connect_Database>
-          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[iIndexRow]" DataTable="[dtCustomersId]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="615,2707" sap2010:WorkflowViewState.IdRef="ForEachRow_18">
+          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[iIndexRow]" DataTable="[dtCustomersId]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="ForEachRow_18">
             <ui:ForEachRow.Body>
               <ActivityAction x:TypeArguments="sd1:DataRow">
                 <ActivityAction.Argument>
@@ -2483,7 +2946,7 @@ WHERE
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:ForEachRow>
-          <ugas:GoogleSheetsApplicationScope ContinueOnError="{x:Null}" CredentialID="{x:Null}" CredentialSecret="{x:Null}" FileId="{x:Null}" Filename="{x:Null}" ParentFolderId="{x:Null}" ParentFolderPath="{x:Null}" SpreadsheetName="{x:Null}" Timeout="{x:Null}" Account="Please select an account." Action="UseExisting" ConnectionAccountName="automacao.moperacoes@nubank.com.br" ConnectionId="c592ec09-009c-4bd5-b8c7-1a691a25d546" Connector="uipath-google-sheets" DisplayName="Use Google Spreadsheet - RPA_RESULT" sap:VirtualizedContainerService.HintSize="615,57" sap2010:WorkflowViewState.IdRef="GoogleSheetsApplicationScope_8" Mode="EnterId" SpreadsheetId="[sSheetId]" UseConnectionService="True">
+          <ugas:GoogleSheetsApplicationScope ContinueOnError="{x:Null}" CredentialID="{x:Null}" CredentialSecret="{x:Null}" FileId="{x:Null}" Filename="{x:Null}" ParentFolderId="{x:Null}" ParentFolderPath="{x:Null}" SpreadsheetName="{x:Null}" Timeout="{x:Null}" Account="Please select an account." Action="UseExisting" ConnectionAccountName="automacao.moperacoes@nubank.com.br" ConnectionId="c592ec09-009c-4bd5-b8c7-1a691a25d546" Connector="uipath-google-sheets" DisplayName="Use Google Spreadsheet - RPA_RESULT" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="GoogleSheetsApplicationScope_8" Mode="EnterId" SpreadsheetId="[sSheetId]" UseConnectionService="True">
             <ugas:GoogleSheetsApplicationScope.Body>
               <ActivityAction x:TypeArguments="ugas:IGoogleSheetTarget">
                 <ActivityAction.Argument>
@@ -2519,8 +2982,8 @@ WHERE
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ugas:GoogleSheetsApplicationScope>
-          <ui:DatabaseDisconnect DatabaseConnection="[dcRPADatabase]" DisplayName="Disconnect from database" sap:VirtualizedContainerService.HintSize="615,57" sap2010:WorkflowViewState.IdRef="DatabaseDisconnect_16" />
-          <ui:DatabaseDisconnect DatabaseConnection="[dcTITU]" DisplayName="Disconnect from database" sap:VirtualizedContainerService.HintSize="612,48" sap2010:WorkflowViewState.IdRef="DatabaseDisconnect_17" />
+          <ui:DatabaseDisconnect DatabaseConnection="[dcRPADatabase]" DisplayName="Disconnect from database" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="DatabaseDisconnect_16" />
+          <ui:DatabaseDisconnect DatabaseConnection="[dcTITU]" DisplayName="Disconnect from database" sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="DatabaseDisconnect_17" />
         </Sequence>
         <Sequence x:Key="sincad" DisplayName="Sincad" sap:VirtualizedContainerService.HintSize="457,228" sap2010:WorkflowViewState.IdRef="Sequence_264">
           <sap:WorkflowViewStateService.ViewState>
@@ -2541,10 +3004,14 @@ WHERE
           </ui:InvokeWorkflowFile>
         </Sequence>
       </Switch>
-      <Sequence x:Key="databricks" DisplayName="sincad" sap:VirtualizedContainerService.HintSize="578,1247" sap2010:WorkflowViewState.IdRef="Sequence_16">
+      <Sequence x:Key="databricks" DisplayName="databricks" sap:VirtualizedContainerService.HintSize="552,2103" sap2010:WorkflowViewState.IdRef="Sequence_16">
         <Sequence.Variables>
           <Variable x:TypeArguments="ui:DatabaseConnection" Name="dcLakeConnect" />
-          <Variable x:TypeArguments="sd1:DataTable" Name="dtDatabricks" />
+          <Variable x:TypeArguments="x:String" Name="sQuery" />
+          <Variable x:TypeArguments="ui:DatabaseConnection" Name="dcTITU" />
+          <Variable x:TypeArguments="sd1:DataTable" Name="dtClientesSemCustodia" />
+          <Variable x:TypeArguments="sd1:DataTable" Name="dtClientesSemMovimentacao" />
+          <Variable x:TypeArguments="sd1:DataTable" Name="dtClientesParaInativar" />
         </Sequence.Variables>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -2552,7 +3019,7 @@ WHERE
             <x:Boolean x:Key="IsPinned">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <n:Connect_Database DisplayName="Connect Database" sap:VirtualizedContainerService.HintSize="544,85" sap2010:WorkflowViewState.IdRef="Connect_Database_5" in_DatabaseToConnect="LAKE NUBANK" out_Connection="[dcLakeConnect]">
+        <n:Connect_Database DisplayName="Connect Database" sap:VirtualizedContainerService.HintSize="518,57" sap2010:WorkflowViewState.IdRef="Connect_Database_5" in_DatabaseToConnect="LAKE NUBANK" out_Connection="[dcLakeConnect]">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2560,189 +3027,502 @@ WHERE
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
         </n:Connect_Database>
-        <Sequence DisplayName="Execute Query" sap:VirtualizedContainerService.HintSize="544,969" sap2010:WorkflowViewState.IdRef="Sequence_35">
-          <Sequence.Variables>
-            <Variable x:TypeArguments="x:String" Name="sQuery" />
-          </Sequence.Variables>
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              <x:Boolean x:Key="IsPinned">True</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <ui:RetryScope DisplayName="Retry Scope - Get " sap:VirtualizedContainerService.HintSize="510,85" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="3" RetryInterval="00:01:00">
-            <ui:RetryScope.ActivityBody>
-              <ActivityAction>
-                <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="416,216" sap2010:WorkflowViewState.IdRef="Sequence_30">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <ucas:ReadStorageText TimeoutMS="{x:Null}" DisplayName="Read Storage Text" FolderPath="Shared" sap:VirtualizedContainerService.HintSize="382,156" sap2010:WorkflowViewState.IdRef="ReadStorageText_1" Path="095/1.SELECT.CLIENTES.INATIVOS.txt" Result="[sQuery]" StorageBucketName="Query">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </ucas:ReadStorageText>
-                </Sequence>
-              </ActivityAction>
-            </ui:RetryScope.ActivityBody>
-            <ui:RetryScope.Condition>
-              <ActivityFunc x:TypeArguments="x:Boolean" />
-            </ui:RetryScope.Condition>
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-          </ui:RetryScope>
-          <ui:RetryScope DisplayName="Retry Scope - Clientes Inativos" sap:VirtualizedContainerService.HintSize="510,792" sap2010:WorkflowViewState.IdRef="RetryScope_2">
-            <ui:RetryScope.ActivityBody>
-              <ActivityAction>
-                <Sequence DisplayName="Action Retry Scope - Clientes Inativos" sap:VirtualizedContainerService.HintSize="468,592" sap2010:WorkflowViewState.IdRef="Sequence_29">
-                  <Sequence.Variables>
-                    <Variable x:TypeArguments="x:String" Name="sQrToRun" />
-                    <Variable x:TypeArguments="x:Int32" Name="iAffectedRows" />
-                    <Variable x:TypeArguments="sd1:DataTable" Name="dtAccountIDClientesInativos" />
-                  </Sequence.Variables>
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <Assign DisplayName="Assign - Build Query" sap:VirtualizedContainerService.HintSize="434,85" sap2010:WorkflowViewState.IdRef="Assign_7">
-                    <Assign.To>
-                      <OutArgument x:TypeArguments="x:String">[sQrToRun]</OutArgument>
-                    </Assign.To>
-                    <Assign.Value>
-                      <InArgument x:TypeArguments="x:String">[sQuery.ToString.Replace("%DATE%",NOW.AddDays(-2).ToString("yyyy-MM-dd")).Replace("INTERVAL 58 MONTH", "INTERVAL 55 MONTH")]</InArgument>
-                    </Assign.Value>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </Assign>
-                  <Assign DisplayName="DESFAZER" sap:VirtualizedContainerService.HintSize="434,116" sap2010:WorkflowViewState.IdRef="Assign_100">
-                    <Assign.To>
-                      <OutArgument x:TypeArguments="x:String">[sQrToRun]</OutArgument>
-                    </Assign.To>
-                    <Assign.Value>
-                      <InArgument x:TypeArguments="x:String" xml:space="preserve">SELECT
-	*
-FROM
-	etl.br__dataset.reported_pep_lrn_customers</InArgument>
-                    </Assign.Value>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </Assign>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,85" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[String.Format(&quot;Running [{0}]&quot;, sQrToRun)]">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </ui:LogMessage>
-                  <ui:ExecuteQuery ContinueOnError="{x:Null}" CommandType="Text" DataTable="[dtAccountIDClientesInativos]" DisplayName="Run query - Clientes Inativos" ExistingDbConnection="[dcLakeConnect]" sap:VirtualizedContainerService.HintSize="434,85" sap2010:WorkflowViewState.IdRef="ExecuteQuery_6" Sql="[sQrToRun]" TimeoutMS="600000">
-                    <ui:ExecuteQuery.Parameters>
-                      <scg:Dictionary x:TypeArguments="x:String, Argument" />
-                    </ui:ExecuteQuery.Parameters>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </ui:ExecuteQuery>
-                  <Assign DisplayName="Assign - Get rows" sap:VirtualizedContainerService.HintSize="434,85" sap2010:WorkflowViewState.IdRef="Assign_8">
-                    <Assign.To>
-                      <OutArgument x:TypeArguments="x:Int32">[iAffectedRows]</OutArgument>
-                    </Assign.To>
-                    <Assign.Value>
-                      <InArgument x:TypeArguments="x:Int32">[dtAccountIDClientesInativos.RowCount]</InArgument>
-                    </Assign.Value>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </Assign>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,76" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[String.Format(&quot;[{0}] rows after [{1}]&quot;, iAffectedRows, sQrToRun)]">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </ui:LogMessage>
-                </Sequence>
-              </ActivityAction>
-            </ui:RetryScope.ActivityBody>
-            <ui:RetryScope.Condition>
-              <ActivityFunc x:TypeArguments="x:Boolean" />
-            </ui:RetryScope.Condition>
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsPinned">True</x:Boolean>
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-          </ui:RetryScope>
-        </Sequence>
-        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="544,85" sap2010:WorkflowViewState.IdRef="CommentOut_5">
-          <ui:CommentOut.Body>
-            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="Sequence_39">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="TryCatch_2">
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-                <TryCatch.Try>
-                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,518" sap2010:WorkflowViewState.IdRef="Sequence_36">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,173" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Running query&quot;]" />
-                    <ui:ExecuteQuery ContinueOnError="{x:Null}" CommandType="Text" DataTable="[dtDatabricks]" DisplayName="Run query" ExistingDbConnection="[dcLakeConnect]" sap:VirtualizedContainerService.HintSize="382,121" sap2010:WorkflowViewState.IdRef="ExecuteQuery_5" Sql="SELECT&#xA;  D.CUSTODY_TREASURY_DIRECT&#xA;  ,D.CUSTODY_VARIABLE_INCOME&#xA;  ,D.customer__id&#xA;  ,C.customer__id&#xA;FROM etl.br__contract.investment_accounts__investment_accounts C&#xA;LEFT JOIN etl.br__dataset.investments_daily_custody D&#xA;  ON C.customer__id = D.customer__id&#xA;INNER JOIN etl.br__contract.customers__customers B&#xA;  ON B.customer__id = C.customer__id&#xA;WHERE D.date = '2026-03-08'&#xA;  AND (D.CUSTODY_TREASURY_DIRECT = 0 OR D.CUSTODY_TREASURY_DIRECT IS NULL)&#xA;  AND (D.CUSTODY_VARIABLE_INCOME = 0 OR D.CUSTODY_VARIABLE_INCOME IS NULL)" TimeoutMS="600000">
-                      <ui:ExecuteQuery.Parameters>
-                        <scg:Dictionary x:TypeArguments="x:String, Argument" />
-                      </ui:ExecuteQuery.Parameters>
-                    </ui:ExecuteQuery>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[dtDatabricks.RowCount]" />
-                  </Sequence>
-                </TryCatch.Try>
-              </TryCatch>
-            </Sequence>
-          </ui:CommentOut.Body>
+        <n:Connect_Database DisplayName="Connect Database" sap:VirtualizedContainerService.HintSize="518,84" sap2010:WorkflowViewState.IdRef="Connect_Database_31" in_DatabaseToConnect="TITUPROD" out_Connection="[dcTITU]">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
+        </n:Connect_Database>
+        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="518,84" sap2010:WorkflowViewState.IdRef="CommentOut_20">
+          <ui:CommentOut.Body>
+            <Sequence DisplayName="Ignored Activities" sap2010:WorkflowViewState.IdRef="Sequence_315">
+              <Sequence DisplayName="PROD" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_311">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:RetryScope DisplayName="Retry Scope - Get " sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="3" RetryInterval="00:01:00">
+                  <ui:RetryScope.ActivityBody>
+                    <ActivityAction>
+                      <ucas:ReadStorageText TimeoutMS="{x:Null}" DisplayName="Read Storage Text" FolderPath="Shared" sap:VirtualizedContainerService.HintSize="334,133" sap2010:WorkflowViewState.IdRef="ReadStorageText_2" Path="095/1.SELECT.CLIENTES.INATIVOS.txt" Result="[sQuery]" StorageBucketName="Query">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ucas:ReadStorageText>
+                    </ActivityAction>
+                  </ui:RetryScope.ActivityBody>
+                  <ui:RetryScope.Condition>
+                    <ActivityFunc x:TypeArguments="x:Boolean" />
+                  </ui:RetryScope.Condition>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:RetryScope>
+                <ui:RetryScope DisplayName="Retry Scope - Clientes Inativos" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="RetryScope_2">
+                  <ui:RetryScope.ActivityBody>
+                    <ActivityAction>
+                      <Sequence DisplayName="Action Retry Scope - Clientes Inativos" sap:VirtualizedContainerService.HintSize="468,450" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="x:String" Name="sQrToRun" />
+                          <Variable x:TypeArguments="x:Int32" Name="iAffectedRows" />
+                          <Variable x:TypeArguments="sd1:DataTable" Name="dtAccountIDClientesInativos" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign DisplayName="Assign - Build Query" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_7">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[sQrToRun]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[sQuery.ToString.Replace("%DATE%",Now.AddDays(-2).ToString("yyyy-MM-dd"))]</InArgument>
+                          </Assign.Value>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Assign>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[String.Format(&quot;Running [{0}]&quot;, sQrToRun)]">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:LogMessage>
+                        <ui:ExecuteQuery ContinueOnError="{x:Null}" CommandType="Text" DataTable="[dtAccountIDClientesInativos]" DisplayName="Run query - Clientes Inativos" ExistingDbConnection="[dcLakeConnect]" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="ExecuteQuery_6" Sql="[sQrToRun]" TimeoutMS="600000">
+                          <ui:ExecuteQuery.Parameters>
+                            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                          </ui:ExecuteQuery.Parameters>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:ExecuteQuery>
+                        <Assign DisplayName="Assign - Get rows" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="Assign_8">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:Int32">[iAffectedRows]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:Int32">[dtAccountIDClientesInativos.RowCount]</InArgument>
+                          </Assign.Value>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Assign>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[String.Format(&quot;[{0}] rows after [{1}]&quot;, iAffectedRows, sQrToRun)]">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:LogMessage>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,48" sap2010:WorkflowViewState.IdRef="LogMessage_133" Level="Warn" Message="[String.Format(&quot;{0} | {1} | {2} &quot;, dtAccountIDClientesInativos(0)(&quot;cd_cpfcgc_hash&quot;), dtAccountIDClientesInativos(0)(&quot;dt_ult_oper&quot;), dtAccountIDClientesInativos(0)(&quot;in_situac&quot;))]">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:LogMessage>
+                      </Sequence>
+                    </ActivityAction>
+                  </ui:RetryScope.ActivityBody>
+                  <ui:RetryScope.Condition>
+                    <ActivityFunc x:TypeArguments="x:Boolean" />
+                  </ui:RetryScope.Condition>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:RetryScope>
+              </Sequence>
+            </Sequence>
+          </ui:CommentOut.Body>
         </ui:CommentOut>
-        <ui:DatabaseDisconnect DatabaseConnection="[dcLakeConnect]" DisplayName="Disconnect from database" sap:VirtualizedContainerService.HintSize="544,48" sap2010:WorkflowViewState.IdRef="DatabaseDisconnect_1" />
+        <ui:RetryScope DisplayName="Retry Scope - Clientes Sem custodia" sap:VirtualizedContainerService.HintSize="518,84" sap2010:WorkflowViewState.IdRef="RetryScope_53">
+          <ui:RetryScope.ActivityBody>
+            <ActivityAction>
+              <Sequence DisplayName="Action Retry Scope - Clientes Sem custodia" sap:VirtualizedContainerService.HintSize="468,532" sap2010:WorkflowViewState.IdRef="Sequence_313">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="x:String" Name="sQrToRun" />
+                  <Variable x:TypeArguments="x:Int32" Name="iAffectedRows" />
+                  <Variable x:TypeArguments="sd1:DataTable" Name="dtAccountIDClientesInativos" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Assign DisplayName="Assign - Build Query" sap:VirtualizedContainerService.HintSize="434,115" sap2010:WorkflowViewState.IdRef="Assign_108">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:String">[sQrToRun]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:String" xml:space="preserve">["SELECT 
+  D.CUSTODY_TREASURY_DIRECT
+  ,D.CUSTODY_VARIABLE_INCOME
+  ,C.easynvest_account__id
+  ,B.customer__id
+  ,B.customer__cpf
+FROM etl.br__contract.customers__customers B
+LEFT JOIN etl.br__dataset.investments_daily_custody D
+  ON B.customer__id = D.customer__id
+INNER JOIN etl.br__contract.investment_accounts__investment_accounts C
+ON B.customer__id = C.customer__id
+WHERE D.date = '%DATE%'
+  AND (D.CUSTODY_TREASURY_DIRECT = 0 OR D.CUSTODY_TREASURY_DIRECT IS NULL)
+  AND (D.CUSTODY_VARIABLE_INCOME = 0 OR D.CUSTODY_VARIABLE_INCOME IS NULL)
+  AND C.easynvest_account__id IS NOT NULL
+  ORDER BY C.easynvest_account__id".Replace("%DATE%",Now.AddDays(-2).ToString("yyyy-MM-dd"))]</InArgument>
+                  </Assign.Value>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Assign>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="LogMessage_134" Level="Info" Message="[String.Format(&quot;Running [{0}]&quot;, sQrToRun)]">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:LogMessage>
+                <ui:ExecuteQuery ContinueOnError="{x:Null}" CommandType="Text" DataTable="[dtClientesSemCustodia]" DisplayName="Run query - Clientes Inativos" ExistingDbConnection="[dcLakeConnect]" sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="ExecuteQuery_52" Sql="[sQrToRun]" TimeoutMS="600000">
+                  <ui:ExecuteQuery.Parameters>
+                    <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                  </ui:ExecuteQuery.Parameters>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:ExecuteQuery>
+                <Assign DisplayName="Assign - Get rows" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_110">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:Int32">[iAffectedRows]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:Int32">[dtClientesSemCustodia.RowCount]</InArgument>
+                  </Assign.Value>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Assign>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,75" sap2010:WorkflowViewState.IdRef="LogMessage_135" Level="Info" Message="[String.Format(&quot;[{0}] rows after [{1}]&quot;, iAffectedRows, sQrToRun)]">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:LogMessage>
+              </Sequence>
+            </ActivityAction>
+          </ui:RetryScope.ActivityBody>
+          <ui:RetryScope.Condition>
+            <ActivityFunc x:TypeArguments="x:Boolean" />
+          </ui:RetryScope.Condition>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:RetryScope>
+        <ui:RetryScope DisplayName="Retry Scope - Clientes Sem Movimentacao" sap:VirtualizedContainerService.HintSize="518,789" sap2010:WorkflowViewState.IdRef="RetryScope_54">
+          <ui:RetryScope.ActivityBody>
+            <ActivityAction>
+              <Sequence DisplayName="Action Retry Scope - Clientes Sem Movimentacao" sap:VirtualizedContainerService.HintSize="468,502" sap2010:WorkflowViewState.IdRef="Sequence_314">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="x:String" Name="sQrToRun" />
+                  <Variable x:TypeArguments="x:Int32" Name="iAffectedRows" />
+                  <Variable x:TypeArguments="sd1:DataTable" Name="dtAccountIDClientesInativos" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Assign DisplayName="Assign - Build Query" sap:VirtualizedContainerService.HintSize="434,115" sap2010:WorkflowViewState.IdRef="Assign_109">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:String">[sQrToRun]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:String" xml:space="preserve">SELECT A.CD_CLIENTE
+	,A.CD_CPFCGC
+	,A.IN_SITUAC
+	,A.DT_ULT_OPER
+	,TO_CHAR(B.DT_NASC_FUND, 'DD/MM/YYYY') AS DT_NASCIMENTO
+	,C.ACI
+FROM CORRWIN.TSCCLIBOL A
+INNER JOIN CORRWIN.TSCCLIGER B
+	ON B.CD_CPFCGC = A.CD_CPFCGC
+INNER JOIN REGS.CUSTOMER_USERS C
+	ON C.CUSTOMERID = A.CD_CPFCGC
+WHERE A.IN_SITUAC = 'A'
+	AND A.DT_ULT_OPER &lt;= ADD_MONTHS(SYSDATE, -58)</InArgument>
+                  </Assign.Value>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Assign>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="LogMessage_137" Level="Info" Message="[String.Format(&quot;Running [{0}]&quot;, sQrToRun)]">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:LogMessage>
+                <ui:ExecuteQuery ContinueOnError="{x:Null}" CommandType="Text" DataTable="[dtClientesSemMovimentacao]" DisplayName="Run query - Clientes Inativos" ExistingDbConnection="[dcTITU]" sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="ExecuteQuery_51" Sql="[sQrToRun]" TimeoutMS="600000">
+                  <ui:ExecuteQuery.Parameters>
+                    <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                  </ui:ExecuteQuery.Parameters>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:ExecuteQuery>
+                <Assign DisplayName="Assign - Get rows" sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_111">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:Int32">[iAffectedRows]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:Int32">[dtClientesSemMovimentacao.RowCount]</InArgument>
+                  </Assign.Value>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Assign>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,75" sap2010:WorkflowViewState.IdRef="LogMessage_138" Level="Info" Message="[String.Format(&quot;[{0}] rows after [{1}]&quot;, iAffectedRows, sQrToRun)]">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:LogMessage>
+              </Sequence>
+            </ActivityAction>
+          </ui:RetryScope.ActivityBody>
+          <ui:RetryScope.Condition>
+            <ActivityFunc x:TypeArguments="x:Boolean" />
+          </ui:RetryScope.Condition>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:RetryScope>
+        <ui:BuildDataTable DataTable="[dtClientesParaInativar]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="518,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;ACCOUNTID&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;DATA_NASC&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;CUSTOMERID&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:BuildDataTable>
+        <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtClientesSemMovimentacao]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="518,748" sap2010:WorkflowViewState.IdRef="ForEachRow_19">
+          <ui:ForEachRow.Body>
+            <ActivityAction x:TypeArguments="sd1:DataRow">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="sd1:DataRow" Name="CurCustomer" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="484,552" sap2010:WorkflowViewState.IdRef="Sequence_316">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="x:String" Name="sCdCliente" />
+                  <Variable x:TypeArguments="x:String" Name="sCpfCgc" />
+                  <Variable x:TypeArguments="x:String" Name="sClienteInSituac" />
+                  <Variable x:TypeArguments="x:String" Name="sClienteUltOperacao" />
+                  <Variable x:TypeArguments="x:String" Name="sClienteDtNascimento" />
+                  <Variable x:TypeArguments="x:String" Name="sClienteACI" />
+                  <Variable x:TypeArguments="sd1:DataTable" Name="dtCustodiaCliente" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="450,84" sap2010:WorkflowViewState.IdRef="MultipleAssign_170">
+                  <ui:MultipleAssign.AssignOperations>
+                    <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_588">
+                        <ui:AssignOperation.To>
+                          <OutArgument x:TypeArguments="x:String">[sCdCliente]</OutArgument>
+                        </ui:AssignOperation.To>
+                        <ui:AssignOperation.Value>
+                          <InArgument x:TypeArguments="x:String">[CurCustomer("CD_CLIENTE").ToString]</InArgument>
+                        </ui:AssignOperation.Value>
+                      </ui:AssignOperation>
+                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_589">
+                        <ui:AssignOperation.To>
+                          <OutArgument x:TypeArguments="x:String">[sCpfCgc]</OutArgument>
+                        </ui:AssignOperation.To>
+                        <ui:AssignOperation.Value>
+                          <InArgument x:TypeArguments="x:String">[CurCustomer("CD_CPFCGC").ToString]</InArgument>
+                        </ui:AssignOperation.Value>
+                      </ui:AssignOperation>
+                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_590">
+                        <ui:AssignOperation.To>
+                          <OutArgument x:TypeArguments="x:String">[sClienteInSituac]</OutArgument>
+                        </ui:AssignOperation.To>
+                        <ui:AssignOperation.Value>
+                          <InArgument x:TypeArguments="x:String">[CurCustomer("IN_SITUAC").ToString]</InArgument>
+                        </ui:AssignOperation.Value>
+                      </ui:AssignOperation>
+                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_591">
+                        <ui:AssignOperation.To>
+                          <OutArgument x:TypeArguments="x:String">[sClienteUltOperacao]</OutArgument>
+                        </ui:AssignOperation.To>
+                        <ui:AssignOperation.Value>
+                          <InArgument x:TypeArguments="x:String">[CurCustomer("DT_ULT_OPER").ToString]</InArgument>
+                        </ui:AssignOperation.Value>
+                      </ui:AssignOperation>
+                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_592">
+                        <ui:AssignOperation.To>
+                          <OutArgument x:TypeArguments="x:String">[sClienteDtNascimento]</OutArgument>
+                        </ui:AssignOperation.To>
+                        <ui:AssignOperation.Value>
+                          <InArgument x:TypeArguments="x:String">[CurCustomer("DT_NASCIMENTO").ToString]</InArgument>
+                        </ui:AssignOperation.Value>
+                      </ui:AssignOperation>
+                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_593">
+                        <ui:AssignOperation.To>
+                          <OutArgument x:TypeArguments="x:String">[sClienteACI]</OutArgument>
+                        </ui:AssignOperation.To>
+                        <ui:AssignOperation.Value>
+                          <InArgument x:TypeArguments="x:String">[CurCustomer("ACI").ToString]</InArgument>
+                        </ui:AssignOperation.Value>
+                      </ui:AssignOperation>
+                    </scg:List>
+                  </ui:MultipleAssign.AssignOperations>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:MultipleAssign>
+                <ui:FilterDataTable DataTable="[dtClientesSemCustodia]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[dtCustodiaCliente]" SelectColumnsMode="Remove">
+                  <ui:FilterDataTable.Filters>
+                    <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                      <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
+                        <ui:FilterOperationArgument.Column>
+                          <InArgument x:TypeArguments="x:String">["easynvest_account__id"]</InArgument>
+                        </ui:FilterOperationArgument.Column>
+                        <ui:FilterOperationArgument.Operand>
+                          <InArgument x:TypeArguments="x:String">[sClienteACI]</InArgument>
+                        </ui:FilterOperationArgument.Operand>
+                      </ui:FilterOperationArgument>
+                    </scg:List>
+                  </ui:FilterDataTable.Filters>
+                  <ui:FilterDataTable.SelectColumns>
+                    <scg:List x:TypeArguments="InArgument" Capacity="4">
+                      <x:Null />
+                    </scg:List>
+                  </ui:FilterDataTable.SelectColumns>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:FilterDataTable>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="LogMessage_139" Level="Info" Message="[String.Format(&quot;Custody rows [{0}] for customer [{1}]&quot;, dtCustodiaCliente.RowCount, sCdCliente)]">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:LogMessage>
+                <If Condition="[dtCustodiaCliente.rowcount &gt;= 1]" sap:VirtualizedContainerService.HintSize="450,294" sap2010:WorkflowViewState.IdRef="If_77">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <If.Then>
+                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="Sequence_317">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{sCdCliente, sClienteDtNascimento, sCpfCgc}]" DataTable="[dtClientesParaInativar]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="AddDataRow_1">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:AddDataRow>
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_318">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Sequence>
+                  </If.Else>
+                </If>
+              </Sequence>
+            </ActivityAction>
+          </ui:ForEachRow.Body>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:ForEachRow>
+        <ui:DatabaseDisconnect DatabaseConnection="[dcLakeConnect]" DisplayName="Disconnect from database" sap:VirtualizedContainerService.HintSize="518,57" sap2010:WorkflowViewState.IdRef="DatabaseDisconnect_1" />
+        <ui:DatabaseDisconnect DatabaseConnection="[dcTITU]" DisplayName="Disconnect from database" sap:VirtualizedContainerService.HintSize="518,48" sap2010:WorkflowViewState.IdRef="DatabaseDisconnect_18" />
       </Sequence>
     </Switch>
   </Sequence>
