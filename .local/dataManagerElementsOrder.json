@@ -65,9 +65,9 @@
       "Path": "Templates/HTTP.Request.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "sAssetEndpoit&Sequence_3",
-        "sRequestURL&Sequence_3",
-        "sFormattedRequestURL&Sequence_3"
+        "sAssetEndpoit&Sequence_1",
+        "sRequestURL&Sequence_1",
+        "sFormattedRequestURL&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [
         "in_iTimeout",
@@ -268,6 +268,88 @@
         "in_iRemainingItems",
         "in_sThreadTs",
         "in_sSlackId"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Orch/UiPath.Authentication.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "iResponseStatus&Sequence_12",
+        "sResponseContent&Sequence_12",
+        "in_sAuthScope&Sequence_7",
+        "sFormattedRequestURL&Sequence_7",
+        "sEndpointUiPathAuth&Sequence_7",
+        "jResponse&Sequence_7",
+        "sClientSecret&Sequence_7",
+        "sClientID&Sequence_7"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_sAuthToken"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Orch/Triggers/Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "sScheduleEnabled&Sequence_4",
+        "sFolderId&Sequence_3",
+        "sSheetName&Sequence_1",
+        "sSheetId&Sequence_1",
+        "sScheduleCronSummary&Sequence_4",
+        "sSchedulePriority&Sequence_4",
+        "sScheduleCron&Sequence_4",
+        "sScheduleName&Sequence_3",
+        "sFolderName&Sequence_3",
+        "jarrFolderSchedules&Sequence_3",
+        "jarrOpsFolders&Sequence_1",
+        "jobjOpsFolders&Sequence_1",
+        "jobjFoldersResponse&Sequence_1",
+        "jarrFoldersResponse&Sequence_1",
+        "sAuthToken&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Orch/Triggers/Orchestrador.Get.Folders.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "jobjFoldersResponse&Sequence_7",
+        "sFoldersResponse&Sequence_7",
+        "sAssetEndpoit&Sequence_7",
+        "sRequestURL&Sequence_7",
+        "sFormattedRequestURL&Sequence_7",
+        "iFoldersStatusCode&Sequence_23"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_jarrFoldersResponse",
+        "in_sAuthToken",
+        "in_iTimeout"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Orch/Triggers/Orchestrador.Get.ProcessSchedules.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "jobjProcessSchedulesResponse&Sequence_7",
+        "iProcessSchedulesStatusCode&Sequence_23",
+        "sProcessSchedulesResponse&Sequence_7",
+        "sAssetEndpoit&Sequence_7",
+        "sRequestURL&Sequence_7",
+        "sFormattedRequestURL&Sequence_7"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_jarrFolderSchedules",
+        "in_sFolderId",
+        "in_sAuthToken",
+        "in_iTimeout"
       ],
       "ConstantsSectionElementsOrder": null,
       "AddedNamespaces": null
