@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="FONZHkQpQUSyAC6knMt3Bg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="corporativo.bvmfnet.com.br/icadx-web/pages/accounts/account/situation/AccountSituationMaintenance.jsf" CVScreenId="9f3324e5-05ed-472b-abf8-9fd414d67810" DesignTimeRectangle="531, 403, 94, 13" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='DIV' colName='ID da Conta' visibleinnertext='4433326' /&gt;" Guid="26d99019-1737-4df5-b32b-a155ae700e16" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SINCAD - Sistema de Cadastro Integrado B3' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="bab511094c9617b7086b792c2f9fff33.png" xmlns="">0f6gC3LFWR0SdyGAucQKKow</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

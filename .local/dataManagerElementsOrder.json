@@ -246,6 +246,8 @@
       "Path": "AccountStatus/Sincad.GetStatus.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "bCorrectAccount&Sequence_41",
+        "sCurAccountId&Sequence_31",
         "dtAccountID&Sequence_9",
         "sSheetId&Sequence_9",
         "sSheetName&Sequence_9",
@@ -350,6 +352,22 @@
         "in_sFolderId",
         "in_sAuthToken",
         "in_iTimeout"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Sincad/SINCAD.Access.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "sSincadUser&Sequence_1",
+        "secSincadPassword&Sequence_1",
+        "sSincadURL&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_bLogin",
+        "in_sSINCADCategoria",
+        "in_sSINCADParticipante"
       ],
       "ConstantsSectionElementsOrder": null,
       "AddedNamespaces": null

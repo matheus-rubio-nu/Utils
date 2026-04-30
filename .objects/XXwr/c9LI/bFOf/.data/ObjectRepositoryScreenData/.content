@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="pRsaydmSe0CUjvc2OoLC4w" Reference="0xIXsK_eHkiEbge_f6ROZQ/bFOfZ8Tl2EGTZ09Jgo3PfQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="-8, -8, 1456, 876" BrowserType="Chrome" ContentHash="-GMIAieUEU6zYVL0iMjonA" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHVSURBVDhPlZJLSFRhFMfPvSM6UBuhZYswe0CFbwKjooWQO122iEpw02ZMfGRJpYjtWkQaunKh4LPMooeLCcONpuigMKiLysU8nBqZaSwf1M/vuzY4MzTUXfw39zv/3/mfc65IwW3syChsQs7Uc+BiCwtfQtgGOIrvILk1dPZP0hfFHsAyH7/Fpepu5jfB+cZOAh09rxGz5C4zyz7KPTFkyPf/AKv7URePet4zsP4bGfbheBlMBhh/Cq1FJXw3tflELaVXn7Cy9YuD4yr68wBGKkDyG5FjNcjpekwFydCwoiaM/L33D4urVHh/WNGt7mOJAGXOOttMZUMvhy63IydrrcgONbfkuLj/9B1jERV9xI+pjXFps+4kuS5utAzzFZgNxRicWORm2whZFx5QeOUxy5s7ZLu/7UePA6x58xrILL2H5/Ma5z9GMV6HuL6yRV8Epv0RwuEo1d4NtTg/GYlmLau7itraNU6/3q6azxwNIIPqRMqQ7Q5TNvcdZ6oxLjlVx5HyhyxFNjg8EUaeBTBVsV6SQxeoyHpuI9UYl/4te0enaA2q7qprakRt1LC0gHPXOvDEdnC+VbdV0dMWppN7/hNVSz+Tb2tL69vIqzXkxd8e/6Ugu8AoTIh/JjprAAAAAElFTkSuQmCC" Reference="0xIXsK_eHkiEbge_f6ROZQ/bFOfZ8Tl2EGTZ09Jgo3PfQ" Selector="&lt;html app='chrome.exe' title='B3 - Controle de Acesso' /&gt;" Url="[sSincadURL]" Version="V2">
+      <imageRef attrName="InformativeScreenshot" originalValue="65747469ddb02b64ba8705f5b5cec12a.jpg" xmlns="">0tet51YcYM0GooXcavk_6Sw</imageRef>
+    </TargetApp>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData Name="sSincadURL" />
+    </scg:List>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="vu0UPrhX4ESt1UdOzIS3pg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHVSURBVDhPlZJLSFRhFMfPvSM6UBuhZYswe0CFbwKjooWQO122iEpw02ZMfGRJpYjtWkQaunKh4LPMooeLCcONpuigMKiLysU8nBqZaSwf1M/vuzY4MzTUXfw39zv/3/mfc65IwW3syChsQs7Uc+BiCwtfQtgGOIrvILk1dPZP0hfFHsAyH7/Fpepu5jfB+cZOAh09rxGz5C4zyz7KPTFkyPf/AKv7URePet4zsP4bGfbheBlMBhh/Cq1FJXw3tflELaVXn7Cy9YuD4yr68wBGKkDyG5FjNcjpekwFydCwoiaM/L33D4urVHh/WNGt7mOJAGXOOttMZUMvhy63IydrrcgONbfkuLj/9B1jERV9xI+pjXFps+4kuS5utAzzFZgNxRicWORm2whZFx5QeOUxy5s7ZLu/7UePA6x58xrILL2H5/Ma5z9GMV6HuL6yRV8Epv0RwuEo1d4NtTg/GYlmLau7itraNU6/3q6azxwNIIPqRMqQ7Q5TNvcdZ6oxLjlVx5HyhyxFNjg8EUaeBTBVsV6SQxeoyHpuI9UYl/4te0enaA2q7qprakRt1LC0gHPXOvDEdnC+VbdV0dMWppN7/hNVSz+Tb2tL69vIqzXkxd8e/6Ugu8AoTIh/JjprAAAAAElFTkSuQmCC" Selector="&lt;html app='chrome.exe' title='SINCAD - Sistema de Cadastro Integrado B3' /&gt;" Url="[in_sSincadURL]">
+      <imageRef attrName="InformativeScreenshot" originalValue="06bd8df8d955a711dfad1f60662f7aec.jpg" xmlns="">06bd8df8d955a711dfad1f60662f7aec.jpg</imageRef>
+    </TargetApp>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="https://corporativo.bvmfnet.com.br/icadx-web/pages/default.jsf" IsVariable="False" Name="in_sSincadURL" />
+    </scg:List>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

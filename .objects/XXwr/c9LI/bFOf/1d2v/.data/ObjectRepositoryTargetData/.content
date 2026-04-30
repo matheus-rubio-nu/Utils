@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="cYvIdhQDvkSCvYXKtGWiVQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="auth4b3-pf-extra.netb3.com.br/as/authorization.oauth2" CVScreenId="14052775-a576-4971-ab77-3ac6140edf52" DesignTimeRectangle="585, 404, 286, 48" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='username' tag='INPUT' /&gt;" Guid="b75a4bc3-3cba-4ab7-91ee-4db6e3fbc274" ScopeSelectorArgument="&lt;html app='chrome.exe' title='B3 - Controle de Acesso' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="787cc9e4f00cdc7e7bc819fa79e29b80.png" xmlns="">0bkmltolWiEK810-aXOZRdw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

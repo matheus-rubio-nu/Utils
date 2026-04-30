@@ -1,0 +1,45 @@
+{
+  "DisplayName": "SINCAD.Login",
+  "Tooltip": null,
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "in_sSINCADParticipante",
+      "DisplayName": "in_sSINCADParticipante",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "90",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_sSINCADCategoria",
+      "DisplayName": "in_sSINCADCategoria",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "ACST",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_bLogin",
+      "DisplayName": "in_bLogin",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    }
+  ]
+}

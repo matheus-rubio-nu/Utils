@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="FKFi9qy0Q0OzCBE6jC4NQQ" Reference="0xIXsK_eHkiEbge_f6ROZQ/GhDl4ZYcT0mW8_s9hPPugg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="corporativo.bvmfnet.com.br/icadx-web/pages/default.jsf" CVScreenId="f70bac9b-a402-4602-8cf4-5eb1769b57e2" DesignTimeRectangle="1108, 130, 252, 13" ElementType="Text" FullSelectorArgument="[string.Format(&quot;&lt;webctrl id='mainForm:lblLogin' tag='SPAN' visibleinnertext='{0}*' /&gt;&quot;, sSincadUser)]" Guid="130adf86-3a83-4077-9502-29f4ca6d26d2" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SINCAD - Sistema de Cadastro Integrado B3' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="7342853309aa8b1ee0f5fa9a6fd0269d.png" xmlns="">0sTL9v6Eu4UmzP_CA024Xgg</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="u-lbrigatti" Name="sSincadUser" />
+    </scg:List>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome SINCAD - Sistema de Cadastro Integrado",
+  "Type": "Screen",
+  "Id": "VUaOOZqav0m5-uaNVCoB3Q",
+  "Reference": "0xIXsK_eHkiEbge_f6ROZQ/VUaOOZqav0m5-uaNVCoB3Q",
+  "ParentRef": "0xIXsK_eHkiEbge_f6ROZQ/E5m0h8Wn50qjiHbH78_hCw",
+  "Created": "2026-04-23T19:22:30.9512289Z",
+  "Updated": "2026-04-23T19:22:30.9512289Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

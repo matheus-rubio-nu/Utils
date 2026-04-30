@@ -1,0 +1,14 @@
+﻿{
+  "Name": "u-lbrigatti - NU INVEST…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "GhDl4ZYcT0mW8_s9hPPugg",
+  "Reference": "0xIXsK_eHkiEbge_f6ROZQ/GhDl4ZYcT0mW8_s9hPPugg",
+  "ParentRef": "0xIXsK_eHkiEbge_f6ROZQ/bFOfZ8Tl2EGTZ09Jgo3PfQ",
+  "Created": "2026-04-23T19:09:03.9340253Z",
+  "Updated": "2026-04-23T19:09:03.9340253Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

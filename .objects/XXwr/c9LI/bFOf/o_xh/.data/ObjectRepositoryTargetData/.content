@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="pGd6b671yUiWA4s7YSESWw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="auth4b3-pf-extra.netb3.com.br/as/omkLHHES9v/resume/as/authorization.ping" CVScreenId="8e13bd97-9fec-4f99-a40f-a63e06f0eb03" DesignTimeRectangle="578, 620, 286, 48" ElementType="Text" FullSelectorArgument="&lt;webctrl id='Btn_CONTINUE' tag='A' visibleinnertext='ENVIAR' /&gt;" Guid="d430940a-650c-4f93-aaf3-47657a514995" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Instituição' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="3926a29daf8985498dbd049b74ce51f4.png" xmlns="">0NnUArMObpkun45vH6a_bKQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

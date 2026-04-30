@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome B3 - Controle de Acesso",
+  "Type": "App",
+  "Id": "XXwrUUf_t06CYszFpHfNHQ",
+  "Reference": "0xIXsK_eHkiEbge_f6ROZQ/XXwrUUf_t06CYszFpHfNHQ",
+  "Created": "2026-04-23T18:31:38.4163997Z",
+  "Updated": "2026-04-23T18:31:38.4163997Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

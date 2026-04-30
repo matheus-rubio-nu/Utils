@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome B3 - Controle de Acesso",
+  "Type": "Screen",
+  "Id": "bFOfZ8Tl2EGTZ09Jgo3PfQ",
+  "Reference": "0xIXsK_eHkiEbge_f6ROZQ/bFOfZ8Tl2EGTZ09Jgo3PfQ",
+  "ParentRef": "0xIXsK_eHkiEbge_f6ROZQ/c9LILfFSGEa-M1YQZ5C0ew",
+  "Created": "2026-04-23T18:31:38.5060129Z",
+  "Updated": "2026-04-23T18:31:38.5060129Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
