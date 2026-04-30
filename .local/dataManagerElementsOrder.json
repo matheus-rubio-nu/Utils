@@ -262,19 +262,6 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "Templates/ShouldStopJob.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
-      "ArgumentsSectionElementsOrder": [
-        "out_bShouldStopJob",
-        "in_iRemainingItems",
-        "in_sThreadTs",
-        "in_sSlackId"
-      ],
-      "ConstantsSectionElementsOrder": null,
-      "AddedNamespaces": null
-    },
-    {
       "Path": "Orch/UiPath.Authentication.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
@@ -368,6 +355,28 @@
         "in_bLogin",
         "in_sSINCADCategoria",
         "in_sSINCADParticipante"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Templates/ShouldStopJob.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "bOrchShouldStopJob&Sequence_1",
+        "bUnvWeekdayStopJob&Sequence_1",
+        "bUnvTimeStopJob&Sequence_1",
+        "dtNow&Sequence_1",
+        "sTimeIni&Sequence_21",
+        "sTimeEnd&Sequence_21",
+        "sCurrentHour&Sequence_21"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_sSlackId",
+        "in_sThreadTs",
+        "in_iRemainingItems",
+        "out_bShouldStopJob",
+        "in_jobjUnavailableDatetime"
       ],
       "ConstantsSectionElementsOrder": null,
       "AddedNamespaces": null
