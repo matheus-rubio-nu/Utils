@@ -158,7 +158,7 @@
       <AssemblyReference>System.Collections.Immutable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Orchestrador.Get.ProcessSchedules" sap:VirtualizedContainerService.HintSize="795,606.04" sap2010:WorkflowViewState.IdRef="Sequence_7">
+  <Sequence DisplayName="Orchestrador.Get.ProcessSchedules" sap:VirtualizedContainerService.HintSize="779,1449" sap2010:WorkflowViewState.IdRef="Sequence_7">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="sAssetEndpoit" />
       <Variable x:TypeArguments="x:String" Name="sRequestURL" />
@@ -171,7 +171,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Assign DisplayName="Assign - Set default timeout value" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_2">
+    <Assign DisplayName="Assign - Set default timeout value" sap:VirtualizedContainerService.HintSize="476,113" sap2010:WorkflowViewState.IdRef="Assign_2">
       <Assign.To>
         <OutArgument x:TypeArguments="x:Int32">[in_iTimeout]</OutArgument>
       </Assign.To>
@@ -179,7 +179,7 @@
         <InArgument x:TypeArguments="x:Int32">[If(in_iTimeout&lt;=0, 30000, in_iTimeout)]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:RetryScope DisplayName="Retry Scope - Get Asset - &quot;&quot;" sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="RetryScope_4" NumberOfRetries="3" RetryInterval="00:00:15">
+    <ui:RetryScope DisplayName="Retry Scope - Get Asset - &quot;&quot;" sap:VirtualizedContainerService.HintSize="476,289" sap2010:WorkflowViewState.IdRef="RetryScope_4" NumberOfRetries="3" RetryInterval="00:00:15">
       <ui:RetryScope.ActivityBody>
         <ActivityAction>
           <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_4">
@@ -197,12 +197,12 @@
       </ui:RetryScope.Condition>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:RetryScope>
-    <Assign DisplayName="Assign - Format Request URL" sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_3">
+    <Assign DisplayName="Assign - Format Request URL" sap:VirtualizedContainerService.HintSize="476,113" sap2010:WorkflowViewState.IdRef="Assign_3">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[sFormattedRequestURL]</OutArgument>
       </Assign.To>
@@ -211,12 +211,12 @@
       </Assign.Value>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </Assign>
-    <ui:RetryScope DisplayName="Retry Scope - HTTP Request" sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="RetryScope_5" NumberOfRetries="3" RetryInterval="00:00:15">
+    <ui:RetryScope DisplayName="Retry Scope - HTTP Request" sap:VirtualizedContainerService.HintSize="476,706" sap2010:WorkflowViewState.IdRef="RetryScope_5" NumberOfRetries="3" RetryInterval="00:00:15">
       <ui:RetryScope.ActivityBody>
         <ActivityAction>
           <Sequence DisplayName="Action Retry Scope - HTTP Request" sap:VirtualizedContainerService.HintSize="416,499" sap2010:WorkflowViewState.IdRef="Sequence_23">
@@ -262,12 +262,12 @@
       </ui:RetryScope.Condition>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:RetryScope>
-    <ui:DeserializeJson x:TypeArguments="njl:JObject" JsonSample="{x:Null}" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_1" JsonObject="[jobjProcessSchedulesResponse]" JsonString="[sProcessSchedulesResponse]" />
-    <ui:DeserializeJsonArray DisplayName="Deserialize JSON Array" sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="DeserializeJsonArray_3" JsonArray="[out_jarrFolderSchedules]" JsonString="[jobjProcessSchedulesResponse(&quot;value&quot;).ToString]" />
+    <ui:DeserializeJson x:TypeArguments="njl:JObject" JsonSample="{x:Null}" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="476,122" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_1" JsonObject="[jobjProcessSchedulesResponse]" JsonString="[sProcessSchedulesResponse]" />
+    <ui:DeserializeJsonArray DisplayName="Deserialize JSON Array" sap:VirtualizedContainerService.HintSize="476,83" sap2010:WorkflowViewState.IdRef="DeserializeJsonArray_3" JsonArray="[out_jarrFolderSchedules]" JsonString="[jobjProcessSchedulesResponse(&quot;value&quot;).ToString]" />
   </Sequence>
 </Activity>

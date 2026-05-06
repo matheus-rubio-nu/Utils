@@ -6,10 +6,10 @@
   "OriginalIconFileName": null,
   "Arguments": [
     {
-      "Name": "Write_Row",
+      "Name": "Read_Range",
       "DisplayName": "uipath-google-sheets",
       "Category": null,
-      "Tooltip": "Write Row",
+      "Tooltip": "Read Range",
       "Placeholder": null,
       "Widget": "Connection",
       "IsRequired": true,
