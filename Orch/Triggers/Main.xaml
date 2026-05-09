@@ -135,7 +135,7 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="779,851" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="787,2398" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="sAuthToken" />
       <Variable x:TypeArguments="njl:JArray" Name="jarrOpsFolders" />
@@ -153,7 +153,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,210" sap2010:WorkflowViewState.IdRef="MultipleAssign_4">
+    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="615,210" sap2010:WorkflowViewState.IdRef="MultipleAssign_4">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_8">
@@ -183,7 +183,7 @@
         </scg:List>
       </ui:MultipleAssign.AssignOperations>
     </ui:MultipleAssign>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="UiPath.Authentication - Invoke Workflow File (Orch\UiPath.Authentication.xaml)" sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Orch\UiPath.Authentication.xaml">
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="UiPath.Authentication - Invoke Workflow File (Orch\UiPath.Authentication.xaml)" sap:VirtualizedContainerService.HintSize="615,84" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Orch\UiPath.Authentication.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <OutArgument x:TypeArguments="x:String" x:Key="out_sAuthToken">[sAuthToken]</OutArgument>
       </ui:InvokeWorkflowFile.Arguments>
@@ -194,7 +194,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeWorkflowFile>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Orchestrador.Get.Folders - Invoke Workflow File (Orch\Triggers\Orchestrador.Get.Folders.xaml)" sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Orch\Triggers\Orchestrador.Get.Folders.xaml">
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Orchestrador.Get.Folders - Invoke Workflow File (Orch\Triggers\Orchestrador.Get.Folders.xaml)" sap:VirtualizedContainerService.HintSize="615,84" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Orch\Triggers\Orchestrador.Get.Folders.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="x:String" x:Key="in_sAuthToken">[sAuthToken]</InArgument>
         <InArgument x:TypeArguments="x:Int32" x:Key="in_iTimeout" />
@@ -207,7 +207,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeWorkflowFile>
-    <Assign DisplayName="Assign - Get Ops Folders" sap:VirtualizedContainerService.HintSize="479,114" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <Assign DisplayName="Assign - Get Ops Folders" sap:VirtualizedContainerService.HintSize="615,114" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="njl:JArray">[jarrOpsFolders]</OutArgument>
       </Assign.To>
@@ -221,7 +221,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </Assign>
-    <uga:ReadRangeConnections x:TypeArguments="sd:DataTable6" BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ColumnNames="{x:Array Type=x:String}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" RangeInformation="{x:Null}" RangeMetadata="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" ConnectionId="c592ec09-009c-4bd5-b8c7-1a691a25d546" DisplayName="Read Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="ReadRangeConnections`1_1" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="[sSheetId]" Range="[sSheetName]" ReadAs="[UiPath.GSuite.Sheets.Enums.ValuesType.Text]" Result="[dtTriggers]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False">
+    <uga:ReadRangeConnections x:TypeArguments="sd:DataTable6" BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ColumnNames="{x:Array Type=x:String}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" RangeInformation="{x:Null}" RangeMetadata="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" ConnectionId="c592ec09-009c-4bd5-b8c7-1a691a25d546" DisplayName="Read Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="615,84" sap2010:WorkflowViewState.IdRef="ReadRangeConnections`1_1" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="[sSheetId]" Range="[sSheetName]" ReadAs="[UiPath.GSuite.Sheets.Enums.ValuesType.Text]" Result="[dtTriggers]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False">
       <uga:ReadRangeConnections.FileIdBackup>
         <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID0" StoredValue="UrlOrId">
           <usau:BackupSlot.BackupValues>
@@ -253,7 +253,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uga:ReadRangeConnections>
-    <uga:ReadRangeConnections x:TypeArguments="sd1:DataTable7" BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ColumnNames="{x:Array Type=x:String}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" RangeInformation="{x:Null}" RangeMetadata="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" ConnectionId="c592ec09-009c-4bd5-b8c7-1a691a25d546" DisplayName="Read Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="ReadRangeConnections`1_2" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="[sSheetId]" Range="[sSheetName_TriggerDePara]" ReadAs="[UiPath.GSuite.Sheets.Enums.ValuesType.Text]" Result="[dtTrigger_DePara]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False">
+    <uga:ReadRangeConnections x:TypeArguments="sd1:DataTable7" BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ColumnNames="{x:Array Type=x:String}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" RangeInformation="{x:Null}" RangeMetadata="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" ConnectionId="c592ec09-009c-4bd5-b8c7-1a691a25d546" DisplayName="Read Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="615,84" sap2010:WorkflowViewState.IdRef="ReadRangeConnections`1_2" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="[sSheetId]" Range="[sSheetName_TriggerDePara]" ReadAs="[UiPath.GSuite.Sheets.Enums.ValuesType.Text]" Result="[dtTrigger_DePara]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False">
       <uga:ReadRangeConnections.FileIdBackup>
         <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID1" StoredValue="UrlOrId">
           <usau:BackupSlot.BackupValues>
@@ -285,7 +285,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uga:ReadRangeConnections>
-    <ui:ClearDataTable DataTable="[dtTriggers]" DisplayName="Clear Data Table" sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="ClearDataTable_1">
+    <ui:ClearDataTable DataTable="[dtTriggers]" DisplayName="Clear Data Table" sap:VirtualizedContainerService.HintSize="615,84" sap2010:WorkflowViewState.IdRef="ClearDataTable_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -293,13 +293,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ClearDataTable>
-    <ui:ForEach x:TypeArguments="njl:JToken" CurrentIndex="{x:Null}" DisplayName="For Each - curFolder" sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[jarrFoldersResponse]">
+    <ui:ForEach x:TypeArguments="njl:JToken" CurrentIndex="{x:Null}" DisplayName="For Each - curFolder" sap:VirtualizedContainerService.HintSize="615,1361" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[jarrFoldersResponse]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="njl:JToken">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="njl:JToken" Name="curFolder" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Sequence Current Folder" sap:VirtualizedContainerService.HintSize="468,369" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Sequence Current Folder" sap:VirtualizedContainerService.HintSize="581,1215" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="sScheduleName" />
               <Variable x:TypeArguments="njl:JArray" Name="jarrFolderSchedules" />
@@ -311,7 +311,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:MultipleAssign DisplayName="Multiple Assign - Get Folders Info" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+            <ui:MultipleAssign DisplayName="Multiple Assign - Get Folders Info" sap:VirtualizedContainerService.HintSize="547,57" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
               <ui:MultipleAssign.AssignOperations>
                 <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
@@ -339,7 +339,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:MultipleAssign>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Orchestrador.Get.ProcessSchedules - Invoke Workflow File (Orch\Triggers\Orchestrador.Get.ProcessSchedules.xaml)" sap:VirtualizedContainerService.HintSize="434,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Orch\Triggers\Orchestrador.Get.ProcessSchedules.xaml">
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Orchestrador.Get.ProcessSchedules - Invoke Workflow File (Orch\Triggers\Orchestrador.Get.ProcessSchedules.xaml)" sap:VirtualizedContainerService.HintSize="547,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Orch\Triggers\Orchestrador.Get.ProcessSchedules.xaml">
               <ui:InvokeWorkflowFile.Arguments>
                 <InArgument x:TypeArguments="x:String" x:Key="in_sAuthToken">[sAuthToken]</InArgument>
                 <InArgument x:TypeArguments="x:Int32" x:Key="in_iTimeout" />
@@ -347,13 +347,13 @@
                 <OutArgument x:TypeArguments="njl:JArray" x:Key="out_jarrFolderSchedules">[jarrFolderSchedules]</OutArgument>
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
-            <ui:ForEach x:TypeArguments="njl:JToken" CurrentIndex="{x:Null}" DisplayName="For Each - curSchedule" sap:VirtualizedContainerService.HintSize="434,75" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[jarrFolderSchedules]">
+            <ui:ForEach x:TypeArguments="njl:JToken" CurrentIndex="{x:Null}" DisplayName="For Each - curSchedule" sap:VirtualizedContainerService.HintSize="547,921" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[jarrFolderSchedules]">
               <ui:ForEach.Body>
                 <ActivityAction x:TypeArguments="njl:JToken">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="njl:JToken" Name="curSchedule" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Sequence Current Schedule" sap:VirtualizedContainerService.HintSize="513,880" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <Sequence DisplayName="Sequence Current Schedule" sap:VirtualizedContainerService.HintSize="513,784" sap2010:WorkflowViewState.IdRef="Sequence_4">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:String" Name="sScheduleCron" />
                       <Variable x:TypeArguments="x:String" Name="sSchedulePriority" />
@@ -419,7 +419,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:MultipleAssign>
-                    <Sequence DisplayName="Check Job Priority" sap:VirtualizedContainerService.HintSize="479,99" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                    <Sequence DisplayName="Check Job Priority" sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="Sequence_8">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="sd2:DataTable" Name="dtTrigger_Priority" />
                       </Sequence.Variables>
@@ -457,7 +457,7 @@
                         </Assign.Value>
                       </Assign>
                     </Sequence>
-                    <TryCatch sap2010:Annotation.AnnotationText="Valida se os 3 primeiros digitos do processo eh um id de bot, senao considera 2h como &quot;overrun&quot;" DisplayName="Try Catch - Get Bot Id" sap:VirtualizedContainerService.HintSize="479,156" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                    <TryCatch sap2010:Annotation.AnnotationText="Valida se os 3 primeiros digitos do processo eh um id de bot, senao considera 2h como &quot;overrun&quot;" DisplayName="Try Catch - Get Bot Id" sap:VirtualizedContainerService.HintSize="479,129" sap2010:WorkflowViewState.IdRef="TryCatch_1">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -511,8 +511,8 @@
                         </Catch>
                       </TryCatch.Catches>
                     </TryCatch>
-                    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{sFolderId, sFolderName, sBotID, sScheduleName, sScheduleEnabled, sSchedulePriority, sScheduleCron, sScheduleCronSummary}]" DataTable="[dtTriggers]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="479,218" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
-                    <ui:CommentOut DisplayName="Write each row" sap:VirtualizedContainerService.HintSize="479,75" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{sBotID, sScheduleName, sScheduleEnabled, sSchedulePriority, sSpecificPriorityValue, sScheduleCronSummary, sFolderName, sScheduleCron, sFolderId}]" DataTable="[dtTriggers]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="479,218" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+                    <ui:CommentOut DisplayName="Write each row" sap:VirtualizedContainerService.HintSize="479,48" sap2010:WorkflowViewState.IdRef="CommentOut_1">
                       <ui:CommentOut.Body>
                         <Sequence DisplayName="Atividades Ignoradas" sap:VirtualizedContainerService.HintSize="416,615" sap2010:WorkflowViewState.IdRef="Sequence_5">
                           <sap:WorkflowViewStateService.ViewState>
@@ -602,7 +602,7 @@
               </ui:ForEach.Body>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
@@ -612,12 +612,12 @@
       </ui:ForEach.Body>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ForEach>
-    <ui:SortDataTable ColumnIndex="{x:Null}" DataColumn="{x:Null}" ColumnName="BOT ID" DataTable="[dtTriggers]" DisplayName="Sort Data Table" sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="SortDataTable_1" Order="Ascending" OutputDataTable="[dtTriggers]" SortOrder="Ascending">
+    <ui:SortDataTable ColumnIndex="{x:Null}" DataColumn="{x:Null}" ColumnName="BOT ID" DataTable="[dtTriggers]" DisplayName="Sort Data Table" sap:VirtualizedContainerService.HintSize="615,84" sap2010:WorkflowViewState.IdRef="SortDataTable_1" Order="Ascending" OutputDataTable="[dtTriggers]" SortOrder="Ascending">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -625,7 +625,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:SortDataTable>
-    <ugas:GoogleSheetsApplicationScope ContinueOnError="{x:Null}" CredentialID="{x:Null}" CredentialSecret="{x:Null}" FileId="{x:Null}" Filename="{x:Null}" ParentFolderId="{x:Null}" ParentFolderPath="{x:Null}" SpreadsheetName="{x:Null}" Timeout="{x:Null}" Account="Please select an account." Action="UseExisting" ConnectionAccountName="automacao.moperacoes@nubank.com.br" ConnectionId="c592ec09-009c-4bd5-b8c7-1a691a25d546" Connector="uipath-google-sheets" DisplayName="Use Google Spreadsheet" sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="GoogleSheetsApplicationScope_3" Mode="EnterId" SpreadsheetId="[sSheetId]" UseConnectionService="True">
+    <ugas:GoogleSheetsApplicationScope ContinueOnError="{x:Null}" CredentialID="{x:Null}" CredentialSecret="{x:Null}" FileId="{x:Null}" Filename="{x:Null}" ParentFolderId="{x:Null}" ParentFolderPath="{x:Null}" SpreadsheetName="{x:Null}" Timeout="{x:Null}" Account="Please select an account." Action="UseExisting" ConnectionAccountName="automacao.moperacoes@nubank.com.br" ConnectionId="c592ec09-009c-4bd5-b8c7-1a691a25d546" Connector="uipath-google-sheets" DisplayName="Use Google Spreadsheet" sap:VirtualizedContainerService.HintSize="615,111" sap2010:WorkflowViewState.IdRef="GoogleSheetsApplicationScope_3" Mode="EnterId" SpreadsheetId="[sSheetId]" UseConnectionService="True">
       <ugas:GoogleSheetsApplicationScope.Body>
         <ActivityAction x:TypeArguments="ugas:IGoogleSheetTarget">
           <ActivityAction.Argument>
@@ -653,7 +653,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ugas:GoogleSheetsApplicationScope>
-    <uga:WriteRangeConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" RowPosition="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" ConnectionId="c592ec09-009c-4bd5-b8c7-1a691a25d546" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="479,48" sap2010:WorkflowViewState.IdRef="WriteRangeConnections_1" IncludeHeaders="True" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="[sSheetId]" Range="[sSheetName]" Source="[dtTriggers]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False" WriteMode="Overwrite">
+    <uga:WriteRangeConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" RowPosition="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" ConnectionId="c592ec09-009c-4bd5-b8c7-1a691a25d546" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="615,75" sap2010:WorkflowViewState.IdRef="WriteRangeConnections_1" IncludeHeaders="True" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="[sSheetId]" Range="[sSheetName]" Source="[dtTriggers]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False" WriteMode="Overwrite">
       <uga:WriteRangeConnections.FileIdBackup>
         <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID3" StoredValue="UrlOrId">
           <usau:BackupSlot.BackupValues>

@@ -284,6 +284,12 @@
       "Path": "Orch/Triggers/Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "dtTriggers&Sequence_1",
+        "sSheetName_TriggerDePara&Sequence_1",
+        "dtTrigger_DePara&Sequence_1",
+        "sBotID&Sequence_4",
+        "sSpecificPriorityValue&Sequence_4",
+        "dtTrigger_Priority&Sequence_8",
         "sScheduleEnabled&Sequence_4",
         "sFolderId&Sequence_3",
         "sSheetName&Sequence_1",
