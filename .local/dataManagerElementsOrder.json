@@ -387,6 +387,109 @@
       ],
       "ConstantsSectionElementsOrder": null,
       "AddedNamespaces": null
+    },
+    {
+      "Path": "Orch/RestartPendingJobs/Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "sStopResponse&Sequence_17",
+        "iStopStatus&Sequence_17",
+        "sCurJobToStopReleaseName&Sequence_17",
+        "sCurJobToStopOrganizationUnitId&Sequence_17",
+        "sCurJobToStopId&Sequence_17",
+        "dtPendingJobsToStop&Sequence_1",
+        "dtPendingJobs&Sequence_1",
+        "sCoEToFilter&Sequence_1",
+        "jarrPendingJobs&Sequence_1",
+        "sAuthToken&Sequence_1",
+        "sSheetId&Sequence_1",
+        "sSheetName&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Orch/RestartPendingJobs/Orchestrador.Get.PendingJobs.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "jobjPendingJobs&Sequence_7",
+        "sAssetEndpoit&Sequence_7",
+        "sRequestURL&Sequence_7",
+        "sFormattedRequestURL&Sequence_7",
+        "sPendingJobsResponse&Sequence_7",
+        "iProcessSchedulesStatusCode&Sequence_23"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_jarrPendingJobs",
+        "in_sAuthToken",
+        "in_iTimeout"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Orch/RestartPendingJobs/Filter.PendingJobs.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "sCurOrchFolderPath&Sequence_13",
+        "datStoppedJob&Sequence_13",
+        "sCurJobReleaseName&Sequence_13",
+        "sCurJobSpecificPriorityValue&Sequence_13",
+        "datCurJobCreationTime&Sequence_13",
+        "sCurJobOrganizationUnitId&Sequence_13",
+        "sCurJobSourceType&Sequence_13",
+        "sCurJobId&Sequence_13",
+        "sCurJobKey&Sequence_13",
+        "sCurJobStartingScheduleId&Sequence_13",
+        "iPendingHours&Sequence_13",
+        "datCurJobBRCreationtime&Sequence_13"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "io_dtPendingJobsToStop",
+        "in_sCoEToFilter",
+        "in_jarrPendingJobs"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Orch/RestartPendingJobs/Stop.FilteredPendingJob.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "sAssetEndpoit&Sequence_5",
+        "sFormattedRequestURL&Sequence_5"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_sStopPendingJobResponse",
+        "out_iStopPendingJobStatusCode",
+        "in_sStopStrategy",
+        "in_sAuthToken",
+        "in_sOrganizationUnitId",
+        "in_iTimeout",
+        "in_sJobPendingId"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Orch/RestartPendingJobs/Start.FilteredStoppedJob.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "sAssetEndpoit&Sequence_5",
+        "sFormattedRequestURL&Sequence_5"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_sJobPendingId",
+        "in_iTimeout",
+        "in_sOrganizationUnitId",
+        "in_sAuthToken",
+        "in_sStopStrategy",
+        "out_iStopPendingJobStatusCode",
+        "out_sStopPendingJobResponse"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
     }
   ]
 }
