@@ -1,0 +1,473 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="Main_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=Studio.Generated.TypedDataTable6" xmlns:sd1="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugam="clr-namespace:UiPath.GSuite.Activities.Models;assembly=UiPath.GSuite.Activities" xmlns:ugase="clr-namespace:UiPath.GSuite.Activities.Sheets.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugdm="clr-namespace:UiPath.GSuite.Drive.Models;assembly=UiPath.GSuite" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.GSuite.Activities.Sheets</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.GSuite.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.GSuite.Activities.Sheets.Enums</x:String>
+      <x:String>UiPath.GSuite.Activities.Models</x:String>
+      <x:String>UiPath.GSuite.Sheets.Enums</x:String>
+      <x:String>UiPath.GSuite.Sheets.Models</x:String>
+      <x:String>UiPath.GSuite.Activities.Drive.Enums</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.GSuite.Drive.Models</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.GSuite.Sheets.Contracts</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>UiPath.GSuite.Activities.Contracts</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Cryptography</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Collections.Specialized</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Python.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Database.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.AmazonWebServices.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Jira.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Persistence.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Cryptography.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable1</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable3</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable2</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable5</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable4</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable6</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable6</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable6</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable7</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable6</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable6</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldCollapseAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="776,1052" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="sAuthToken" />
+      <Variable x:TypeArguments="x:String" Name="sSheetId" />
+      <Variable x:TypeArguments="x:String" Name="sSheetName" />
+      <Variable x:TypeArguments="njl:JArray" Name="jarrPendingJobs" />
+      <Variable x:TypeArguments="x:String" Name="sCoEToFilter" />
+      <Variable x:TypeArguments="sd1:DataTable" Name="dtPendingJobs" />
+      <Variable x:TypeArguments="sd1:DataTable" Name="dtPendingJobsToStop" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="MultipleAssign_4">
+      <ui:MultipleAssign.AssignOperations>
+        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_8">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[sSheetId]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">1gwV19wcipush2FENjtllSurs2sH0KRwMSuKHyf1u9mw</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_9">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[sSheetName]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">RESTARTED_JOBS</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_10">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[sCoeToFilter]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">CoE Ops</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+        </scg:List>
+      </ui:MultipleAssign.AssignOperations>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:MultipleAssign>
+    <uga:ReadRangeConnections x:TypeArguments="sd:DataTable6" BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ColumnNames="{x:Array Type=x:String}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" RangeInformation="{x:Null}" RangeMetadata="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" ConnectionId="c592ec09-009c-4bd5-b8c7-1a691a25d546" DisplayName="Read Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="ReadRangeConnections`1_1" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="[sSheetId]" Range="[sSheetName]" ReadAs="[UiPath.GSuite.Sheets.Enums.ValuesType.Text]" Result="[dtPendingJobs]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False">
+      <uga:ReadRangeConnections.FileIdBackup>
+        <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID0" StoredValue="UrlOrId">
+          <usau:BackupSlot.BackupValues>
+            <scg:List x:TypeArguments="x:Object" x:Key="Browse" Capacity="2">
+              <x:Null />
+              <x:Null />
+            </scg:List>
+            <scg:List x:TypeArguments="x:Object" x:Key="UrlOrId" Capacity="1">
+              <x:Null />
+            </scg:List>
+          </usau:BackupSlot.BackupValues>
+        </usau:BackupSlot>
+      </uga:ReadRangeConnections.FileIdBackup>
+      <uga:ReadRangeConnections.Item>
+        <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID0}" BrowserId="{x:Null}" ConnectionDescriptor="{x:Null}" ConnectionKey="{x:Null}" Existing="{x:Null}" FriendlyName="{x:Null}" FullPath="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" IdOrUrl="[sSheetId]" InputMode="UrlOrId">
+          <ugam:DriveItemArgument.FullPathHint>
+            <InArgument x:TypeArguments="x:String">
+              <Literal x:TypeArguments="x:String" Value="" />
+            </InArgument>
+          </ugam:DriveItemArgument.FullPathHint>
+          <ugam:DriveItemArgument.ParentIdFullPathHint>
+            <InArgument x:TypeArguments="x:String">
+              <Literal x:TypeArguments="x:String" Value="" />
+            </InArgument>
+          </ugam:DriveItemArgument.ParentIdFullPathHint>
+        </ugam:DriveItemArgument>
+      </uga:ReadRangeConnections.Item>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uga:ReadRangeConnections>
+    <Assign DisplayName="Assign - Get Headers" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="sd1:DataTable">[dtPendingJobsToStop]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="sd1:DataTable">[dtPendingJobs.Clone]</InArgument>
+      </Assign.Value>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Assign>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="UiPath.Authentication - Invoke Workflow File (Orch\UiPath.Authentication.xaml)" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Orch\UiPath.Authentication.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <OutArgument x:TypeArguments="x:String" x:Key="out_sAuthToken">[sAuthToken]</OutArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Orchestrador.Get.PendingJobs - Invoke Workflow File (Orch\RestartPendingJobs\Orchestrador.Get.PendingJobs.xaml)" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Orch\RestartPendingJobs\Orchestrador.Get.PendingJobs.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="in_sAuthToken">[sAuthToken]</InArgument>
+        <InArgument x:TypeArguments="x:Int32" x:Key="in_iTimeout" />
+        <OutArgument x:TypeArguments="njl:JArray" x:Key="out_jarrPendingJobs">[jarrPendingJobs]</OutArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeWorkflowFile>
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtPendingJobsToStop]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="450,696" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd1:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd1:DataRow" Name="CurrentRow" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="416,500" sap2010:WorkflowViewState.IdRef="Sequence_17">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="sCurJobToStopId" />
+              <Variable x:TypeArguments="x:String" Name="sCurJobToStopOrganizationUnitId" />
+              <Variable x:TypeArguments="x:String" Name="sCurJobToStopReleaseName" />
+              <Variable x:TypeArguments="x:Int32" Name="iStopStatus" />
+              <Variable x:TypeArguments="x:String" Name="sStopResponse" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign DisplayName="Assign - Init Status Stop" sap:VirtualizedContainerService.HintSize="382,57" sap2010:WorkflowViewState.IdRef="Assign_7">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Object">[CurrentRow("Status Stop")]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Object">["-"]</InArgument>
+              </Assign.Value>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </Assign>
+            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="382,57" sap2010:WorkflowViewState.IdRef="MultipleAssign_6">
+              <ui:MultipleAssign.AssignOperations>
+                <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_19">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:String">[sCurJobToStopId]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:String">[CurrentRow("Id").ToString]</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_20">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:String">[sCurJobToStopOrganizationUnitId]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:String">[CurrentRow("OrganizationUnitId").ToString]</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_21">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:String">[sCurJobToStopReleaseName]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:String">[CurrentRow("ReleaseName").ToString]</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                </scg:List>
+              </ui:MultipleAssign.AssignOperations>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:MultipleAssign>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Stop.FilteredPendingJob - Invoke Workflow File (Orch\RestartPendingJobs\Stop.FilteredPendingJob.xaml)" sap:VirtualizedContainerService.HintSize="382,57" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Orch\RestartPendingJobs\Stop.FilteredPendingJob.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="in_sJobPendingId">[sCurJobToStopId]</InArgument>
+                <InArgument x:TypeArguments="x:Int32" x:Key="in_iTimeout" />
+                <InArgument x:TypeArguments="x:String" x:Key="in_sOrganizationUnitId">[sCurJobToStopOrganizationUnitId]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_sAuthToken">[sAuthToken]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_sStopStrategy">Soft Stop</InArgument>
+                <OutArgument x:TypeArguments="x:Int32" x:Key="out_iStopPendingJobStatusCode">[iStopStatus]</OutArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="out_sStopPendingJobResponse">[sStopResponse]</OutArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:InvokeWorkflowFile>
+            <Assign DisplayName="Assign - Stop Status" sap:VirtualizedContainerService.HintSize="382,57" sap2010:WorkflowViewState.IdRef="Assign_6">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Object">[CurrentRow("Status Stop")]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Object">[String.Format("[{0}] - [{1}]", iStopStatus, sStopResponse)]</InArgument>
+              </Assign.Value>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </Assign>
+            <If Condition="[iStopStatus &lt;&gt; 200]" DisplayName="If - Stop was successful" sap:VirtualizedContainerService.HintSize="382,57" sap2010:WorkflowViewState.IdRef="If_4">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If.Then>
+                <ui:Continue sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="Continue_4" />
+              </If.Then>
+              <If.Else>
+                <Assign DisplayName="Assign - Init Status Start" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_9">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:Object">[CurrentRow("Status Start")]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:Object">["-"]</InArgument>
+                  </Assign.Value>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Assign>
+              </If.Else>
+            </If>
+            <ui:Comment DisplayName="PEND" sap:VirtualizedContainerService.HintSize="382,107" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// Validar quais devem ser os inputs aqui para fazer o start do bot" />
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Start.FilteredStoppedJob - Invoke Workflow File (Orch\RestartPendingJobs\Start.FilteredStoppedJob.xaml)" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="Orch\RestartPendingJobs\Start.FilteredStoppedJob.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="in_sJobPendingId" />
+                <InArgument x:TypeArguments="x:Int32" x:Key="in_iTimeout" />
+                <InArgument x:TypeArguments="x:String" x:Key="in_sOrganizationUnitId" />
+                <InArgument x:TypeArguments="x:String" x:Key="in_sAuthToken" />
+                <InArgument x:TypeArguments="x:String" x:Key="in_sStopStrategy" />
+                <OutArgument x:TypeArguments="x:Int32" x:Key="out_iStopPendingJobStatusCode" />
+                <OutArgument x:TypeArguments="x:String" x:Key="out_sStopPendingJobResponse" />
+              </ui:InvokeWorkflowFile.Arguments>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:InvokeWorkflowFile>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ForEachRow>
+    <uga:WriteRangeConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" ConnectionId="c592ec09-009c-4bd5-b8c7-1a691a25d546" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="WriteRangeConnections_1" IncludeHeaders="False" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="[sSheetId]" Range="[sSheetName]" RowPosition="0" Source="[dtPendingJobsToStop]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False" WriteMode="Append">
+      <uga:WriteRangeConnections.FileIdBackup>
+        <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID1" StoredValue="UrlOrId">
+          <usau:BackupSlot.BackupValues>
+            <scg:List x:TypeArguments="x:Object" x:Key="Browse" Capacity="2">
+              <x:Null />
+              <x:Null />
+            </scg:List>
+            <scg:List x:TypeArguments="x:Object" x:Key="UseExisting" Capacity="1">
+              <InArgument x:TypeArguments="ugdm:GDriveRemoteItem">[sSheetId]</InArgument>
+            </scg:List>
+          </usau:BackupSlot.BackupValues>
+        </usau:BackupSlot>
+      </uga:WriteRangeConnections.FileIdBackup>
+      <uga:WriteRangeConnections.Item>
+        <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID1}" BrowserId="{x:Null}" ConnectionDescriptor="{x:Null}" ConnectionKey="{x:Null}" Existing="{x:Null}" FriendlyName="{x:Null}" FullPath="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" IdOrUrl="[sSheetId]" InputMode="UrlOrId">
+          <ugam:DriveItemArgument.FullPathHint>
+            <InArgument x:TypeArguments="x:String">
+              <Literal x:TypeArguments="x:String" Value="" />
+            </InArgument>
+          </ugam:DriveItemArgument.FullPathHint>
+          <ugam:DriveItemArgument.ParentIdFullPathHint>
+            <InArgument x:TypeArguments="x:String">
+              <Literal x:TypeArguments="x:String" Value="" />
+            </InArgument>
+          </ugam:DriveItemArgument.ParentIdFullPathHint>
+        </ugam:DriveItemArgument>
+      </uga:WriteRangeConnections.Item>
+      <uga:WriteRangeConnections.RangeWriteModeBackup>
+        <usau:BackupSlot x:TypeArguments="ugase:RangeWriteMode" StoredValue="Append">
+          <usau:BackupSlot.BackupValues>
+            <scg:List x:TypeArguments="x:Object" x:Key="Overwrite" Capacity="1">
+              <x:String></x:String>
+            </scg:List>
+          </usau:BackupSlot.BackupValues>
+        </usau:BackupSlot>
+      </uga:WriteRangeConnections.RangeWriteModeBackup>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uga:WriteRangeConnections>
+  </Sequence>
+</Activity>

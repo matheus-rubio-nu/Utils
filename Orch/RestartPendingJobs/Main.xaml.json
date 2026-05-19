@@ -1,0 +1,21 @@
+{
+  "DisplayName": "Main",
+  "Tooltip": null,
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "Read_Range",
+      "DisplayName": "uipath-google-sheets",
+      "Category": null,
+      "Tooltip": "Read Range",
+      "Placeholder": null,
+      "Widget": "Connection",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "ArgumentType": 1,
+      "DataSourceItems": null
+    }
+  ]
+}

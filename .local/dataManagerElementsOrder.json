@@ -140,6 +140,7 @@
       "Path": "AccountStatus/GetAccountId.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "sBDSystem&Sequence_252",
         "dtMovimentacaoCliente&Sequence_316",
         "sCdCliente&Sequence_319",
         "sCpfCgc&Sequence_319",
