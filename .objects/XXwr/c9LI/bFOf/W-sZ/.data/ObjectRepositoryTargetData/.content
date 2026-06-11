@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="l2GzaJp4b0G6ojzMwsblbw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="k3sk7sF_f0CzWW0RLS6SIw" Reference="0xIXsK_eHkiEbge_f6ROZQ/W-sZCH6pH0KeLDThDp3nnA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="auth4b3-pf-extra.netb3.com.br/as/omkLHHES9v/resume/as/authorization.ping" CVScreenId="68d2e8ca-216c-4061-b1c3-d78cb50a190f" DesignTimeRectangle="578, 498, 286, 39" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='category' tag='SELECT' /&gt;" Guid="ec17b4ef-e9f2-40f7-af5c-22d5527503a2" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Instituição' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="a923583a2941394a8c07b4c25c6fe236.png" xmlns="">0W2Lm7ob7pk2SO0Fz3ddvzw</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="auth4b3-pf-extra.netb3.com.br/as/authorization.oauth2" CVScreenId="86e393b8-bd6a-4956-9bac-470fc44358ec" DesignTimeRectangle="541, 432, 286, 39" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='category' tag='SELECT' /&gt;" Guid="ebea8b64-ef79-451a-8ccf-9ce80a448f23" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Instituição' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="a923583a2941394a8c07b4c25c6fe236.png" xmlns="">0WsjpffWY_k-5jrJqKDAZwg</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">CheckState</x:String>
   </ObjectRepositoryTargetData.Data>

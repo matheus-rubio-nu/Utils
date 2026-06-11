@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="UJgqKbOGwU-NqOTKyrnpbg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="auth4b3-pf-extra.netb3.com.br/as/authorization.oauth2" CVScreenId="c5fb8904-3050-49dd-9da5-8fdb80be150b" DesignTimeRectangle="541, 339, 286, 39" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='participant' tag='SELECT' /&gt;" Guid="b3c1726c-8cff-4e16-b09b-bf243ec90637" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Instituição' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="0c0162359afc8741f28c2c91bac390b9.png" xmlns="">0UMTS9r_3X0GdPuha-8V4GA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

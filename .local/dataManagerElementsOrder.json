@@ -181,7 +181,6 @@
         "sBDBirthday&Sequence_252",
         "sBDSinacorColumn&Sequence_252",
         "sBDInactivateDate&Sequence_252",
-        "sBDStatus&Sequence_252",
         "sBDDateExec&Sequence_252",
         "dtExecAccountId&Sequence_252",
         "drCustomerExec&Sequence_253",
@@ -488,6 +487,14 @@
         "out_iStopPendingJobStatusCode",
         "out_sStopPendingJobResponse"
       ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Metricas/Generate.Report.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": null,
       "AddedNamespaces": null
     }

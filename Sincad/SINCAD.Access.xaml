@@ -115,7 +115,7 @@
       <AssemblyReference>UiPath.AmazonWebServices</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SINCAD.Access" sap:VirtualizedContainerService.HintSize="1060,767" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SINCAD.Access" sap:VirtualizedContainerService.HintSize="690,698" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="sSincadUser">
         <Variable.Default>
@@ -130,7 +130,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:RetryScope DisplayName="Retry Scope - Get Assets" sap:VirtualizedContainerService.HintSize="484,84" sap2010:WorkflowViewState.IdRef="RetryScope_1">
+    <ui:RetryScope DisplayName="Retry Scope - Get Assets" sap:VirtualizedContainerService.HintSize="484,57" sap2010:WorkflowViewState.IdRef="RetryScope_1">
       <ui:RetryScope.ActivityBody>
         <ActivityAction>
           <Sequence DisplayName="Ação" sap:VirtualizedContainerService.HintSize="416,310" sap2010:WorkflowViewState.IdRef="Sequence_3">
@@ -171,13 +171,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:RetryScope>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome B3 - Controle de Acesso" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,660" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="87ad1fba-a160-4722-90fe-2f4cd32a26ff" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome B3 - Controle de Acesso" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,618" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="87ad1fba-a160-4722-90fe-2f4cd32a26ff" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <If Condition="[in_bLogin = True]" sap:VirtualizedContainerService.HintSize="450,420" sap2010:WorkflowViewState.IdRef="If_1">
+          <If Condition="[in_bLogin = True]" sap:VirtualizedContainerService.HintSize="450,378" sap2010:WorkflowViewState.IdRef="If_1">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -185,7 +185,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <If.Then>
-              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="788,2911" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="788,2871" sap2010:WorkflowViewState.IdRef="Sequence_6">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -307,14 +307,20 @@
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uix:NSelectItem DisplayName="Select Item 'Selecione um participan…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NSelectItem_3" Item="[in_sSINCADParticipante]" ScopeIdentifier="87ad1fba-a160-4722-90fe-2f4cd32a26ff" Version="V5">
+                      <uix:NSelectItem DisplayName="Select Item '90'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NSelectItem_3" Item="[in_sSINCADParticipante]" ScopeIdentifier="87ad1fba-a160-4722-90fe-2f4cd32a26ff" Version="V5">
+                        <uix:NSelectItem.Items>
+                          <scg:List x:TypeArguments="x:String" Capacity="2">
+                            <x:String>Selecione um participante</x:String>
+                            <x:String>90</x:String>
+                          </scg:List>
+                        </uix:NSelectItem.Items>
                         <uix:NSelectItem.Target>
-                          <uix:TargetAnchorable BrowserURL="auth4b3-pf-extra.netb3.com.br/as/omkLHHES9v/resume/as/authorization.ping" CVScreenId="68d2e8ca-216c-4061-b1c3-d78cb50a190f" ContentHash="l2GzaJp4b0G6ojzMwsblbw" DesignTimeRectangle="578, 498, 286, 39" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='category' tag='SELECT' /&gt;" Guid="ec17b4ef-e9f2-40f7-af5c-22d5527503a2" InformativeScreenshot="a923583a2941394a8c07b4c25c6fe236.png" Reference="0xIXsK_eHkiEbge_f6ROZQ/W-sZCH6pH0KeLDThDp3nnA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Instituição' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                          <uix:TargetAnchorable BrowserURL="auth4b3-pf-extra.netb3.com.br/as/authorization.oauth2" CVScreenId="c5fb8904-3050-49dd-9da5-8fdb80be150b" ContentHash="UJgqKbOGwU-NqOTKyrnpbg" DesignTimeRectangle="541, 339, 286, 39" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='participant' tag='SELECT' /&gt;" Guid="b3c1726c-8cff-4e16-b09b-bf243ec90637" ImageBase64="" InformativeScreenshot="0c0162359afc8741f28c2c91bac390b9.png" Reference="0xIXsK_eHkiEbge_f6ROZQ/dm1QOyZRgUS4YNYEc2yeWQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Instituição' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
                         </uix:NSelectItem.Target>
                       </uix:NSelectItem>
                       <uix:NSelectItem DisplayName="Select Item 'Selecione um categoria'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NSelectItem_4" Item="[in_sSINCADCategoria]" ScopeIdentifier="87ad1fba-a160-4722-90fe-2f4cd32a26ff" Version="V5">
                         <uix:NSelectItem.Target>
-                          <uix:TargetAnchorable BrowserURL="auth4b3-pf-extra.netb3.com.br/as/omkLHHES9v/resume/as/authorization.ping" CVScreenId="68d2e8ca-216c-4061-b1c3-d78cb50a190f" ContentHash="l2GzaJp4b0G6ojzMwsblbw" DesignTimeRectangle="578, 498, 286, 39" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='category' tag='SELECT' /&gt;" Guid="ec17b4ef-e9f2-40f7-af5c-22d5527503a2" InformativeScreenshot="a923583a2941394a8c07b4c25c6fe236.png" Reference="0xIXsK_eHkiEbge_f6ROZQ/W-sZCH6pH0KeLDThDp3nnA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Instituição' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                          <uix:TargetAnchorable BrowserURL="auth4b3-pf-extra.netb3.com.br/as/authorization.oauth2" CVScreenId="86e393b8-bd6a-4956-9bac-470fc44358ec" ContentHash="k3sk7sF_f0CzWW0RLS6SIw" DesignTimeRectangle="541, 432, 286, 39" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='category' tag='SELECT' /&gt;" Guid="ebea8b64-ef79-451a-8ccf-9ce80a448f23" InformativeScreenshot="a923583a2941394a8c07b4c25c6fe236.png" Reference="0xIXsK_eHkiEbge_f6ROZQ/W-sZCH6pH0KeLDThDp3nnA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Instituição' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
                         </uix:NSelectItem.Target>
                       </uix:NSelectItem>
                       <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Entrar'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="87ad1fba-a160-4722-90fe-2f4cd32a26ff" Version="V5">
@@ -351,10 +357,10 @@
                     </ui:LogMessage>
                   </uix:NCheckState.IfNotExists>
                   <uix:NCheckState.Target>
-                    <uix:TargetAnchorable BrowserURL="auth4b3-pf-extra.netb3.com.br/as/omkLHHES9v/resume/as/authorization.ping" CVScreenId="68d2e8ca-216c-4061-b1c3-d78cb50a190f" ContentHash="l2GzaJp4b0G6ojzMwsblbw" DesignTimeRectangle="578, 498, 286, 39" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='category' tag='SELECT' /&gt;" Guid="ec17b4ef-e9f2-40f7-af5c-22d5527503a2" InformativeScreenshot="a923583a2941394a8c07b4c25c6fe236.png" Reference="0xIXsK_eHkiEbge_f6ROZQ/W-sZCH6pH0KeLDThDp3nnA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Instituição' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                    <uix:TargetAnchorable BrowserURL="auth4b3-pf-extra.netb3.com.br/as/authorization.oauth2" CVScreenId="86e393b8-bd6a-4956-9bac-470fc44358ec" ContentHash="k3sk7sF_f0CzWW0RLS6SIw" DesignTimeRectangle="541, 432, 286, 39" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='category' tag='SELECT' /&gt;" Guid="ebea8b64-ef79-451a-8ccf-9ce80a448f23" InformativeScreenshot="a923583a2941394a8c07b4c25c6fe236.png" Reference="0xIXsK_eHkiEbge_f6ROZQ/W-sZCH6pH0KeLDThDp3nnA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Instituição' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
                   </uix:NCheckState.Target>
                 </uix:NCheckState>
-                <uix:NCheckState DisplayName="Check App State '[user] NU INVEST…'" EnableIfExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="754,379" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="87ad1fba-a160-4722-90fe-2f4cd32a26ff" Version="V5">
+                <uix:NCheckState DisplayName="Check App State '[user] NU INVEST…'" EnableIfExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="754,339" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="87ad1fba-a160-4722-90fe-2f4cd32a26ff" Version="V5">
                   <uix:NCheckState.IfNotExists>
                     <Throw Exception="[New BusinessRuleException(String.Format(&quot;Could not find label for user [{0}]&quot;, sSincadUser))]" sap:VirtualizedContainerService.HintSize="334,90" sap2010:WorkflowViewState.IdRef="Throw_2" />
                   </uix:NCheckState.IfNotExists>
