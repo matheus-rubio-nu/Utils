@@ -493,8 +493,15 @@
     {
       "Path": "Metricas/Generate.Report.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
-      "ArgumentsSectionElementsOrder": [],
+      "VariablesSectionElementsOrder": [
+        "dtMetricas&Sequence_2",
+        "sCurrentBotId&Sequence_2",
+        "dcRPA&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_sSheetIdMetricas",
+        "in_arrBots"
+      ],
       "ConstantsSectionElementsOrder": null,
       "AddedNamespaces": null
     }
