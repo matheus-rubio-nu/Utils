@@ -504,6 +504,18 @@
       ],
       "ConstantsSectionElementsOrder": null,
       "AddedNamespaces": null
+    },
+    {
+      "Path": "OFICIOS.235.156/PENDENTES.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dcRPA&Sequence_1",
+        "dtCasosPendentes&Sequence_1",
+        "dtCaso&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
     }
   ]
 }
