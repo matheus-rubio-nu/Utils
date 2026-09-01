@@ -144,7 +144,7 @@
       <AssemblyReference>Studio.Generated.TypedDataTable7</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Generate_Report" sap:VirtualizedContainerService.HintSize="1060,1272" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Generate_Report" sap:VirtualizedContainerService.HintSize="770,1137" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:DatabaseConnection" Name="dcRPA" />
     </Sequence.Variables>
@@ -153,14 +153,14 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <n:Connect_Database DisplayName="Connect Database" sap:VirtualizedContainerService.HintSize="564,173" sap2010:WorkflowViewState.IdRef="Connect_Database_1" in_DatabaseToConnect="EASYBI" out_Connection="[dcRPA]" />
-    <ui:ForEach x:TypeArguments="x:Int32" CurrentIndex="{x:Null}" DisplayName="For Each curBotNumber" sap:VirtualizedContainerService.HintSize="564,1028" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[in_arrBots]">
+    <n:Connect_Database DisplayName="Connect Database" sap:VirtualizedContainerService.HintSize="565,173" sap2010:WorkflowViewState.IdRef="Connect_Database_1" in_DatabaseToConnect="EASYBI" out_Connection="[dcRPA]" />
+    <ui:ForEach x:TypeArguments="x:Int32" CurrentIndex="{x:Null}" DisplayName="For Each curBotNumber" sap:VirtualizedContainerService.HintSize="565,893" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[in_arrBots]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="x:Int32">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Int32" Name="curBotNumber" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="530,882" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="531,747" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="sCurrentBotId" />
               <Variable x:TypeArguments="sd:DataTable" Name="dtMetricas" />
@@ -170,7 +170,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Assign DisplayName="Assign - Get Bot Number" sap:VirtualizedContainerService.HintSize="496,114" sap2010:WorkflowViewState.IdRef="Assign_1">
+            <Assign DisplayName="Assign - Get Bot Number" sap:VirtualizedContainerService.HintSize="497,114" sap2010:WorkflowViewState.IdRef="Assign_1">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[sCurrentBotId]</OutArgument>
               </Assign.To>
@@ -178,7 +178,7 @@
                 <InArgument x:TypeArguments="x:String">[curBotNumber.ToString]</InArgument>
               </Assign.Value>
             </Assign>
-            <Switch x:TypeArguments="x:Int32" DisplayName="Switch" Expression="[curBotNumber]" sap:VirtualizedContainerService.HintSize="496,327" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+            <Switch x:TypeArguments="x:Int32" DisplayName="Switch" Expression="[curBotNumber]" sap:VirtualizedContainerService.HintSize="497,192" sap2010:WorkflowViewState.IdRef="Switch`1_1">
               <Switch.Default>
                 <Sequence DisplayName="Bot id invalido" sap:VirtualizedContainerService.HintSize="458,281" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
@@ -196,18 +196,18 @@
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:ExecuteQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" x:Key="156" CommandType="Text" DataTable="[dtMetricas]" DisplayName="Run query" ExistingDbConnection="[dcRPA]" sap:VirtualizedContainerService.HintSize="456,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_1" Sql="SELECT&#xD;&#xA;    TO_CHAR(ADD_MONTHS(SYSDATE, -1), 'MM/YYYY') AS PERIODO&#xD;&#xA;  , COUNT(*) AS QTDE_EXECS&#xD;&#xA;  , SUM(COUNT_EXEC) AS ITENS&#xD;&#xA;FROM RPA.RPA_AA_GERENCIADOR_EXECUCOES&#xD;&#xA;WHERE ID_BOT = 156&#xD;&#xA;  AND ENVIRONMENT = 3&#xD;&#xA;  AND STATUS = 1&#xD;&#xA;  AND TRUNC(TO_DATE(INI_EXECUTION, 'DD/MM/YYYY HH24:MI:SS'), 'MM') = TRUNC(ADD_MONTHS(SYSDATE, -1), 'MM')&#xD;&#xA;ORDER BY PERIODO DESC">
+              <ui:ExecuteQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" x:Key="156" CommandType="Text" DataTable="[dtMetricas]" DisplayName="Run query" ExistingDbConnection="[dcRPA]" sap:VirtualizedContainerService.HintSize="458,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_1" Sql="SELECT&#xA;    TO_CHAR(ADD_MONTHS(SYSDATE, -1), 'MM/YYYY') AS PERIODO&#xA;  , COUNT(*) AS QTDE_EXECS&#xA;  , SUM(COUNT_EXEC) AS ITENS&#xA;FROM RPA.RPA_AA_GERENCIADOR_EXECUCOES&#xA;WHERE ID_BOT = 156&#xA;  AND ENVIRONMENT = 3&#xA;  AND STATUS = 1&#xA;  AND TRUNC(TO_DATE(INI_EXECUTION, 'DD/MM/YYYY HH24:MI:SS'), 'MM') = TRUNC(ADD_MONTHS(SYSDATE, -1), 'MM')&#xA;ORDER BY PERIODO DESC">
                 <ui:ExecuteQuery.Parameters>
                   <scg:Dictionary x:TypeArguments="x:String, Argument" />
                 </ui:ExecuteQuery.Parameters>
               </ui:ExecuteQuery>
-              <ui:ExecuteQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" x:Key="235" CommandType="Text" DataTable="[dtMetricas]" DisplayName="Run query" ExistingDbConnection="[dcRPA]" sap:VirtualizedContainerService.HintSize="456,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_2" Sql="SELECT &#xD;&#xA;    -- 1) Casos PF + STA (End-to-End)&#xD;&#xA;    COUNT(CASE &#xD;&#xA;        WHEN TP_PESSOA = 'F' &#xD;&#xA;         AND ORIGEM = 'CCS' &#xD;&#xA;         AND STATUS_EXTRATO = 'COMPLETED' &#xD;&#xA;        THEN 1 END) AS TOTAL_PF_STA_E2E,&#xD;&#xA;    -- 2) Casos SIMBA (Sistema de Envio 'S')&#xD;&#xA;    COUNT(CASE &#xD;&#xA;        WHEN SISTEMA_ENVIO = 'S' &#xD;&#xA;        THEN 1 END) AS TOTAL_SIMBA_COOP_TECNICA,&#xD;&#xA;    -- 3) Casos PJ com geração parcial&#xD;&#xA;    COUNT(CASE &#xD;&#xA;        WHEN TP_PESSOA = 'J' &#xD;&#xA;         AND (STATUS_EXTRATO = 'COMPLETED' OR STATUS_FATURA = 'COMPLETED' OR STATUS_DADOS = 'COMPLETED')&#xD;&#xA;         AND (STATUS_EXTRATO &lt;&gt; 'COMPLETED' OR STATUS_FATURA &lt;&gt; 'COMPLETED' OR STATUS_DADOS &lt;&gt; 'COMPLETED')&#xD;&#xA;        THEN 1 END) AS TOTAL_PJ_PARCIAL,&#xD;&#xA;    -- 4) Falha na geração (Timeout API)&#xD;&#xA;    COUNT(CASE &#xD;&#xA;        WHEN STATUS_EXTRATO = 'ERRO' &#xD;&#xA;        THEN 1 END) AS TOTAL_FALHA_EXTRATO_TIMEOUT&#xD;&#xA;FROM RPA.RPA_CTRL_JUD_SIMBA_BASIC_KIT&#xD;&#xA;WHERE DT_INSERT &gt;= TRUNC(ADD_MONTHS(SYSDATE, -1), 'MM')&#xD;&#xA;&#x9;&#x9;AND DT_INSERT &lt; TRUNC(SYSDATE, 'MM')">
+              <ui:ExecuteQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" x:Key="235" CommandType="Text" DataTable="[dtMetricas]" DisplayName="Run query" ExistingDbConnection="[dcRPA]" sap:VirtualizedContainerService.HintSize="458,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_2" Sql="SELECT &#xA;    -- 1) Casos PF + STA (End-to-End)&#xA;    COUNT(CASE &#xA;        WHEN TP_PESSOA = 'F' &#xA;         AND ORIGEM = 'CCS' &#xA;         AND STATUS_EXTRATO = 'COMPLETED' &#xA;        THEN 1 END) AS TOTAL_PF_STA_E2E,&#xA;    -- 2) Casos SIMBA (Sistema de Envio 'S')&#xA;    COUNT(CASE &#xA;        WHEN SISTEMA_ENVIO = 'S' &#xA;        THEN 1 END) AS TOTAL_SIMBA_COOP_TECNICA,&#xA;    -- 3) Casos PJ com geração parcial&#xA;    COUNT(CASE &#xA;        WHEN TP_PESSOA = 'J' &#xA;         AND (STATUS_EXTRATO = 'COMPLETED' OR STATUS_FATURA = 'COMPLETED' OR STATUS_DADOS = 'COMPLETED')&#xA;         AND (STATUS_EXTRATO &lt;&gt; 'COMPLETED' OR STATUS_FATURA &lt;&gt; 'COMPLETED' OR STATUS_DADOS &lt;&gt; 'COMPLETED')&#xA;        THEN 1 END) AS TOTAL_PJ_PARCIAL,&#xA;    -- 4) Falha na geração (Timeout API)&#xA;    COUNT(CASE &#xA;        WHEN STATUS_EXTRATO = 'ERRO' &#xA;        THEN 1 END) AS TOTAL_FALHA_EXTRATO_TIMEOUT&#xA;FROM RPA.RPA_CTRL_JUD_SIMBA_BASIC_KIT&#xA;WHERE DT_INSERT &gt;= TRUNC(ADD_MONTHS(SYSDATE, -1), 'MM')&#xA;&#x9;&#x9;AND DT_INSERT &lt; TRUNC(SYSDATE, 'MM')">
                 <ui:ExecuteQuery.Parameters>
                   <scg:Dictionary x:TypeArguments="x:String, Argument" />
                 </ui:ExecuteQuery.Parameters>
               </ui:ExecuteQuery>
             </Switch>
-            <uga:WriteRangeConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" RowPosition="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" ConnectionId="2c55c21c-c9a3-4aba-a9a1-a4c79e10138b" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="496,381" sap2010:WorkflowViewState.IdRef="WriteRangeConnections_1" IncludeHeaders="False" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1wh8FGkockVMXafPPz0QPyEIG9T-N41BhgFAuLm4nTt8" Range="[sCurrentBotId]" Source="[dtMetricas]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False" WriteMode="Append">
+            <uga:WriteRangeConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" RowPosition="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" ConnectionId="c592ec09-009c-4bd5-b8c7-1a691a25d546" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="497,381" sap2010:WorkflowViewState.IdRef="WriteRangeConnections_1" IncludeHeaders="False" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="[in_sSheetIdMetricas]" Range="[sCurrentBotId]" Source="[dtMetricas]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False" WriteMode="Append">
               <uga:WriteRangeConnections.FileIdBackup>
                 <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID0" StoredValue="UrlOrId">
                   <usau:BackupSlot.BackupValues>
@@ -219,7 +219,7 @@
                 </usau:BackupSlot>
               </uga:WriteRangeConnections.FileIdBackup>
               <uga:WriteRangeConnections.Item>
-                <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID0}" BrowserId="{x:Null}" ConnectionDescriptor="{x:Null}" ConnectionKey="{x:Null}" Existing="{x:Null}" FriendlyName="{x:Null}" FullPath="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" IdOrUrl="1wh8FGkockVMXafPPz0QPyEIG9T-N41BhgFAuLm4nTt8" InputMode="UrlOrId">
+                <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID0}" BrowserId="{x:Null}" ConnectionDescriptor="{x:Null}" ConnectionKey="{x:Null}" Existing="{x:Null}" FriendlyName="{x:Null}" FullPath="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" IdOrUrl="[in_sSheetIdMetricas]" InputMode="UrlOrId">
                   <ugam:DriveItemArgument.FullPathHint>
                     <InArgument x:TypeArguments="x:String">
                       <Literal x:TypeArguments="x:String" Value="" />
@@ -249,6 +249,6 @@
         </ActivityAction>
       </ui:ForEach.Body>
     </ui:ForEach>
-    <ui:DatabaseDisconnect DatabaseConnection="[dcRPA]" DisplayName="Disconnect from database" sap:VirtualizedContainerService.HintSize="564,48" sap2010:WorkflowViewState.IdRef="DatabaseDisconnect_1" />
+    <ui:DatabaseDisconnect DatabaseConnection="[dcRPA]" DisplayName="Disconnect from database" sap:VirtualizedContainerService.HintSize="565,48" sap2010:WorkflowViewState.IdRef="DatabaseDisconnect_1" />
   </Sequence>
 </Activity>

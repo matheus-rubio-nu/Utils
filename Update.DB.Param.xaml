@@ -116,11 +116,33 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <n:Connect_Database DisplayName="Connect Database" sap:VirtualizedContainerService.HintSize="416,173" sap2010:WorkflowViewState.IdRef="Connect_Database_1" in_DatabaseToConnect="EASYBI" out_Connection="[dcRPAConnection]" />
-    <ui:ExecuteNonQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" AffectedRecords="[iAffectedRows]" CommandType="Text" DisplayName="Run command" ExistingDbConnection="[dcRPAConnection]" sap:VirtualizedContainerService.HintSize="416,121" sap2010:WorkflowViewState.IdRef="ExecuteNonQuery_1" Sql="UPDATE RPA.RPA_AA_GERENCIADOR_PARAMETERS x&#xD;&#xA;&#x9;SET x.VALUE='{&#xD;&#xA;    ''WEEKDAYS'': [''SUNDAY''],&#xD;&#xA;    ''PERIOD'': [''00:50-02:00'']&#xD;&#xA;}'&#xD;&#xA;&#x9;WHERE x.ID=7876&#xD;&#xA;">
+    <ui:ExecuteNonQuery AffectedRecords="{x:Null}" ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DisplayName="Run command" ExistingDbConnection="[dcRPAConnection]" sap:VirtualizedContainerService.HintSize="416,121" sap2010:WorkflowViewState.IdRef="ExecuteNonQuery_2" Sql="[&quot;INSERT INTO RPA.RPA_AA_GERENCIADOR_PARAMETERS (ID_BOT,&quot;&quot;KEY&quot;&quot;,DESCRIPTION,VALUE)&#xD;&#xA;&#x9;VALUES (235,'COLUMNS_TO_CHECK','STATUS_EXTRATO|STATUS_FATURA|STATUS_DADOS','Colunas utilizadas para validar status de documentos solicitados')&quot;]">
       <ui:ExecuteNonQuery.Parameters>
         <scg:Dictionary x:TypeArguments="x:String, Argument" />
       </ui:ExecuteNonQuery.Parameters>
     </ui:ExecuteNonQuery>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,172" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:ExecuteNonQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" AffectedRecords="[iAffectedRows]" CommandType="Text" DisplayName="Run command" ExistingDbConnection="[dcRPAConnection]" sap:VirtualizedContainerService.HintSize="382,112" sap2010:WorkflowViewState.IdRef="ExecuteNonQuery_1" Sql="UPDATE RPA.RPA_AA_GERENCIADOR_PARAMETERS x&#xA;&#x9;SET x.VALUE='{&#xA;    'WEEKDAYS': ['SUNDAY'],&#xA;    'PERIOD': ['00:50-02:00'&#xA;&#x9;,'11:50-13:30'&#xA;&#x9;,'15:00-15:30']&#xA;}'&#xA;&#x9;WHERE x.ID=7876">
+            <ui:ExecuteNonQuery.Parameters>
+              <scg:Dictionary x:TypeArguments="x:String, Argument" />
+            </ui:ExecuteNonQuery.Parameters>
+          </ui:ExecuteNonQuery>
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
     <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="416,122" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[iAffectedRows.ToString]" />
     <ui:DatabaseDisconnect DatabaseConnection="[dcRPAConnection]" DisplayName="Disconnect from database" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="DatabaseDisconnect_1" />
   </Sequence>

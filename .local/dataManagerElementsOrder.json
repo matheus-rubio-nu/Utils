@@ -509,9 +509,30 @@
       "Path": "OFICIOS.235.156/PENDENTES.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "iAffectedRows&Sequence_10",
+        "sQuery&Sequence_10",
+        "sCurrentColumnName&Sequence_8",
+        "sQuery&Sequence_2",
+        "sCurrentSheetName&Sequence_7",
         "dcRPA&Sequence_1",
         "dtCasosPendentes&Sequence_1",
         "dtCaso&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_bReprocessStatus",
+        "in_arrBotIDs",
+        "in_sGSheetName",
+        "in_sSheetID"
+      ],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Update.DB.Param.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "iAffectedRows&Sequence_1",
+        "dcRPAConnection&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": null,
