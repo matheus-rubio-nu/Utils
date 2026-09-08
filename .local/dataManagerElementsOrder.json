@@ -509,8 +509,8 @@
       "Path": "OFICIOS.235.156/PENDENTES.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "iAffectedRows&Sequence_10",
-        "sQuery&Sequence_10",
+        "iAffectedRows&Sequence_18",
+        "dtCasosToUpdate&Sequence_7",
         "sCurrentColumnName&Sequence_8",
         "sQuery&Sequence_2",
         "sCurrentSheetName&Sequence_7",

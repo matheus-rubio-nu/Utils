@@ -6,10 +6,10 @@
   "OriginalIconFileName": null,
   "Arguments": [
     {
-      "Name": "Read_Range",
+      "Name": "Read_Range_Accounts",
       "DisplayName": "uipath-google-sheets",
       "Category": null,
-      "Tooltip": "Read Range",
+      "Tooltip": "Read Range - Accounts",
       "Placeholder": null,
       "Widget": "Connection",
       "IsRequired": true,
