@@ -6,20 +6,39 @@ FROM RPA.RPA_AA_GERENCIADOR_PARAMETERS pr
 WHERE ID_BOT IN (156)
 ORDER BY KEY ASC;
 
+SELECT ---------------------------------------------------------------------------------- "Local" Parameters
+	*
+FROM RPA.RPA_AA_GERENCIADOR_PARAMETERS pr
+WHERE ID_BOT IN (156)
+ORDER BY KEY ASC;
+
 SELECT  ---------------------------------------------------------------------------------- Check exec status
  *
 FROM RPA.RPA_AA_GERENCIADOR_EXECUCOES
 WHERE ID_BOT = 156
 ORDER BY ID_EXECUTION DESC;
 ---------------------------------------------------------------------------------- CONTROL TABLE
-SELECT *
+SELECT * --FILA
 FROM RPA.RPA_CTRL_STA_NUBANK
-ORDER BY ID DESC;
+WHERE STATUS = '3';
+
+SELECT COUNT(*)
+FROM RPA.RPA_CTRL_STA_NUBANK
+WHERE STATUS = '3';
 
 SELECT *
 FROM RPA.RPA_CTRL_STA_NUBANK
-WHERE STATUS = '3'
+WHERE CCS_NUMBER = '20260727747077028'
 ORDER BY ID DESC;
+
+{
+    'WEEKDAYS': ['SUNDAY'],
+    'PERIOD': ['00:50-02:00'
+	,'12:30-13:00']
+}
+
+
+
 ---------------------------------------------------------------------------------- Global bot Parameters
 SELECT * 
 FROM RPA.RPA_GERENCIADOR_GLOBAL_PARAMETERS

@@ -1,16 +1,45 @@
 --"Local" Parameters---------------------------------------------------------------------------------------------------------
 SELECT *
 FROM RPA.RPA_AA_GERENCIADOR_PARAMETERS pr
-WHERE ID_BOT = 085
+WHERE ID_BOT = 280
 ORDER BY KEY ASC;
 --CONTROL TABLE---------------------------------------------------------------------------------------------------------
 SELECT *
-FROM RPA.RPA_CTRL_CX_ESTATE_DUPLICATE_EMAILS
+FROM RPA.RPA_CTRL_COMPSOL_RDR_DOSSIER_INV_OPS_BR
 ORDER BY ID DESC;
+
+SELECT * --FILA
+FROM RPA.RPA_CTRL_COMPSOL_RDR_DOSSIER_INV_OPS_BR
+WHERE STATUS = 3
+ORDER BY ID DESC;
+
+SELECT * 
+FROM RPA.RPA_CTRL_COMPSOL_RDR_DOSSIER_INV_OPS_BR
+WHERE JSON_TEMPLATE LIKE '%20260831-0180%'
+	OR JSON_TEMPLATE LIKE '%20260831-0179%'
+	OR JSON_TEMPLATE LIKE '%20260831-0178%'
+ORDER BY ID DESC; 
+
+SELECT * 
+FROM RPA.RPA_CTRL_COMPSOL_RDR_DOSSIER_INV_OPS_BR
+WHERE JSON_TEMPLATE LIKE '%Possui DICT%'
+ORDER BY ID DESC;  
+
+SELECT * 
+FROM RPA.RPA_CTRL_COMPSOL_RDR_DOSSIER_INV_OPS_BR
+WHERE ID_EXEC = 1092081
+ORDER BY ID DESC;  
+
+SELECT *
+FROM RPA.RPA_CTRL_COMPSOL_RDR_DOSSIER_INV_OPS_BR
+WHERE ID = 2237
+ORDER BY ID DESC;
+
+
 --GERENCIADOR EXECUCOES---------------------------------------------------------------------------------------------------------
 SELECT *
 FROM RPA.RPA_AA_GERENCIADOR_EXECUCOES
-WHERE ID_BOT = 218
+WHERE ID_BOT = 280
 ORDER BY ID_EXECUTION DESC;
 --Global bot Parameters---------------------------------------------------------------------------------------------------------
 SELECT *

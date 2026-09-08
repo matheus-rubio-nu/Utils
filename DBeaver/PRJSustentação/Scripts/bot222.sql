@@ -6,8 +6,22 @@ ORDER BY KEY ASC;
 --CONTROL TABLE---------------------------------------------------------------------------------------------------------
 SELECT *
 FROM RPA.RPA_CTRL_JUD_TRIAGEM_SIMBA
+WHERE STATUS = 3
 ORDER BY ID DESC;
 
+SELECT *
+FROM RPA.RPA_CTRL_JUD_TRIAGEM_SIMBA
+WHERE ID_OFICIO IN (329818
+,329793
+,329792
+,329324
+,329323)
+ORDER BY ID DESC;
+
+SELECT *
+FROM RPA.RPA_CTRL_JUD_TRIAGEM_SIMBA
+WHERE STATUS = 6
+ORDER BY ID DESC;
 --GERENCIADOR EXECUCOES---------------------------------------------------------------------------------------------------------
 SELECT *
 FROM RPA.RPA_AA_GERENCIADOR_EXECUCOES
