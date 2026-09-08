@@ -1,0 +1,27 @@
+SELECT ----------------------------------------------------------------------------------"Local" Parameters
+	ID_BOT 
+	,KEY
+	,VALUE
+FROM RPA.RPA_AA_GERENCIADOR_PARAMETERS
+WHERE ID_BOT  IN (183)
+ORDER BY KEY ASC;
+
+SELECT  ----------------------------------------------------------------------------------Check exec status
+*
+FROM RPA.RPA_AA_GERENCIADOR_EXECUCOES
+WHERE ID_BOT = 176
+ORDER BY ID_EXECUTION DESC;
+
+
+SELECT 
+CLIENT_EMAIL,
+TICKET_SUBJECT,
+Count(*) 
+FROM RPA.RPA_CTRL_OMB_DUPLICATE_EMAILS
+WHERE (TICKET_STATUS = 'open' OR TICKET_STATUS = 'new') 
+AND CLIENT_EMAIL <> 'Sem Dados' 
+AND MERGED_TICKETS = 'Nothing' 
+--AND CREATED_AT >= SYSDATE - INTERVAL '3' DAY
+AND TRUNC(DT_EXEC) = TRUNC(SYSDATE)
+GROUP BY CLIENT_EMAIL,
+TICKET_SUBJECT HAVING COUNT(*) > 1

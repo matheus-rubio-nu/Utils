@@ -1,0 +1,55 @@
+--"Local" Parameters---------------------------------------------------------------------------------------------------------
+SELECT KEY
+	,pr.VALUE
+	,DESCRIPTION
+FROM RPA.RPA_AA_GERENCIADOR_PARAMETERS pr
+WHERE ID_BOT IN (144)
+ORDER BY KEY ASC;
+--GERENCIADOR EXECUCOES---------------------------------------------------------------------------------------------------------
+SELECT *
+FROM RPA.RPA_AA_GERENCIADOR_EXECUCOES
+WHERE ID_BOT = 144
+ORDER BY ID_EXECUTION DESC;
+
+SELECT 
+    ID_BOT
+    ,TO_TIMESTAMP(END_EXECUTION, 'DD/MM/YYYY HH24:MI:SS') - 
+    		TO_TIMESTAMP(INI_EXECUTION, 'DD/MM/YYYY HH24:MI:SS') AS DURACAO_INTERVALO
+FROM RPA.RPA_AA_GERENCIADOR_EXECUCOES
+WHERE ID_BOT = 157
+	AND END_EXECUTION IS NOT NULL
+ORDER BY ID_EXECUTION DESC;
+--CONTROL TABLE---------------------------------------------------------------------------------------------------------
+SELECT *
+FROM RPA.RPA_CTRL_LGL_RETIRADA_APONTAMENTO
+ORDER BY ID DESC;
+
+--NuPag e Nufin
+SELECT COUNT(*) FROM RPA.RPA_CTRL_LGL_RETIRADA_APONTAMENTO 
+WHERE SERASA_DONE IS NULL;
+
+SELECT COUNT(*) FROM RPA.RPA_CTRL_LGL_RETIRADA_APONTAMENTO
+WHERE BOAVISTA_CHECK IS NULL OR BOAVISTA_CHECK = 'ERRO' ORDER BY ID;
+
+SELECT COUNT(*)
+FROM RPA.RPA_CTRL_LGL_RETIRADA_APONTAMENTO
+WHERE BOAVISTA_CHECK LIKE '%DONE%'
+	AND SERASA_DONE LIKE '%/DONE%NuPag%'
+	AND SERASA_DONE LIKE '%/DONE%Nufin%'
+	AND ELAW_DONE IS NULL;
+
+SELECT COUNT(*)
+FROM RPA.RPA_CTRL_LGL_RETIRADA_APONTAMENTO
+WHERE ELAW_DONE IS NULL;
+
+SELECT COUNT(*)
+FROM RPA.RPA_CTRL_LGL_RETIRADA_APONTAMENTO
+WHERE ELAW_DONE = 'ERRO'; --3905
+--Global bot Parameters---------------------------------------------------------------------------------------------------------
+SELECT
+	*
+FROM
+	RPA.RPA_GERENCIADOR_GLOBAL_PARAMETERS
+ORDER BY
+	KEY ASC;
+--------------------------------------------------------------------------------------------------------------------------------

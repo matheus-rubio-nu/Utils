@@ -1,0 +1,60 @@
+--"Local" Parameters---------------------------------------------------------------------------------------------------------
+SELECT 
+	KEY
+	,pr.VALUE
+	,DESCRIPTION
+FROM RPA.RPA_AA_GERENCIADOR_PARAMETERS pr
+WHERE ID_BOT IN (95)
+	--AND KEY LIKE '%CONTROL_TABLE_NAME%'
+ORDER BY KEY ASC;
+--Check exec status---------------------------------------------------------------------------------------------------------
+SELECT 
+	*
+FROM RPA.RPA_AA_GERENCIADOR_EXECUCOES
+WHERE ID_BOT = 95
+ORDER BY ID_EXECUTION DESC;
+--CONTROL TABLE---------------------------------------------------------------------------------------------------------
+SELECT *
+FROM RPA.RPA_ROP_TAXA_INATIVIDADE_B3;
+
+SELECT *
+FROM RPA.RPA_ROP_TAXA_INATIVIDADE_B3 
+WHERE SINCAD_INACTIVATE_ACCOUNT = '3'
+ORDER BY DT_EXEC DESC;
+
+SELECT *
+FROM RPA.RPA_ROP_TAXA_INATIVIDADE_B3
+WHERE SINACOR_INACTIVATE_ACCOUNT = '3'
+ORDER BY DT_EXEC DESC;
+
+--Conta processada antes: 8527152
+--SUSPENSO PARCIAL: 9884302
+
+SELECT  --Coleta qtde de status dos itens
+    COUNT(*) AS TOTAL_CONTAS_SINCAD
+    ,SUM(CASE WHEN SINCAD_INACTIVATE_ACCOUNT = '1' THEN 1 ELSE 0 END) AS CONTAS_PROCESSADAS
+    ,SUM(CASE WHEN SINCAD_INACTIVATE_ACCOUNT = '5' THEN 1 ELSE 0 END) AS ERROS_EXECUCAO
+    ,SUM(CASE WHEN SINCAD_INACTIVATE_ACCOUNT = '3' THEN 1 ELSE 0 END) AS PENDENTES
+FROM RPA.RPA_ROP_TAXA_INATIVIDADE_B3
+WHERE SINCAD_INACTIVATE_ACCOUNT IS NOT NULL 
+    AND TRUNC(DT_EXEC) >= TRUNC(SYSDATE) - 3;
+
+--TITU_SVC---------------------------------------------------------------------------------------------------------
+SELECT *
+FROM CORRWIN.TSCCLIBOL t
+WHERE CD_CLIENTE = 9664808;
+
+SELECT A.CD_CLIENTE
+	,A.CD_CPFCGC
+	,A.IN_SITUAC
+	,A.DT_ULT_OPER
+	,TO_CHAR(B.DT_NASC_FUND, 'DD/MM/YYYY') AS DT_NASCIMENTO
+	,C.ACI
+FROM CORRWIN.TSCCLIBOL A
+INNER JOIN CORRWIN.TSCCLIGER B
+	ON B.CD_CPFCGC = A.CD_CPFCGC
+INNER JOIN REGS.CUSTOMER_USERS C
+	ON C.CUSTOMERID = A.CD_CPFCGC
+WHERE A.IN_SITUAC = 'A'
+	AND A.DT_ULT_OPER <= ADD_MONTHS(SYSDATE, -58);
+--------------------------------------------------------------------------------------------------------------------------------

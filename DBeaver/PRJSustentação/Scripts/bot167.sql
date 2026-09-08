@@ -1,0 +1,138 @@
+SELECT ---------------------------------------------------------------------------------- "Local" Parameters
+	KEY
+	,pr.VALUE
+	,DESCRIPTION
+FROM RPA.RPA_AA_GERENCIADOR_PARAMETERS pr
+WHERE ID_BOT IN (167)
+ORDER BY KEY ASC;
+
+SELECT  ---------------------------------------------------------------------------------- Check exec status
+ *
+FROM RPA.RPA_AA_GERENCIADOR_EXECUCOES
+WHERE ID_BOT = 167
+ORDER BY ID_EXECUTION DESC;
+---------------------------------------------------------------------------------- CONTROL TABLE
+SELECT *
+FROM RPA.RPA_CTRL_REGSOL_REATIVACAO_CONTAS
+ORDER BY ID DESC;
+
+SELECT
+	TO_CHAR(DT_EXEC, 'DD/MM/YYYY HH24:MI:SS') AS DATA_EXECUCAO,
+	SYSTEM_REQUEST,
+	CPF,
+	ACCOUNTNUMBER,
+	REQUEST_TICKET_ID,
+	ACCOUNT_NUINVEST,
+	SINACOR_ACCOUNT_STATUS,
+	EZMARKET_ACCOUNT_STATUS,
+	VIRTUAL_ACCOUNT_STATUS,
+	ACCOUNT_NUBANK,
+	RESTRICTIVE_LIST,
+	PEP_LIST,
+	FLAG_PEP_EMS,
+	INADIMPLENTE_SINACOR,
+	ESPOLIO_NAME,
+	UDB_JUDICIAL_BLOCK,
+	EMS_JUDICIAL_BLOCK,
+	EMS_COMMERCIAL_DESINTEREST,
+	CUSTOMER_TICKET_ID,
+	STATUS,
+	REASON
+FROM
+	RPA.RPA_CTRL_REGSOL_REATIVACAO_CONTAS
+ORDER BY
+	DT_EXEC DESC,
+	STATUS ASC;
+	
+SELECT
+	TO_CHAR(DT_EXEC, 'DD/MM/YYYY HH24:MI:SS') AS DT_EXEC,
+	SYSTEM_REQUEST,
+	CPF,
+	ACCOUNTNUMBER,
+	REQUEST_TICKET_ID,
+	ACCOUNT_NUINVEST,
+	SINACOR_ACCOUNT_STATUS,
+	EZMARKET_ACCOUNT_STATUS,
+	VIRTUAL_ACCOUNT_STATUS,
+	ACCOUNT_NUBANK,
+	RESTRICTIVE_LIST,
+	PEP_LIST,
+	FLAG_PEP_EMS,
+	INADIMPLENTE_SINACOR,
+	ESPOLIO_NAME,
+	UDB_JUDICIAL_BLOCK,
+	EMS_JUDICIAL_BLOCK,
+	EMS_COMMERCIAL_DESINTEREST,
+	CUSTOMER_TICKET_ID,
+	STATUS,
+	REASON
+FROM
+	RPA.RPA_CTRL_REGSOL_REATIVACAO_CONTAS
+WHERE
+	TRUNC(DT_EXEC) = TRUNC(SYSDATE)
+ORDER BY
+	DT_EXEC DESC,
+	STATUS ASC;
+---------------------------------------------------------------------------------- Global bot Parameters
+SELECT * 
+FROM RPA.RPA_GERENCIADOR_GLOBAL_PARAMETERS
+ORDER BY key asc;
+----------------------------------------------------------------------------------
+
+SELECT
+	CASE
+		WHEN customer_is_pep_official = TRUE THEN 'SIM'
+		ELSE 'NAO'
+	END AS CUSTOMER_IS_PEP,
+	CASE
+		WHEN customer_is_lrn = TRUE THEN 'SIM'
+		ELSE 'NAO'
+	END AS CUSTOMER_IS_LRN
+FROM
+	nu-br-data.dataset.reported_pep_lrn_customers
+	etl.br__dataset.reported_pep_lrn_customers
+WHERE
+	UPPER(customer__id) = '5C6E7A5A-B1C5-4858-BE84-D75B9D936274'
+
+SELECT
+	CASE
+		WHEN customer_is_pep_official = TRUE THEN 'SIM'
+		ELSE 'NAO'
+	END AS CUSTOMER_IS_PEP,
+	CASE
+		WHEN customer_is_lrn = TRUE THEN 'SIM'
+		ELSE 'NAO'
+	END AS CUSTOMER_IS_LRN
+FROM
+	nu-br-data.dataset.reported_pep_lrn_customers
+	etl.br__dataset.reported_pep_lrn_customers
+WHERE
+	UPPER(customer__id) = UPPER('540f8f05-f3a4-4c36-aa6d-9cd110015baf')
+	
+SELECT
+	CASE
+		WHEN customer_is_pep_official = TRUE THEN 'SIM'
+		ELSE 'NAO'
+	END AS CUSTOMER_IS_PEP,
+	CASE
+		WHEN customer_is_lrn = TRUE THEN 'SIM'
+		ELSE 'NAO'
+	END AS CUSTOMER_IS_LRN
+FROM
+	nu-br-data.dataset.reported_pep_lrn_customers
+WHERE
+	UPPER(customer__id) = '%CUSTOMER_ID%'
+
+SELECT
+	CASE
+		WHEN customer_is_pep_official = TRUE THEN 'SIM'
+		ELSE 'NAO'
+	END AS CUSTOMER_IS_PEP,
+	CASE
+		WHEN customer_is_lrn = TRUE THEN 'SIM'
+		ELSE 'NAO'
+	END AS CUSTOMER_IS_LRN
+FROM
+	etl.br__dataset.reported_pep_lrn_customers
+WHERE
+	UPPER(customer__id) = '%CUSTOMER_ID%'

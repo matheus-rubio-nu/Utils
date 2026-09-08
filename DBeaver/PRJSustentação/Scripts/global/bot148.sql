@@ -1,0 +1,136 @@
+SELECT --"Local" Parameters
+	ID_BOT 
+	,KEY
+	,VALUE
+FROM RPA.RPA_AA_GERENCIADOR_PARAMETERS
+WHERE ID_BOT  IN (193)
+ORDER BY KEY ASC;
+
+
+WITH Subquery1 AS (
+    SELECT 
+        U.NOME, 
+        U.EMAIL, 
+        U.APELIDO, 
+        U.ID_BOLSA, 
+        U.ID_BOLSA_BMF, 
+        P.NOME AS NOME_PERFIL, 
+        U.BLOQUEADO
+    FROM 
+        EZMARKET.USUARIO U
+    INNER JOIN 
+        EZMARKET.PERFIL P 
+    ON 
+        U.CODIGO_PERFIL = P.CODIGO
+),
+Subquery2 AS (
+    SELECT LOG_DATE,
+           'DATA_CRIACAO' AS MOV_TYPE,
+           SUBSTR(MESSAGE, EMAIL_START_POS, EMAIL_END_POS - EMAIL_START_POS) AS EMAIL,
+           SUBSTR(MESSAGE, PROFILE_START_POS, PROFILE_END_POS - PROFILE_START_POS) AS PROFILE
+    FROM (
+        SELECT  LOG_DATE,
+                INSTR(message, 'email: "') + 8 AS EMAIL_START_POS,
+                INSTR(message, '" password') AS EMAIL_END_POS,
+                INSTR(message, ' name:', INSTR(message, 'profile {') + 8) + 8 AS PROFILE_START_POS,
+                INSTR(message, '" description') AS PROFILE_END_POS,
+                INSTR(message, 'nickname: "') + 11 AS NICKNAME_START_POS,
+                INSTR(message, '" profile') AS NICKNAME_END_POS,
+                INSTR(message, ' name: "') + 8 AS NAME_START_POS,
+                INSTR(message, '" email') AS NAME_END_POS,
+                INSTR(message, '][Usuário') + 10 AS USER_START_POS,
+                INSTR(message, ' salvando dados do usuário') AS USER_END_POS,
+                MESSAGE
+        FROM (
+            SELECT *
+            FROM EZMARKET.AUDIT_LOG al 
+            WHERE message LIKE '%NewUserForm%user { blocked%'
+            AND LOGSESSION <> 'UDB ADMIN'
+        )
+    )
+    UNION ALL
+    SELECT LOG_DATE,
+           'DATA_REVOGACAO' AS MOV_TYPE,
+           SUBSTR(MESSAGE, EMAIL_START_POS, EMAIL_END_POS - EMAIL_START_POS) AS EMAIL,
+           SUBSTR(MESSAGE, PROFILE_START_POS, PROFILE_END_POS - PROFILE_START_POS) AS PROFILE
+    FROM (
+        SELECT  LOG_DATE,
+                INSTR(message, 'email: "') + 8 AS EMAIL_START_POS,
+                INSTR(message, '" password') AS EMAIL_END_POS,
+                INSTR(message, ' name:', INSTR(message, 'profile {') + 8) + 8 AS PROFILE_START_POS,
+                INSTR(message, '" description') AS PROFILE_END_POS,
+                INSTR(message, 'nickname: "') + 11 AS NICKNAME_START_POS,
+                INSTR(message, '" profile') AS NICKNAME_END_POS,
+                INSTR(message, ' name: "') + 8 AS NAME_START_POS,
+                INSTR(message, '" email') AS NAME_END_POS,
+                INSTR(message, '][Usuário') + 10 AS USER_START_POS,
+                INSTR(message, 'removendo usuário') AS USER_END_POS,
+                MESSAGE
+        FROM (
+            SELECT *
+            FROM EZMARKET.AUDIT_LOG al 
+            WHERE message LIKE '%G_MSG_REQUEST_REMOVE_USER%user { id:%'
+            AND LOGSESSION <> 'UDB ADMIN'
+        )
+        WHERE LOG_DATE >= TO_DATE('01/11/2023', 'dd/mm/yyyy')
+    )
+),
+MaxLogDates AS (
+    SELECT
+        EMAIL,
+        PROFILE,
+        MAX(CASE WHEN MOV_TYPE = 'DATA_CRIACAO' THEN LOG_DATE END) AS MAX_DATA_CRIACAO,
+        MAX(CASE WHEN MOV_TYPE = 'DATA_REVOGACAO' THEN LOG_DATE END) AS MAX_DATA_REVOGACAO
+    FROM Subquery2
+    GROUP BY EMAIL, PROFILE
+)
+SELECT 
+    S1.NOME, 
+    S1.EMAIL, 
+    S1.APELIDO, 
+    S1.ID_BOLSA, 
+    S1.ID_BOLSA_BMF, 
+    S1.NOME_PERFIL, 
+    S1.BLOQUEADO,
+    MLD.MAX_DATA_CRIACAO AS DATA_CRIACAO,
+    MLD.MAX_DATA_REVOGACAO AS DATA_REVOGACAO
+FROM 
+    Subquery1 S1
+LEFT JOIN
+    MaxLogDates MLD
+ON 
+    S1.EMAIL = MLD.EMAIL
+AND 
+    S1.NOME_PERFIL = MLD.PROFILE
+    
+    
+    
+    SELECT
+TGSUSUA.COD_USUA AS CODIGO_USUARIO,
+       TGSUSUA.NOME_USUA AS NOME_USUARIO,
+       TGSUSUA.TXT_LOGN_USUA AS LOGIN,
+       usu.CD_EMAIL,
+       TGSGRUP_USUA.DESC_GRUP_USUA AS GRUPO_USUARIO,
+       --TGSPERF_ACES.DESC_PERF_ACES AS PERFIL_ACESSO,
+         usu.IN_BLOQUEIO,
+        usu.DT_ATUALIZA,
+        usu.DT_ACESSO
+ FROM SINAWIN.TGSUSUA TGSUSUA
+ INNER JOIN sinawin.tgeusuario usu ON usu.CD_USUARIO = TGSUSUA.COD_USUA
+ INNER JOIN SINAWIN.TGSUSUA_GRUP_USUA TGSUSUA_GRUP_USUA ON TGSUSUA.COD_USUA = TGSUSUA_GRUP_USUA.COD_USUA
+ INNER JOIN SINAWIN.TGSGRUP_USUA TGSGRUP_USUA ON TGSGRUP_USUA.COD_GRUP_USUA = TGSUSUA_GRUP_USUA.COD_GRUP_USUA
+ INNER JOIN SINAWIN.TGSPERF_ACES_GRUP_USUA AB ON AB.COD_GRUP_USUA = TGSGRUP_USUA.COD_GRUP_USUA
+ INNER JOIN SINAWIN.TGSPERF_ACES TGSPERF_ACES ON TGSPERF_ACES.COD_PERF_ACES = AB.COD_PERF_ACES
+INNER JOIN SINAWIN.TGSUSUA_GRUP_USUA_EMP TGSUSUA_GRUP_USUA_EMP ON TGSUSUA_GRUP_USUA_EMP.COD_USUA_GRUP_USUA = TGSUSUA_GRUP_USUA.COD_USUA_GRUP_USUA
+INNER JOIN SINAWIN.TGEEMPR TGEEMPR ON TGEEMPR.CD_EMPRESA = TGSUSUA_GRUP_USUA_EMP.CD_EMPRESA
+GROUP BY
+TGSUSUA.COD_USUA ,
+       TGSUSUA.NOME_USUA,
+       TGSUSUA.TXT_LOGN_USUA,
+       TGSGRUP_USUA.DESC_GRUP_USUA,
+      -- TGSPERF_ACES.DESC_PERF_ACES,
+       usu.IN_BLOQUEIO,
+       usu.DT_ATUALIZA,
+       usu.DT_ACESSO,
+       usu.CD_EMAIL
+ORDER BY 1

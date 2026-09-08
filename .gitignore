@@ -1,0 +1,5 @@
+# macOS
+.DS_Store
+
+# DBeaver workspace metadata (credentials, connection info, local settings)
+.dbeaver/
