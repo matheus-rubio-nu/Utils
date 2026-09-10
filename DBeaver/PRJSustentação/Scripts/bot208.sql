@@ -5,7 +5,6 @@ SELECT
 	,DESCRIPTION
 FROM RPA.RPA_AA_GERENCIADOR_PARAMETERS pr
 WHERE ID_BOT IN (208)
-	AND VALUE LIKE '%DT_UPDATE%'
 ORDER BY KEY ASC;
 ------------------------------------------------------------------------------------Check exec status
 SELECT  

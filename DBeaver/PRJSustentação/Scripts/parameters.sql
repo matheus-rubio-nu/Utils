@@ -1,7 +1,7 @@
 --"Local" Parameters---------------------------------------------------------------------------------------------------------
 SELECT *
 FROM RPA.RPA_AA_GERENCIADOR_PARAMETERS pr
-WHERE ID_BOT = 085
+WHERE ID_BOT = 156
 ORDER BY KEY ASC;
 --CONTROL TABLE---------------------------------------------------------------------------------------------------------
 SELECT *
