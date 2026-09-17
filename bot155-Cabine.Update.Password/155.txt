@@ -1,0 +1,6 @@
+﻿{
+  'NU INVEST CORRETORA DE VALORES SA': {
+  	'path': '\\\\nub-jud-app\\JDJUD\\CABINE\\PCabine_JUD.exe',
+    'credential': 'Auth.CabineJDJUD.Prod.Nubank'
+  }
+}

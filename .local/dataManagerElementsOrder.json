@@ -140,6 +140,13 @@
       "Path": "AccountStatus/GetAccountId.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "sSheetId&Sequence_327",
+        "sSheetName&Sequence_327",
+        "dtGetAccountResult&Sequence_327",
+        "sAccountId&Sequence_328",
+        "sQrToRun&Sequence_329",
+        "dtQrResult&Sequence_329",
+        "iAffectedRows&Sequence_329",
         "sBDSystem&Sequence_252",
         "dtMovimentacaoCliente&Sequence_316",
         "sCdCliente&Sequence_319",
@@ -535,6 +542,58 @@
         "dcRPAConnection&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "AccountStatus/AccountStatus.GetStatus.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dcTITU&Sequence_1",
+        "sSheetId&Sequence_1",
+        "sSheetName&Sequence_1",
+        "dtAccounts&Sequence_1",
+        "iIndexRow&Sequence_1",
+        "sCurCpf&Sequence_2",
+        "sCurAccountNumber&Sequence_2",
+        "dtResultRegs&Sequence_3",
+        "sQueryRegs&Sequence_3",
+        "sRegsLoginStatus&Sequence_3",
+        "sRegsAccountState&Sequence_3",
+        "sRegsAccountActive&Sequence_3",
+        "drRegs&Sequence_5",
+        "dtResultSinacor&Sequence_6",
+        "sQuerySinacor&Sequence_6",
+        "sSinacorCligerStatus&Sequence_6",
+        "sSinacorCliccStatus&Sequence_6",
+        "sSinacorClibolStatus&Sequence_6",
+        "sSinacorClicusStatus&Sequence_6",
+        "sSinacorClitsdStatus&Sequence_6",
+        "drSinacor&Sequence_8"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "bot155-Cabine.Update.Password/Cabine.Get.Credentials.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "sAppPath&Sequence_1",
+        "sCategory&Sequence_1",
+        "sClass&Sequence_1",
+        "sTypeAccess&Sequence_1",
+        "sAppUsername&Sequence_1",
+        "sAppPassword&Sequence_1",
+        "sCabineJDEnvs&Sequence_1",
+        "sAppInstitution&Sequence_1",
+        "sCredName&Sequence_1",
+        "jCabineJDEnvs&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "sAppEnvironment",
+        "in_sEnvironment"
+      ],
       "ConstantsSectionElementsOrder": null,
       "AddedNamespaces": null
     }
