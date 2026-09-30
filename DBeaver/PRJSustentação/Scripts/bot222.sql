@@ -6,7 +6,7 @@ ORDER BY KEY ASC;
 --CONTROL TABLE---------------------------------------------------------------------------------------------------------
 SELECT *
 FROM RPA.RPA_CTRL_JUD_TRIAGEM_SIMBA
-WHERE STATUS = 3
+WHERE TRUNC(DT_INSERT) = TRUNC(SYSDATE)
 ORDER BY ID DESC;
 
 SELECT *

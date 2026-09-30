@@ -1,7 +1,7 @@
 --"Local" Parameters---------------------------------------------------------------------------------------------------------
 SELECT *
 FROM RPA.RPA_AA_GERENCIADOR_PARAMETERS pr
-WHERE ID_BOT = 156
+WHERE pr.VALUE LIKE '%1-GnfyR_tFLYacOVAIZ05TJMPzm5gevLoL7gVmWgJnKQ%'
 ORDER BY KEY ASC;
 --CONTROL TABLE---------------------------------------------------------------------------------------------------------
 SELECT *
@@ -48,13 +48,15 @@ WHERE
 ORDER BY ID_EXECUTION DESC;
 --Gerenciador de bots---------------------------------------------------------------------------------------------------------
 SELECT
-	ID, RESPONSIBLE
+	*
 FROM RPA.RPA_AA_GERENCIADOR_ROBOS gr
 WHERE BU = 'Brazil - Operations'
 	AND gr.ENABLE = '1'
 ORDER BY ID ASC;
 
-SELECT ID_BOT, RESPONSIBLE
-FROM RPA.RPA_AA_GERENCIADOR_APLIC_BOTS
-WHERE U = 'Brazil - Operations'
-ORDER BY ID_BOT ASC;
+SELECT
+	ID, RESPONSIBLE
+FROM RPA.RPA_AA_GERENCIADOR_ROBOS gr
+WHERE BU = 'Brazil - Operations'
+	AND gr.ENABLE = '1'
+ORDER BY ID ASC;

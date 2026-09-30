@@ -9,9 +9,14 @@ WHERE ID_BOT IN (228)
 ORDER BY KEY ASC;
 --Check exec status---------------------------------------------------------------------------------------------------------
 SELECT 
-	*
+	ID_EXECUTION 
+	,INI_EXECUTION 
+	,END_EXECUTION 
+	,STATUS 
+	,HOST_NAME 
 FROM RPA.RPA_AA_GERENCIADOR_EXECUCOES
 WHERE ID_BOT = 228
+	AND STATUS IN (2, 6)
 ORDER BY ID_EXECUTION DESC;
 
 SELECT 
@@ -28,7 +33,7 @@ GROUP BY
 	,STATUS; 
 --CONTROL TABLE---------------------------------------------------------------------------------------------------------
 SELECT *  
-FROM RPA.[control_table]
+FROM RPA.RPA_CTRL_OMB_PAINEL_OUVIDORIA_GRAFANA
 ORDER BY ID DESC;
 --Global bot Parameters---------------------------------------------------------------------------------------------------------
 SELECT * 

@@ -9,12 +9,16 @@ ORDER BY KEY ASC;
 SELECT  ---------------------------------------------------------------------------------- Check exec status
  *
 FROM RPA.RPA_AA_GERENCIADOR_EXECUCOES
-WHERE ID_BOT = 178
+WHERE ID_BOT = 172
 ORDER BY ID_EXECUTION DESC;
 ---------------------------------------------------------------------------------- CONTROL TABLE
 SELECT *
 FROM RPA.RPA_CTRL_AML_CFT_CPF_IRREGULAR_EMS
 WHERE STATUS = 'Processing'
+ORDER BY ID DESC;
+
+SELECT *
+FROM RPA.RPA_CTRL_AML_CFT_CPF_IRREGULAR_EMS
 ORDER BY ID DESC;
 
 SELECT *
