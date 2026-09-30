@@ -1,0 +1,33 @@
+{
+  "DisplayName": "Update.DB.Param",
+  "Tooltip": null,
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "in_sValue",
+      "DisplayName": "in_sValue",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "1",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_sId",
+      "DisplayName": "in_sId",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "178",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    }
+  ]
+}
