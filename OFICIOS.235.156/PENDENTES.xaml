@@ -140,7 +140,6 @@
       <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Python.Activities</AssemblyReference>
       <AssemblyReference>Studio.Generated.TypedDataTable1</AssemblyReference>
-      <AssemblyReference>Studio.Generated.TypedDataTable1</AssemblyReference>
       <AssemblyReference>System.Data.SqlClient</AssemblyReference>
       <AssemblyReference>Studio.Generated.TypedDataTable2</AssemblyReference>
       <AssemblyReference>System.Linq.Async</AssemblyReference>
@@ -149,16 +148,16 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
-      <AssemblyReference>Studio.Generated.TypedDataTable1</AssemblyReference>
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
       <AssemblyReference>Studio.Generated.TypedDataTable3</AssemblyReference>
       <AssemblyReference>Studio.Generated.TypedDataTable5</AssemblyReference>
       <AssemblyReference>Studio.Generated.TypedDataTable6</AssemblyReference>
       <AssemblyReference>Studio.Generated.TypedDataTable4</AssemblyReference>
       <AssemblyReference>Studio.Generated.TypedDataTable7</AssemblyReference>
+      <AssemblyReference>Utils_Studio.Generated.TypedDataTable11</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="PENDENTES" sap:VirtualizedContainerService.HintSize="800,3753" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="PENDENTES" sap:VirtualizedContainerService.HintSize="799,3718" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:DatabaseConnection" Name="dcRPA" />
       <Variable x:TypeArguments="sd1:DataTable" Name="dtCasosPendentes" />
@@ -168,14 +167,14 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <n:Connect_Database DisplayName="Connect Database" sap:VirtualizedContainerService.HintSize="800,173" sap2010:WorkflowViewState.IdRef="Connect_Database_1" in_DatabaseToConnect="EASYBI" out_Connection="[dcRPA]" />
-    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each - Bot ID" sap:VirtualizedContainerService.HintSize="800,3509" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[in_arrBotIDs]">
+    <n:Connect_Database DisplayName="Connect Database" sap:VirtualizedContainerService.HintSize="768,175" sap2010:WorkflowViewState.IdRef="Connect_Database_1" in_DatabaseToConnect="EASYBI" out_Connection="[dcRPA]" />
+    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each - Bot ID" sap:VirtualizedContainerService.HintSize="768,3472" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[in_arrBotIDs]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="x:String">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:String" Name="sBotID" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="766,3363" sap2010:WorkflowViewState.IdRef="Sequence_7">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="766,3341" sap2010:WorkflowViewState.IdRef="Sequence_7">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="sCurrentSheetName" />
               <Variable x:TypeArguments="sd1:DataTable" Name="dtCasosToUpdate" />
@@ -186,7 +185,7 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Assign DisplayName="Assign - Format sheet name" sap:VirtualizedContainerService.HintSize="732,84" sap2010:WorkflowViewState.IdRef="Assign_1">
+            <Assign DisplayName="Assign - Format sheet name" sap:VirtualizedContainerService.HintSize="732,57" sap2010:WorkflowViewState.IdRef="Assign_1">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[sCurrentSheetName]</OutArgument>
               </Assign.To>
@@ -200,7 +199,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </Assign>
-            <uga:ReadRangeConnections x:TypeArguments="sd:DataTable1" BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ColumnNames="{x:Array Type=x:String}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" RangeInformation="{x:Null}" RangeMetadata="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" ConnectionId="c592ec09-009c-4bd5-b8c7-1a691a25d546" DisplayName="Read Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="732,288" sap2010:WorkflowViewState.IdRef="ReadRangeConnections`1_1" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="[in_sSheetID]" Range="[sCurrentSheetName]" ReadAs="Values" Result="[dtCasosPendentes]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False">
+            <uga:ReadRangeConnections x:TypeArguments="sd:DataTable1" BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ColumnNames="{x:Array Type=x:String}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" RangeInformation="{x:Null}" RangeMetadata="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" ConnectionId="c592ec09-009c-4bd5-b8c7-1a691a25d546" DisplayName="Read Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="732,290" sap2010:WorkflowViewState.IdRef="ReadRangeConnections`1_1" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="[in_sSheetID]" Range="[sCurrentSheetName]" ReadAs="Values" Result="[dtCasosPendentes]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False">
               <uga:ReadRangeConnections.FileIdBackup>
                 <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID0" StoredValue="UrlOrId">
                   <usau:BackupSlot.BackupValues>
@@ -232,11 +231,12 @@
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:String x:Key="bbbffa17-1024-47ac-a79a-41b860f664d0">Share</x:String>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uga:ReadRangeConnections>
-            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="732,122" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[dtCasosPendentes.RowCount.ToString]" />
-            <ui:FilterDataTable DataTable="[dtCasosPendentes]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="732,193" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[dtCasosToUpdate]" SelectColumnsMode="Remove">
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="732,123" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[dtCasosPendentes.RowCount.ToString]" />
+            <ui:FilterDataTable DataTable="[dtCasosPendentes]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="732,195" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[dtCasosToUpdate]" SelectColumnsMode="Remove">
               <ui:FilterDataTable.Filters>
                 <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
                   <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="EMPTY">
@@ -659,6 +659,6 @@ WHERE
         </ActivityAction>
       </ui:ForEach.Body>
     </ui:ForEach>
-    <ui:DatabaseDisconnect DatabaseConnection="[dcRPA]" DisplayName="Disconnect from database" sap:VirtualizedContainerService.HintSize="800,48" sap2010:WorkflowViewState.IdRef="DatabaseDisconnect_1" />
+    <ui:DatabaseDisconnect DatabaseConnection="[dcRPA]" DisplayName="Disconnect from database" sap:VirtualizedContainerService.HintSize="768,48" sap2010:WorkflowViewState.IdRef="DatabaseDisconnect_1" />
   </Sequence>
 </Activity>

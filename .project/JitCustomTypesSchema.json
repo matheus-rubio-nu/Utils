@@ -400,6 +400,118 @@
         "hash": "ReadRangeConnections`1_2|DataTable|T1PNoYwrqgwDVLtfmj7L5e0Sq02OEbqHPC8RFhICuUU|XSMtJgdIFX6OTuwbMJNACc4UKEb9Si47s0szzFr8o|HT8aFX0uTakdBZzx1gQ7QazRUYM25L1273kAdp3Xng",
         "assemblyName": "Studio.Generated.TypedDataTable7"
       }
+    },
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 8,
+        "idRef": "ReadRangeConnections`1_1",
+        "hash": "ReadRangeConnections`1_1|DataTable|T1PNoYwrqgwDVLtfmj7L5e0Sq02OEbqHPC8RFhICuUU",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [],
+        "rowExtensionProperties": [
+          {
+            "columnName": "SheetsRowIndex",
+            "dataType": "System.Int32, System.Private.CoreLib",
+            "descriptionKey": "General_RowExtensions_Property_SheetsRowIndex_Description",
+            "category": "Simplified"
+          }
+        ],
+        "nestedRowExtensionProperties": [],
+        "resourceManager": {
+          "resourceManagerName": "UiPath.GSuite.Properties.UiPath.GSuite",
+          "resourceManagerAssemblyName": "UiPath.GSuite"
+        }
+      },
+      "entityAssemblyKey": {
+        "name": "Utils_Studio.Generated.TypedDataTable8",
+        "hash": "ReadRangeConnections`1_1|DataTable|T1PNoYwrqgwDVLtfmj7L5e0Sq02OEbqHPC8RFhICuUU|M8QgJnMcDYq2DQeuuBU0Jk546eYbnq2FCcwUoYRi4Ss|HT8aFX0uTakdBZzx1gQ7QazRUYM25L1273kAdp3Xng",
+        "assemblyName": "Utils_Studio.Generated.TypedDataTable8"
+      }
+    },
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 9,
+        "idRef": "ReadRangeConnections`1_2",
+        "hash": "ReadRangeConnections`1_2|DataTable|T1PNoYwrqgwDVLtfmj7L5e0Sq02OEbqHPC8RFhICuUU",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [],
+        "rowExtensionProperties": [
+          {
+            "columnName": "SheetsRowIndex",
+            "dataType": "System.Int32, System.Private.CoreLib",
+            "descriptionKey": "General_RowExtensions_Property_SheetsRowIndex_Description",
+            "category": "Simplified"
+          }
+        ],
+        "nestedRowExtensionProperties": [],
+        "resourceManager": {
+          "resourceManagerName": "UiPath.GSuite.Properties.UiPath.GSuite",
+          "resourceManagerAssemblyName": "UiPath.GSuite"
+        }
+      },
+      "entityAssemblyKey": {
+        "name": "Utils_Studio.Generated.TypedDataTable9",
+        "hash": "ReadRangeConnections`1_2|DataTable|T1PNoYwrqgwDVLtfmj7L5e0Sq02OEbqHPC8RFhICuUU|M8QgJnMcDYq2DQeuuBU0Jk546eYbnq2FCcwUoYRi4Ss|HT8aFX0uTakdBZzx1gQ7QazRUYM25L1273kAdp3Xng",
+        "assemblyName": "Utils_Studio.Generated.TypedDataTable9"
+      }
+    },
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 10,
+        "idRef": "ReadRangeConnections`1_3",
+        "hash": "ReadRangeConnections`1_3|DataTable|T1PNoYwrqgwDVLtfmj7L5e0Sq02OEbqHPC8RFhICuUU",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [],
+        "rowExtensionProperties": [
+          {
+            "columnName": "SheetsRowIndex",
+            "dataType": "System.Int32, System.Private.CoreLib",
+            "descriptionKey": "General_RowExtensions_Property_SheetsRowIndex_Description",
+            "category": "Simplified"
+          }
+        ],
+        "nestedRowExtensionProperties": [],
+        "resourceManager": {
+          "resourceManagerName": "UiPath.GSuite.Properties.UiPath.GSuite",
+          "resourceManagerAssemblyName": "UiPath.GSuite"
+        }
+      },
+      "entityAssemblyKey": {
+        "name": "Utils_Studio.Generated.TypedDataTable10",
+        "hash": "ReadRangeConnections`1_3|DataTable|T1PNoYwrqgwDVLtfmj7L5e0Sq02OEbqHPC8RFhICuUU|M8QgJnMcDYq2DQeuuBU0Jk546eYbnq2FCcwUoYRi4Ss|HT8aFX0uTakdBZzx1gQ7QazRUYM25L1273kAdp3Xng",
+        "assemblyName": "Utils_Studio.Generated.TypedDataTable10"
+      }
+    },
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 11,
+        "idRef": "ReadRangeConnections`1_4",
+        "hash": "ReadRangeConnections`1_4|DataTable|T1PNoYwrqgwDVLtfmj7L5e0Sq02OEbqHPC8RFhICuUU",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [],
+        "rowExtensionProperties": [
+          {
+            "columnName": "SheetsRowIndex",
+            "dataType": "System.Int32, System.Private.CoreLib",
+            "descriptionKey": "General_RowExtensions_Property_SheetsRowIndex_Description",
+            "category": "Simplified"
+          }
+        ],
+        "nestedRowExtensionProperties": [],
+        "resourceManager": {
+          "resourceManagerName": "UiPath.GSuite.Properties.UiPath.GSuite",
+          "resourceManagerAssemblyName": "UiPath.GSuite"
+        }
+      },
+      "entityAssemblyKey": {
+        "name": "Utils_Studio.Generated.TypedDataTable11",
+        "hash": "ReadRangeConnections`1_4|DataTable|T1PNoYwrqgwDVLtfmj7L5e0Sq02OEbqHPC8RFhICuUU|M8QgJnMcDYq2DQeuuBU0Jk546eYbnq2FCcwUoYRi4Ss|HT8aFX0uTakdBZzx1gQ7QazRUYM25L1273kAdp3Xng",
+        "assemblyName": "Utils_Studio.Generated.TypedDataTable11"
+      }
     }
   ]
 }

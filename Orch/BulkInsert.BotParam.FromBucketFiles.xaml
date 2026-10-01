@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Get_StorageBucket_Files" this:Get_StorageBucket_Files.in_sGSheetFileID="1qygVnBFERYzVe3fXsrTNqzlGxIYrk9twKG4oaCX5PJA" this:Get_StorageBucket_Files.in_sBucketName="Query" this:Get_StorageBucket_Files.in_sDirectoryName="021" this:Get_StorageBucket_Files.in_sFolderPath="Shared" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ucas="clr-namespace:UiPath.Core.Activities.Storage;assembly=UiPath.System.Activities" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugam="clr-namespace:UiPath.GSuite.Activities.Models;assembly=UiPath.GSuite.Activities" xmlns:ugase="clr-namespace:UiPath.GSuite.Activities.Sheets.Enums;assembly=UiPath.GSuite.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Get_StorageBucket_Files" this:Get_StorageBucket_Files.in_sGSheetFileID="1qygVnBFERYzVe3fXsrTNqzlGxIYrk9twKG4oaCX5PJA" this:Get_StorageBucket_Files.in_sBucketName="Query" this:Get_StorageBucket_Files.in_sDirectoryName="021" this:Get_StorageBucket_Files.in_sFolderPath="Shared" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=Utils_Studio.Generated.TypedDataTable11" xmlns:this="clr-namespace:" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugam="clr-namespace:UiPath.GSuite.Activities.Models;assembly=UiPath.GSuite.Activities" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_sGSheetFileID" Type="InArgument(x:String)" />
     <x:Property Name="in_sBucketName" Type="InArgument(x:String)" />
@@ -49,6 +49,8 @@
       <x:String>UiPath.GSuite.Activities</x:String>
       <x:String>UiPath.Shared.Activities</x:String>
       <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.GSuite.Sheets.Enums</x:String>
+      <x:String>UiPath.GSuite.Sheets.Models</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -124,83 +126,41 @@
       <AssemblyReference>UiPath.Database.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Persistence.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>Utils_Studio.Generated.TypedDataTable8</AssemblyReference>
+      <AssemblyReference>Utils_Studio.Generated.TypedDataTable9</AssemblyReference>
+      <AssemblyReference>Utils_Studio.Generated.TypedDataTable10</AssemblyReference>
+      <AssemblyReference>Utils_Studio.Generated.TypedDataTable11</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Get_StorageBucket_Files" sap:VirtualizedContainerService.HintSize="799,1417" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldCollapseAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Get_StorageBucket_Files" sap:VirtualizedContainerService.HintSize="805,677.6566666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="scg:IEnumerable(ucas:StorageFileInfo)" Name="ieStorageFiles" />
-      <Variable x:TypeArguments="sd:DataTable" Name="dtBucketFilesText" />
+      <Variable x:TypeArguments="sd:DataTable11" Name="dtParamToInsert" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ucas:ListStorageFiles Filter="{x:Null}" TimeoutMS="{x:Null}" Directory="[in_sDirectoryName]" DisplayName="List Storage Files" FolderPath="[in_sFolderPath]" sap:VirtualizedContainerService.HintSize="514,167" sap2010:WorkflowViewState.IdRef="ListStorageFiles_2" Recursive="True" Result="[ieStorageFiles]" StorageBucketName="[in_sBucketName]" />
-    <ui:BuildDataTable DataTable="[dtBucketFilesText]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="514,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;BUCKET_FILE_NAME&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;BUCKET_FILE_TEXT&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;PARAM_NAME&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
-    <ui:ForEach x:TypeArguments="ucas:StorageFileInfo" CurrentIndex="{x:Null}" DisplayName="For Each currentStorageFileInfo" sap:VirtualizedContainerService.HintSize="514,750" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[ieStorageFiles]">
-      <ui:ForEach.Body>
-        <ActivityAction x:TypeArguments="ucas:StorageFileInfo">
-          <ActivityAction.Argument>
-            <DelegateInArgument x:TypeArguments="ucas:StorageFileInfo" Name="currentStorageFileInfo" />
-          </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="512,619" sap2010:WorkflowViewState.IdRef="Sequence_3">
-            <Sequence.Variables>
-              <Variable x:TypeArguments="x:String" Name="sFilePath" />
-              <Variable x:TypeArguments="x:String" Name="sBucketFileText" />
-              <Variable x:TypeArguments="x:String" Name="sParamName" />
-            </Sequence.Variables>
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="478,180" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
-              <ui:MultipleAssign.AssignOperations>
-                <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
-                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
-                    <ui:AssignOperation.To>
-                      <OutArgument x:TypeArguments="x:String">[sFilePath]</OutArgument>
-                    </ui:AssignOperation.To>
-                    <ui:AssignOperation.Value>
-                      <InArgument x:TypeArguments="x:String">[currentStorageFileInfo.FileFullPath]</InArgument>
-                    </ui:AssignOperation.Value>
-                  </ui:AssignOperation>
-                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
-                    <ui:AssignOperation.To>
-                      <OutArgument x:TypeArguments="x:String">[sParamName]</OutArgument>
-                    </ui:AssignOperation.To>
-                    <ui:AssignOperation.Value>
-                      <InArgument x:TypeArguments="x:String">[String.Format("QUERY_{0}", sFilePath.Replace(in_sDirectoryName+"/", "").Replace(".txt", "").Replace(".", "_"))]</InArgument>
-                    </ui:AssignOperation.Value>
-                  </ui:AssignOperation>
-                </scg:List>
-              </ui:MultipleAssign.AssignOperations>
-            </ui:MultipleAssign>
-            <ucas:ReadStorageText TimeoutMS="{x:Null}" DisplayName="Read Storage Text" FolderPath="[in_sFolderPath]" sap:VirtualizedContainerService.HintSize="478,167" sap2010:WorkflowViewState.IdRef="ReadStorageText_2" Path="[sFilePath]" Result="[sBucketFileText]" StorageBucketName="[in_sBucketName]" />
-            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{sFilePath, sBucketFileText, sParamName}]" DataTable="[dtBucketFilesText]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="478,212" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
-          </Sequence>
-        </ActivityAction>
-      </ui:ForEach.Body>
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-    </ui:ForEach>
-    <uga:WriteRangeConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" ConnectionId="c592ec09-009c-4bd5-b8c7-1a691a25d546" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="514,385" sap2010:WorkflowViewState.IdRef="WriteRangeConnections_1" IncludeHeaders="True" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="[in_sGSheetFileID]" Range="[in_sDirectoryName]" RowPosition="0" Source="[dtBucketFilesText]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False" WriteMode="Overwrite">
-      <uga:WriteRangeConnections.FileIdBackup>
+    <uga:ReadRangeConnections x:TypeArguments="sd:DataTable11" BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ColumnNames="{x:Array Type=x:String}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" RangeInformation="{x:Null}" RangeMetadata="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" ConnectionId="c592ec09-009c-4bd5-b8c7-1a691a25d546" DisplayName="Read Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="ReadRangeConnections`1_4" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="[in_sGSheetFileID]" Range="[in_sFolderPath]" ReadAs="[UiPath.GSuite.Sheets.Enums.ValuesType.Text]" Result="[dtParamToInsert]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False">
+      <uga:ReadRangeConnections.FileIdBackup>
         <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID0" StoredValue="UrlOrId">
           <usau:BackupSlot.BackupValues>
             <scg:List x:TypeArguments="x:Object" x:Key="Browse" Capacity="2">
               <x:Null />
               <x:Null />
             </scg:List>
+            <scg:List x:TypeArguments="x:Object" x:Key="UrlOrId" Capacity="1">
+              <x:Null />
+            </scg:List>
           </usau:BackupSlot.BackupValues>
         </usau:BackupSlot>
-      </uga:WriteRangeConnections.FileIdBackup>
-      <uga:WriteRangeConnections.Item>
+      </uga:ReadRangeConnections.FileIdBackup>
+      <uga:ReadRangeConnections.Item>
         <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID0}" BrowserId="{x:Null}" ConnectionDescriptor="{x:Null}" ConnectionKey="{x:Null}" Existing="{x:Null}" FriendlyName="{x:Null}" FullPath="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" IdOrUrl="[in_sGSheetFileID]" InputMode="UrlOrId">
           <ugam:DriveItemArgument.FullPathHint>
             <InArgument x:TypeArguments="x:String">
@@ -213,14 +173,7 @@
             </InArgument>
           </ugam:DriveItemArgument.ParentIdFullPathHint>
         </ugam:DriveItemArgument>
-      </uga:WriteRangeConnections.Item>
-      <uga:WriteRangeConnections.RangeWriteModeBackup>
-        <usau:BackupSlot x:TypeArguments="ugase:RangeWriteMode" StoredValue="Overwrite">
-          <usau:BackupSlot.BackupValues>
-            <scg:Dictionary x:TypeArguments="ugase:RangeWriteMode, scg:List(x:Object)" />
-          </usau:BackupSlot.BackupValues>
-        </usau:BackupSlot>
-      </uga:WriteRangeConnections.RangeWriteModeBackup>
-    </uga:WriteRangeConnections>
+      </uga:ReadRangeConnections.Item>
+    </uga:ReadRangeConnections>
   </Sequence>
 </Activity>

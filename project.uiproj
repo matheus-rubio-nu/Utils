@@ -1,0 +1,6 @@
+{
+  "Name": "Utils",
+  "ProjectType": "Library",
+  "Description": "Utils",
+  "MainFile": "NewActivity.xaml"
+}

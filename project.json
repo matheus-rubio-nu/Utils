@@ -37,7 +37,6 @@
     "projectProfile": "Developement",
     "outputType": "Library",
     "libraryOptions": {
-      "includeOriginalXaml": false,
       "privateWorkflows": []
     },
     "processOptions": {
