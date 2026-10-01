@@ -1,0 +1,69 @@
+{
+  "DisplayName": "Get.StorageBucket.Files",
+  "Tooltip": null,
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "in_sBucketName",
+      "DisplayName": "in_sBucketName",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "Query",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_sDirectoryName",
+      "DisplayName": "in_sDirectoryName",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "021",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_sFolderPath",
+      "DisplayName": "in_sFolderPath",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "Shared",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_sGSheetFileID",
+      "DisplayName": "in_sGSheetFileID",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "1qygVnBFERYzVe3fXsrTNqzlGxIYrk9twKG4oaCX5PJA",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "Write_Range",
+      "DisplayName": "uipath-google-sheets",
+      "Category": null,
+      "Tooltip": "Write Range",
+      "Placeholder": null,
+      "Widget": "Connection",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "ArgumentType": 1,
+      "DataSourceItems": null
+    }
+  ]
+}
