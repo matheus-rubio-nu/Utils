@@ -1,0 +1,33 @@
+{
+  "DisplayName": "GetDCTitu",
+  "Tooltip": null,
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "in_sGSheetID",
+      "DisplayName": "in_sGSheetID",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "1XgVvYKfejigSRIVGPAEdPAmumm2OsoFKuKYhvEsktzY",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "Write_Range",
+      "DisplayName": "uipath-google-sheets",
+      "Category": null,
+      "Tooltip": "Write Range",
+      "Placeholder": null,
+      "Widget": "Connection",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "ArgumentType": 1,
+      "DataSourceItems": null
+    }
+  ]
+}
