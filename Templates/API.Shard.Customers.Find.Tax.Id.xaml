@@ -1,6 +1,6 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="Get_Alcatraces_Custody" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
-    <x:Property Name="in_sTaxIDType" Type="InArgument(x:String)" />
+    <x:Property sap2010:Annotation.AnnotationText="'person' or 'company'" Name="in_sTaxIDType" Type="InArgument(x:String)" />
     <x:Property Name="out_sCustomerID" Type="OutArgument(x:String)" />
     <x:Property Name="in_sTaxID" Type="InArgument(x:String)" />
     <x:Property Name="in_sCountry" Type="InArgument(x:String)" />
@@ -172,7 +172,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="API.Shard.Customers.Find.Tax.Id" sap:VirtualizedContainerService.HintSize="800,979" sap2010:WorkflowViewState.IdRef="Sequence_65">
+  <Sequence DisplayName="API.Shard.Customers.Find.Tax.Id" sap:VirtualizedContainerService.HintSize="492,899" sap2010:WorkflowViewState.IdRef="Sequence_65">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="sEndPointCustomerShard" />
       <Variable x:TypeArguments="x:String" Name="sAPIBody" />
@@ -233,7 +233,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:MultipleAssign>
-    <ui:RetryScope DisplayName="Retry Scope HTTP Request - Find Customer ID" sap:VirtualizedContainerService.HintSize="492,671" sap2010:WorkflowViewState.IdRef="RetryScope_2">
+    <ui:RetryScope DisplayName="Retry Scope HTTP Request - Find Customer ID" sap:VirtualizedContainerService.HintSize="492,591" sap2010:WorkflowViewState.IdRef="RetryScope_2">
       <ui:RetryScope.ActivityBody>
         <ActivityAction>
           <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="450,382" sap2010:WorkflowViewState.IdRef="Sequence_118">
@@ -293,7 +293,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:LogMessage>
-            <Switch x:TypeArguments="x:Int32" DisplayName="Switch" Expression="[iAPIStatusCode]" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="Switch`1_3">
+            <Switch x:TypeArguments="x:Int32" DisplayName="Switch" Expression="[iAPIStatusCode]" sap:VirtualizedContainerService.HintSize="336,547" sap2010:WorkflowViewState.IdRef="Switch`1_3">
               <Switch.Default>
                 <Throw DisplayName="Throw SE - Unknown error" Exception="[New SystemException(String.Format(&quot;Not mapped SE: [{0}]&quot;, sResultMessage))]" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="Throw_2" />
               </Switch.Default>
@@ -312,6 +312,14 @@
                 </sap:WorkflowViewStateService.ViewState>
               </Throw>
               <ui:Comment x:Key="200" DisplayName="Proceed" sap:VirtualizedContainerService.HintSize="334,57" sap2010:WorkflowViewState.IdRef="Comment_2" Text="Proceed" />
+              <Throw x:Key="404" DisplayName="Throw BE - Not found" Exception="[New BusinessRuleException(sResultMessage)]" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="Throw_4">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </Throw>
             </Switch>
           </Sequence>
         </ActivityAction>
