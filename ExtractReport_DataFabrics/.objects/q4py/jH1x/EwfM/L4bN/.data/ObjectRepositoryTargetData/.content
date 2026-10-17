@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="gIx4MwmQ9EibeMTs3BBQ1A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="cloud.uipath.com/rpanubank/Investments/datafabric_/entities/37129ff4-a01f-f011-8b3d-002248a1377f" CVScreenId="fb2c352d-1803-43a1-80e8-75ad76e71cbe" DesignTimeRectangle="1510, 904, 40, 40" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='button' aria-label='Next page' /&gt;" Guid="9ab58672-43d7-44d7-bd85-3245fe32f247" ScopeSelectorArgument="&lt;html app='chrome.exe' title='RegSol.Leitura.de.Oficios.227 - UiPath Data Fabric' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="96a95d98fd09c69fbf764ca677517f38.png" xmlns="">09JpxKH9Rn0-O-KTrODieRg</imageRef>
-    </TargetAnchorable>
-    <x:String x:Key="ActivityType">Click</x:String>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>

@@ -11,16 +11,7 @@
     {
       "Path": "OFICIOS.235.156/PENDENTES.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "dcRPA&Sequence_1",
-        "dtCasosPendentes&Sequence_1",
-        "sCurrentSheetName&Sequence_7",
-        "dtCasosToUpdate&Sequence_7",
-        "dtCaso&Sequence_2",
-        "sQuery&Sequence_2",
-        "sCurrentColumnName&Sequence_8",
-        "iAffectedRows&Sequence_18"
-      ],
+      "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": [
         "in_sSheetID",
         "in_sGSheetName",

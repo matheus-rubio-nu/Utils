@@ -1,6 +1,0 @@
-INIT EXEC: {INIT_EXEC}
-END EXEC: {END_EXEC}
-
-{CRASH_MESSAGE}
-
-https://nubank.slack.com/archives/{CHANNEL_ID}/{MESSAGE_TS}
