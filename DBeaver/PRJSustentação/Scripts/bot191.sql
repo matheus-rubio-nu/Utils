@@ -14,13 +14,20 @@ ORDER BY ID_EXECUTION DESC;
 ---------------------------------------------------------------------------------- CONTROL TABLE
 SELECT *
 FROM RPA.RPA_CTRL_REGSOL_JUD_BC_CORREIOS
+WHERE STATUS_EXECUTION = 'PENDING'
 ORDER BY DATE_EXECUTION DESC;
----------------------------------------------------------------------------------- 
-
 
 SELECT *
 FROM RPA.RPA_CTRL_REGSOL_JUD_BC_CORREIOS
-WHERE NUMERO_CORREIO = '125175513'
+ORDER BY DATE_EXECUTION DESC;
+
+SELECT *
+FROM RPA.RPA_CTRL_REGSOL_JUD_BC_CORREIOS
+WHERE NUMERO_CORREIO = '126154420';
+---------------------------------------------------------------------------------- 
+
+
+
 
 
 SELECT *

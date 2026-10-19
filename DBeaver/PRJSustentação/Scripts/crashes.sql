@@ -3,10 +3,8 @@ SELECT ID_EXECUTION
 	,ID_BOT 
 	,INI_EXECUTION 
 FROM RPA.RPA_AA_GERENCIADOR_EXECUCOES
-WHERE ID_EXECUTION = 373558
 ORDER BY ID_EXECUTION DESC;
-
-----------------------------------------------------------------------GERENCIADOR EXECUCOES OPS
+-------------------------------------------------------GERENCIADOR EXECUCOES OPS
 SELECT *
 FROM RPA.RPA_AA_GERENCIADOR_EXECUCOES
 WHERE ID_BOT IN (
@@ -15,19 +13,11 @@ WHERE ID_BOT IN (
 		WHERE BU = 'Brazil - Operations'
 	)
 ORDER BY ID_EXECUTION DESC;
-----------------------------------------------------------------------CRASHES
-SELECT *
-FROM RPA.RPA_AA_GERENCIADOR_EXECUCOES
-WHERE STATUS = 2
-ORDER BY ID_EXECUTION DESC;
-
 ----------------------------------------------------------------------Bots de Ops
 SELECT *
 FROM RPA.RPA_AA_GERENCIADOR_ROBOS gr
 WHERE BU = 'Brazil - Operations'
-	AND ID = 
 ORDER BY ID ASC;
-
 ----------------------------------------------------------------------CRASHES DE OPS
 SELECT 
 	ge.ID_EXECUTION
@@ -45,28 +35,8 @@ INNER JOIN RPA.RPA_AA_GERENCIADOR_ROBOS gr
 WHERE ENVIRONMENT = 3
 	AND ge.STATUS IN (2, 6)
 	AND gr.BU = 'Brazil - Operations'
-	AND ge.ID_EXECUTION  > 1102989
+	AND ge.ID_EXECUTION  >= 1119311
 ORDER BY ID_EXECUTION DESC; 
-
-SELECT 
-	ge.ID_EXECUTION
-	,ge.INI_EXECUTION 
-	,ge.END_EXECUTION 
-	,ge.ID_BOT 
-	,ge.STATUS 
-	,ge.DESCR_ERR
-	,ge.HOST_NAME 
-	,ge.PROCESS_NAME 
-	,ge.CURRENT_USER 
-FROM RPA.RPA_AA_GERENCIADOR_EXECUCOES ge
-INNER JOIN RPA.RPA_AA_GERENCIADOR_ROBOS gr
-	ON ge.ID_BOT = gr.ID
-WHERE ENVIRONMENT = 3
-	AND ge.STATUS IN (2, 6)
-	AND gr.BU <> 'Brazil - Operations'
-	AND ge.ID_EXECUTION  > 1102989
-ORDER BY ID_EXECUTION DESC; 
-
 ----------------------------------------------------------------------Tempo EXECUCAO
 SELECT 
     ID_BOT
@@ -74,7 +44,7 @@ SELECT
     ,TO_TIMESTAMP(END_EXECUTION, 'DD/MM/YYYY HH24:MI:SS') - 
     		TO_TIMESTAMP(INI_EXECUTION, 'DD/MM/YYYY HH24:MI:SS') AS DURACAO_INTERVALO
 FROM RPA.RPA_AA_GERENCIADOR_EXECUCOES
-WHERE ID_BOT = 226
+WHERE ID_BOT = 93
 	--AND END_EXECUTION IS NOT NULL
 ORDER BY ID_EXECUTION DESC;
 ----------------------------------------------------------------------Tempo MEDIO EXECUCAO
@@ -88,6 +58,25 @@ SELECT
 	, 2) AS TEMPO_EXEC_HORA_DOUBLE
 FROM RPA.RPA_AA_GERENCIADOR_EXECUCOES
 GROUP BY ID_BOT;
+
+SELECT
+    PROCESS_NAME,
+    TRUNC(TO_DATE(END_EXECUTION, 'DD/MM/YYYY HH24:MI:SS'), 'MM') AS MES_REFERENCIA,
+    ROUND(
+        AVG(
+            (TO_DATE(END_EXECUTION, 'DD/MM/YYYY HH24:MI:SS') -
+             TO_DATE(INI_EXECUTION,  'DD/MM/YYYY HH24:MI:SS')) * 24
+        ),
+        2
+    ) AS TEMPO_EXEC_HORA_DOUBLE
+FROM RPA.RPA_AA_GERENCIADOR_EXECUCOES
+WHERE ID_BOT = 93
+GROUP BY
+    PROCESS_NAME,
+    TRUNC(TO_DATE(END_EXECUTION, 'DD/MM/YYYY HH24:MI:SS'), 'MM')
+ORDER BY
+    PROCESS_NAME,
+    MES_REFERENCIA;
 ----------------------------------------------------------------------LOGS
 SELECT
 	ID_BOT,

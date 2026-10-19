@@ -10,7 +10,7 @@ ORDER BY ID DESC;
 --GERENCIADOR EXECUCOES---------------------------------------------------------------------------------------------------------
 SELECT *
 FROM RPA.RPA_AA_GERENCIADOR_EXECUCOES
-WHERE ID_BOT = 219
+WHERE ID_BOT = 275
 ORDER BY ID_EXECUTION DESC;
 --Global bot Parameters---------------------------------------------------------------------------------------------------------
 SELECT *

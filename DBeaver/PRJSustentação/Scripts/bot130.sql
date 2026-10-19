@@ -25,7 +25,7 @@ ORDER BY STATUS DESC, REQUEST_TYPE;
 
 SELECT * 
 FROM RPA.RPA_CTRL_CX_RELATORIOS_NOTAS
-WHERE TRUNC(DT_EXEC) = TRUNC(SYSDATE - 8)
+WHERE TICKET = '125272720'
 ORDER BY ID DESC;
 
 --------------------------------------------------------------------------------- Global bot Parameters

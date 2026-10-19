@@ -1,7 +1,7 @@
 --"Local" Parameters---------------------------------------------------------------------------------------------------------
 SELECT *
 FROM RPA.RPA_AA_GERENCIADOR_PARAMETERS pr
-WHERE pr.VALUE LIKE '%1-GnfyR_tFLYacOVAIZ05TJMPzm5gevLoL7gVmWgJnKQ%'
+WHERE ID_BOT = 21
 ORDER BY KEY ASC;
 --CONTROL TABLE---------------------------------------------------------------------------------------------------------
 SELECT *
@@ -10,7 +10,7 @@ ORDER BY ID DESC;
 --GERENCIADOR EXECUCOES---------------------------------------------------------------------------------------------------------
 SELECT *
 FROM RPA.RPA_AA_GERENCIADOR_EXECUCOES
-WHERE ID_BOT = 218
+WHERE ID_BOT = 191
 ORDER BY ID_EXECUTION DESC;
 --Global bot Parameters---------------------------------------------------------------------------------------------------------
 SELECT *
@@ -51,7 +51,6 @@ SELECT
 	*
 FROM RPA.RPA_AA_GERENCIADOR_ROBOS gr
 WHERE BU = 'Brazil - Operations'
-	AND gr.ENABLE = '1'
 ORDER BY ID ASC;
 
 SELECT
@@ -60,3 +59,18 @@ FROM RPA.RPA_AA_GERENCIADOR_ROBOS gr
 WHERE BU = 'Brazil - Operations'
 	AND gr.ENABLE = '1'
 ORDER BY ID ASC;
+---------------------------------------------------------------------------------------------------------LOGS
+SELECT
+	ID,
+	ID_BOT,
+	ID_EXECUTION,
+	LOG_DESCRIPTION,
+	STATUS,
+	DATE_TIME,
+	EVIDENCE,
+	WORKFLOW_NAME
+FROM
+	RPA.RPA_AA_GERENCIADOR_LOGS
+WHERE ID_BOT = 235
+	AND ID >= 57950645
+ORDER BY ID DESC;

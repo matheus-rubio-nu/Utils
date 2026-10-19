@@ -18,9 +18,8 @@ SELECT
 FROM RPA.RPA_CTRL_CX_EXTRATO_RENDIMENTOS
 WHERE 
 	CUSTOMER_ID = '6737d1ee-6d80-4b92-9dcb-3370d6b5dcd9'
-	AND BOX_ID = '67bf5216-420a-4449-b446-7f906c4030f5'
+	AND BOX_ID = '67bf5216-420a-4449-b446-7f906c4030f5';
 ------------------------------------------------------------------------------------Query da fila
-
 SELECT 
 	CPF,
 	CUSTOMER_ID,
