@@ -31013,9 +31013,9 @@
     "restore": {
       "projectUniqueName": "Utils",
       "projectName": "Utils",
-      "projectPath": "C:\\Rubio\\BOTS\\Utils\\.local",
+      "projectPath": "C:\\rubinho\\Utils\\.local",
       "packagesPath": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\",
-      "outputPath": "C:\\Rubio\\BOTS\\Utils\\.local",
+      "outputPath": "C:\\rubinho\\Utils\\.local",
       "UsingMicrosoftNETSdk": false,
       "restoreAuditProperties": {
         "enableAudit": "False"
@@ -31050,7 +31050,7 @@
             "version": "[25.10.8, 25.10.8]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\UiPath\\Studio\\PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\matheus.rubio.gft\\AppData\\Local\\Programs\\UiPath\\Studio\\PortableRuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

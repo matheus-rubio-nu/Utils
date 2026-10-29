@@ -123,10 +123,10 @@
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\njsonschema\\10.5.2\\lib/netstandard2.0/NJsonSchema.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nlog\\4.7.15\\lib/netstandard2.0/NLog.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nodatime\\2.4.7\\lib/netstandard2.0/NodaTime.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\npoi\\2.5.5\\lib/netstandard2.1/NPOI.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\npoi\\2.5.5\\lib/netstandard2.1/NPOI.OOXML.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\npoi\\2.5.5\\lib/netstandard2.1/NPOI.OpenXml4Net.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\npoi\\2.5.5\\lib/netstandard2.1/NPOI.OpenXmlFormats.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\npoi\\2.5.5\\lib/netstandard2.1/NPOI.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nubank\\6.3.7\\lib/net8.0-windows7.0/Nubank.ViewModels.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nubank.library.runtime\\6.3.7\\lib/net8.0-windows7.0/CB8BB92D046_textComp.bmAJK21JQcD14XtiL2EPpY54.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\nubank.library.runtime\\6.3.7\\lib/net8.0-windows7.0/Nubank.dll",
@@ -449,9 +449,9 @@
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.database.activities\\1.7.1\\lib/net5.0-windows7.0/UiPath.Database.Activities.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.database.activities\\1.7.1\\lib/net5.0-windows7.0/UiPath.Database.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.database.activities\\1.7.1\\lib/net5.0-windows7.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.emgucvbundle\\1.3.0\\lib/net6.0/Emgu.CV.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.emgucvbundle\\1.3.0\\lib/net6.0/concrt140.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.emgucvbundle\\1.3.0\\lib/net6.0/cvextern.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.emgucvbundle\\1.3.0\\lib/net6.0/Emgu.CV.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.emgucvbundle\\1.3.0\\lib/net6.0/libusb-1.0.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.emgucvbundle\\1.3.0\\lib/net6.0/msvcp140.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.emgucvbundle\\1.3.0\\lib/net6.0/msvcp140_1.dll",
@@ -464,8 +464,8 @@
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.excel.activities\\2.20.2\\lib/net5.0-windows7.0/Microsoft.Vbe.Interop.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.excel.activities\\2.20.2\\lib/net5.0-windows7.0/Office.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.excel.activities\\2.20.2\\lib/net5.0-windows7.0/UiPath.Excel.Activities.Design.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.excel.activities\\2.20.2\\lib/net5.0-windows7.0/UiPath.Excel.Activities.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.excel.activities\\2.20.2\\lib/net5.0-windows7.0/UiPath.Excel.Activities.Package.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.excel.activities\\2.20.2\\lib/net5.0-windows7.0/UiPath.Excel.Activities.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.excel.activities\\2.20.2\\lib/net5.0-windows7.0/UiPath.Excel.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.formactivitylibrary.contracts\\2.0.7\\lib/net5.0-windows7.0/UiPath.Form.ActivityLibrary.Contracts.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.gsuite.activities\\2.8.23\\lib/net6.0-windows7.0/UiPath.GSuite.Activities.Api.dll",
@@ -482,8 +482,8 @@
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.mail.activities\\1.12.3\\lib/net5.0-windows7.0/Microsoft.Office.Interop.Word.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.mail.activities\\1.12.3\\lib/net5.0-windows7.0/Office.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.mail.activities\\1.12.3\\lib/net5.0-windows7.0/UiPath.Mail.Activities.Design.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.mail.activities\\1.12.3\\lib/net5.0-windows7.0/UiPath.Mail.Activities.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.mail.activities\\1.12.3\\lib/net5.0-windows7.0/UiPath.Mail.Activities.Package.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.mail.activities\\1.12.3\\lib/net5.0-windows7.0/UiPath.Mail.Activities.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.mail.activities\\1.12.3\\lib/net5.0-windows7.0/UiPath.Mail.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.mail.activities\\1.12.3\\lib/net5.0-windows7.0/UiPath.MainSessionServer.Shared.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.ocr.activities\\3.22.0\\lib/net6.0-windows7.0/UiPath.OCR.Activities.Design.dll",
@@ -513,20 +513,20 @@
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities\\25.10.8\\lib/net6.0-windows7.0/UiPath.Wizards.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib/net6.0-windows7.0/UiPath.CV.Activities.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib/net6.0-windows7.0/UiPath.CV.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib/net6.0-windows7.0/UiPath.UiAutomation.Activities.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomationCore.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.API.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.Activities.Contracts.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.Activities.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.API.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.ExternalIntegrations.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib/net6.0-windows7.0/UiPath.UiAutomation.Activities.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities.runtime.design\\25.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomation.Activities.Runtime.Design.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.design.recoverypanel\\25.10.8\\lib/net6.0/UiPath.UIAutomation.Design.RecoveryPanel.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.vision\\3.15.0\\lib/net6.0-windows7.0/UiPath.Vision.AzureComputerVision.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.vision\\3.15.0\\lib/net6.0-windows7.0/UiPath.Vision.Core.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.vision\\3.15.0\\lib/net6.0-windows7.0/UiPath.Vision.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.vision\\3.15.0\\lib/net6.0-windows7.0/UiPath.Vision.GoogleCloud.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.vision\\3.15.0\\lib/net6.0-windows7.0/UiPath.Vision.Tesseract.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.vision\\3.15.0\\lib/net6.0-windows7.0/UiPath.Vision.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.webapi.activities\\1.21.1\\lib/net6.0-windows7.0/UiPath.Web.Activities.Design.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.webapi.activities\\1.21.1\\lib/net6.0-windows7.0/UiPath.Web.Activities.RulesLibrary.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.webapi.activities\\1.21.1\\lib/net6.0-windows7.0/UiPath.Web.Activities.ViewModels.dll",
@@ -746,9 +746,9 @@
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.activities.runtimegovernance\\1.1.7\\lib/net6.0-windows7.0/UiPath.Activities.RuntimeGovernance.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.appsignatures\\25.6.140.65296\\lib/net6.0-windows7.0/AppSignatures.Locator.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.codedworkflows\\24.10.1\\lib/net6.0-windows7.0/UiPath.CodedWorkflows.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.emgucvbundle\\1.3.0\\lib/net6.0/Emgu.CV.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.emgucvbundle\\1.3.0\\lib/net6.0/concrt140.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.emgucvbundle\\1.3.0\\lib/net6.0/cvextern.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.emgucvbundle\\1.3.0\\lib/net6.0/Emgu.CV.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.emgucvbundle\\1.3.0\\lib/net6.0/libusb-1.0.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.emgucvbundle\\1.3.0\\lib/net6.0/msvcp140.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.emgucvbundle\\1.3.0\\lib/net6.0/msvcp140_1.dll",
@@ -772,20 +772,20 @@
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities\\25.10.8\\lib/net6.0-windows7.0/UiPath.Wizards.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib/net6.0-windows7.0/UiPath.CV.Activities.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib/net6.0-windows7.0/UiPath.CV.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib/net6.0-windows7.0/UiPath.UiAutomation.Activities.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomationCore.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.API.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.Activities.Contracts.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.Activities.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.API.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.ExternalIntegrations.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib/net6.0-windows7.0/UiPath.UiAutomation.Activities.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities.runtime.design\\25.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomation.Activities.Runtime.Design.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.design.recoverypanel\\25.10.8\\lib/net6.0/UiPath.UIAutomation.Design.RecoveryPanel.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.vision\\3.15.0\\lib/net6.0-windows7.0/UiPath.Vision.AzureComputerVision.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.vision\\3.15.0\\lib/net6.0-windows7.0/UiPath.Vision.Core.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.vision\\3.15.0\\lib/net6.0-windows7.0/UiPath.Vision.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.vision\\3.15.0\\lib/net6.0-windows7.0/UiPath.Vision.GoogleCloud.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.vision\\3.15.0\\lib/net6.0-windows7.0/UiPath.Vision.Tesseract.dll"
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.vision\\3.15.0\\lib/net6.0-windows7.0/UiPath.Vision.Tesseract.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.vision\\3.15.0\\lib/net6.0-windows7.0/UiPath.Vision.dll"
       ],
       "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities\\25.10.8"
     }
@@ -8033,10 +8033,10 @@
         "Version": "2.5.5"
       },
       "Assemblies": [
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\npoi\\2.5.5\\lib\\netstandard2.1\\NPOI.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\npoi\\2.5.5\\lib\\netstandard2.1\\NPOI.OOXML.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\npoi\\2.5.5\\lib\\netstandard2.1\\NPOI.OpenXml4Net.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\npoi\\2.5.5\\lib\\netstandard2.1\\NPOI.OpenXmlFormats.dll"
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\npoi\\2.5.5\\lib\\netstandard2.1\\NPOI.OpenXmlFormats.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\npoi\\2.5.5\\lib\\netstandard2.1\\NPOI.dll"
       ],
       "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\npoi\\2.5.5"
     },
@@ -10111,9 +10111,9 @@
         "Version": "1.3.0"
       },
       "Assemblies": [
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.emgucvbundle\\1.3.0\\lib\\net6.0\\Emgu.CV.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.emgucvbundle\\1.3.0\\lib\\net6.0\\concrt140.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.emgucvbundle\\1.3.0\\lib\\net6.0\\cvextern.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.emgucvbundle\\1.3.0\\lib\\net6.0\\Emgu.CV.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.emgucvbundle\\1.3.0\\lib\\net6.0\\libusb-1.0.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.emgucvbundle\\1.3.0\\lib\\net6.0\\msvcp140.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.emgucvbundle\\1.3.0\\lib\\net6.0\\msvcp140_1.dll",
@@ -10135,8 +10135,8 @@
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.excel.activities\\2.20.2\\lib\\net5.0-windows7.0\\Microsoft.Vbe.Interop.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.excel.activities\\2.20.2\\lib\\net5.0-windows7.0\\Office.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.excel.activities\\2.20.2\\lib\\net5.0-windows7.0\\UiPath.Excel.Activities.Design.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.excel.activities\\2.20.2\\lib\\net5.0-windows7.0\\UiPath.Excel.Activities.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.excel.activities\\2.20.2\\lib\\net5.0-windows7.0\\UiPath.Excel.Activities.Package.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.excel.activities\\2.20.2\\lib\\net5.0-windows7.0\\UiPath.Excel.Activities.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.excel.activities\\2.20.2\\lib\\net5.0-windows7.0\\UiPath.Excel.dll"
       ],
       "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.excel.activities\\2.20.2"
@@ -10228,8 +10228,8 @@
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.mail.activities\\1.12.3\\lib\\net5.0-windows7.0\\Microsoft.Office.Interop.Word.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.mail.activities\\1.12.3\\lib\\net5.0-windows7.0\\Office.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.mail.activities\\1.12.3\\lib\\net5.0-windows7.0\\UiPath.Mail.Activities.Design.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.mail.activities\\1.12.3\\lib\\net5.0-windows7.0\\UiPath.Mail.Activities.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.mail.activities\\1.12.3\\lib\\net5.0-windows7.0\\UiPath.Mail.Activities.Package.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.mail.activities\\1.12.3\\lib\\net5.0-windows7.0\\UiPath.Mail.Activities.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.mail.activities\\1.12.3\\lib\\net5.0-windows7.0\\UiPath.Mail.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.mail.activities\\1.12.3\\lib\\net5.0-windows7.0\\UiPath.MainSessionServer.Shared.dll"
       ],
@@ -10367,13 +10367,13 @@
       "Assemblies": [
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib\\net6.0-windows7.0\\UiPath.CV.Activities.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib\\net6.0-windows7.0\\UiPath.CV.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib\\net6.0-windows7.0\\UiPath.UiAutomation.Activities.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib\\net6.0-windows7.0\\UiPath.UIAutomationCore.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.API.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.Activities.Contracts.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.Activities.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.API.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.ExternalIntegrations.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.ExternalIntegrations.dll"
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8\\lib\\net6.0-windows7.0\\UiPath.UiAutomation.Activities.dll"
       ],
       "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.8"
     },
@@ -10405,9 +10405,9 @@
       "Assemblies": [
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.vision\\3.15.0\\lib\\net6.0-windows7.0\\UiPath.Vision.AzureComputerVision.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.vision\\3.15.0\\lib\\net6.0-windows7.0\\UiPath.Vision.Core.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.vision\\3.15.0\\lib\\net6.0-windows7.0\\UiPath.Vision.dll",
         "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.vision\\3.15.0\\lib\\net6.0-windows7.0\\UiPath.Vision.GoogleCloud.dll",
-        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.vision\\3.15.0\\lib\\net6.0-windows7.0\\UiPath.Vision.Tesseract.dll"
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.vision\\3.15.0\\lib\\net6.0-windows7.0\\UiPath.Vision.Tesseract.dll",
+        "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.vision\\3.15.0\\lib\\net6.0-windows7.0\\UiPath.Vision.dll"
       ],
       "Path": "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\uipath.vision\\3.15.0"
     },

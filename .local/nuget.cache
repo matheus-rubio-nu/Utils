@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "w6TsZZBkn1o=",
+  "dgSpecHash": "th+OmqnHIYM=",
   "success": true,
-  "projectFilePath": "C:\\Rubio\\BOTS\\Utils\\.local\\",
+  "projectFilePath": "C:\\rubinho\\Utils\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\amazon.extensions.configuration.systemsmanager\\3.0.0\\amazon.extensions.configuration.systemsmanager.3.0.0.nupkg.sha512",
     "C:\\Users\\matheus.rubio.gft\\.nuget\\packages\\avalonedit\\6.1.3.50\\avalonedit.6.1.3.50.nupkg.sha512",
@@ -363,7 +363,7 @@
       "code": "NU1603",
       "level": "Warning",
       "warningLevel": 1,
-      "filePath": "C:\\Rubio\\BOTS\\Utils\\.local",
+      "filePath": "C:\\rubinho\\Utils\\.local",
       "message": "UiPath.Persistence.Activities 1.5.11 depends on UiPath.FormActivityLibrary.Contracts (>= 2.0.7-alpha.4234105) but UiPath.FormActivityLibrary.Contracts 2.0.7-alpha.4234105 was not found. UiPath.FormActivityLibrary.Contracts 2.0.7 was resolved instead.",
       "libraryId": "UiPath.FormActivityLibrary.Contracts",
       "targetGraphs": [
