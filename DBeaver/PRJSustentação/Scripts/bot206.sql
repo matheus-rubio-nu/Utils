@@ -17,4 +17,8 @@ SELECT
 FROM
 	RPA.RPA_CTRL_CX_CANCELAMENTO_CDB
 ORDER BY
-	DT_EXEC DESC;
+	ID DESC;
+
+JSON_UNAVAILABLE_DATETIME
+Data e/ou hora que o bot nao deve executar. Se não necessário, deixe a array da chave vazia ([]) { 'WEEKDAYS': ['SUNDAY'], 'PERIOD': ['00:50-02:00' ,'12:10-13:00'] }
+{ 'WEEKDAYS': ['SUNDAY'], 'PERIOD': [] }

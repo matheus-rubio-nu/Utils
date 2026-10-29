@@ -7,17 +7,9 @@ WHERE ID_BOT IN (226)
 ORDER BY KEY ASC;
 
 SELECT  ---------------------------------------------------------------------------------- Check exec status
-	ID_EXECUTION 
-	,INI_EXECUTION
-	,END_EXECUTION
-	,STATUS 
-	,DESCR_ERR 
-	,ENVIRONMENT 
-	,HOST_NAME 
-	,EXTERNAL_ID s
+	*
 FROM RPA.RPA_AA_GERENCIADOR_EXECUCOES
 WHERE ID_BOT = 226
-	AND STATUS = 2
 ORDER BY ID_EXECUTION DESC;
 ---------------------------------------------------------------------------------- CONTROL TABLE
 SELECT *
@@ -26,7 +18,7 @@ ORDER BY ID DESC;
 
 SELECT *
 FROM RPA.RPA_CTRL_JUD_VALIDADOR_SIMBA
-WHERE ID_EXEC = 1110633
+WHERE NUM_CTRL_ENVIO = '049-PCMS-000391-52'
 ORDER BY ID DESC;
 
 SELECT *

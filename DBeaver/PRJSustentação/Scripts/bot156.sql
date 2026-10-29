@@ -7,37 +7,17 @@ FROM RPA.RPA_AA_GERENCIADOR_PARAMETERS pr
 WHERE ID_BOT IN (156)
 ORDER BY KEY ASC;
 
-{
-    'WEEKDAYS': ['SUNDAY'],
-    'PERIOD': ['00:50-02:00'
-	,'12:20-13:00']
-};
 -----------------------------------------------------------------------------------Check exec status
 SELECT  
  *
 FROM RPA.RPA_AA_GERENCIADOR_EXECUCOES
 WHERE ID_BOT = 156
-	AND COUNT_EXEC IS NOT NULL
 ORDER BY ID_EXECUTION DESC; 
 ---------------------------------------------------------------------------------- CONTROL TABLE
 SELECT * --FILA
 FROM RPA.RPA_CTRL_STA_NUBANK
 WHERE STATUS = '3'
-ORDER BY ID ASC;
-
-SELECT COUNT(*)
-FROM RPA.RPA_CTRL_STA_NUBANK
-WHERE STATUS = '3';
-
-SELECT *
-FROM RPA.RPA_CTRL_STA_NUBANK
-WHERE CCS_NUMBER IN ('20260414246234512')
-ORDER BY ID DESC;
-
-SELECT *
-FROM RPA.RPA_CTRL_STA_NUBANK
-WHERE ID = 418454
-ORDER BY ID DESC;
+ORDER BY ID desc;
 -----------------------------------------------------------------------------------QUERY PARA GERACAO DO RELATORIO
 SELECT
 	CCS_NUMBER AS "Nº DE CONTROLE"
